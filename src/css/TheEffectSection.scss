@@ -1,0 +1,379 @@
+.effect-section {
+  width: 100vw;
+  background: #ffd03e;
+  padding: 64px 112px;
+  padding-top: 0;
+
+  section {
+    max-width: 1102px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+
+    .first-container {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 570px;
+      position: relative;
+
+      .left-part {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        padding-top: 64px;
+        position: relative;
+
+        img {
+          position: absolute;
+          left: -112px;
+          top: 0;
+          pointer-events: none;
+        }
+
+        .btn {
+          z-index: 1;
+          border-radius: 12px;
+          padding: 8px 12px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background: #31290b;
+          border: 1px solid #fbd03d;
+          color: #fbd03d;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 23.87px;
+          letter-spacing: -3%;
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-weight: 700;
+          z-index: 1;
+          font-size: 45px;
+          line-height: 54px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+          text-transform: capitalize;
+        }
+      }
+
+      .right-part {
+        img {
+          position: relative;
+          right: -40px;
+        }
+      }
+
+      .path {
+        position: absolute;
+        left: 20px;
+        bottom: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    .second-container {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      width: 100%;
+      padding-bottom: 200px;
+
+      .left-part {
+        flex: 1;
+
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28.64px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+          margin-bottom: 10px;
+        }
+
+        .path {
+          margin-left: 30px;
+          position: relative;
+
+          p {
+            position: absolute;
+            left: 15px;
+            font-size: 18px;
+            line-height: 21.48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            bottom: 3px;
+
+            img {
+              transform: translateY(2px);
+            }
+          }
+
+          img {
+            &.first {
+              height: 225px;
+              width: 600px;
+            }
+
+            &.second {
+              position: relative;
+              top: 8px;
+            }
+          }
+        }
+      }
+
+      .right-part {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        position: relative;
+        bottom: -45px;
+
+        img {
+          position: absolute;
+          top: -150px;
+          left: 140px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28.64px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+        }
+      }
+    }
+
+    .third-container {
+      width: 100%;
+
+      .container {
+        width: 100%;
+
+        .main {
+          width: 100%;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+
+          .left-main {
+            .wrap {
+              display: flex;
+              align-items: flex-start;
+              flex-direction: column;
+
+              .contain {
+                width: 301.81px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-bottom: 60px;
+
+                .btn {
+                  border-radius: 8px;
+                  padding: 8px 12px;
+                  background: #ffeba8;
+                  font-weight: 400;
+                  font-size: 18px;
+                  line-height: 21.48px;
+                  letter-spacing: -3%;
+                  color: #0c0a09;
+                }
+
+                .anime-container {
+                  width: 301.81px;
+                  height: 280px;
+
+                  .hero-anime {
+                    width: 301.81px;
+                    height: 304px;
+                    transform: translateY(-23px);
+                  }
+                }
+              }
+
+              p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 28.64px;
+                letter-spacing: -3%;
+                color: #0c0a09;
+                width: 310px;
+              }
+            }
+          }
+
+          .middle-main {
+            width: 100%;
+            // width: 200px;
+            padding-top: 80px;
+            position: relative;
+
+            .stats {
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              align-items: flex-end;
+              transition: 0.5s all ease-in-out;
+              transition-delay: 0.5s;
+
+              &.not-active {
+                width: 220px;
+                overflow: hidden; // Ensure no scrollbar appears
+                position: relative;
+
+                // Transition for width change with ease-out
+                transition: width 0.6s ease-out, transform 0.8s ease-in-out;
+
+                // Add a subtle scale effect to the container for extra emphasis
+                &:hover {
+                  transform: scale(1.05);
+                }
+
+                img {
+                  z-index: 2;
+
+                  // Targeting the second child (the one with opacity 0)
+                  &:nth-child(2) {
+                    opacity: 0;
+                    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+
+                    // Adding a slight transform for the exit animation
+                    transform: translateX(10px);
+                  }
+
+                  // Optional: Adding a hover effect for the first image as well (if applicable)
+                  &:nth-child(1) {
+                    transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+                    opacity: 1;
+                    transform: translateY(5px);
+                  }
+                }
+
+                // When not active and transitioning
+                &.not-active {
+                  img {
+                    &:nth-child(2) {
+                      // Slight delay for opacity transition
+                      transition-delay: 0.4s;
+                    }
+                  }
+                }
+              }
+
+              img {
+                &:nth-child(2) {
+                  opacity: 1;
+                  transform: translateX(20px);
+                  transition: 0.5s all ease-in-out;
+                }
+              }
+            }
+
+            .img-longest {
+              width: 100%;
+              overflow: hidden;
+              transition: width 0.5s ease-in-out, transform 0.6s ease-in-out,
+                opacity 0.6s ease-out;
+
+              // When the element has the not-active class
+              &.not-active {
+                width: 220px;
+                opacity: 0.7; // Slightly fade out when not active
+                transform: scale(
+                  0.95
+                ); // Shrink the container slightly for effect
+                transition: width 0.5s ease-in-out, opacity 0.6s ease-out,
+                  transform 0.6s ease-in-out; // Add a smooth transition for all properties
+              }
+
+              img.img-line {
+                width: 516px;
+                transition: width 0.6s ease-in-out, transform 0.6s ease-in-out;
+
+                // Add transform and opacity effects to the image
+                &:hover {
+                  transform: scale(1.05); // Slight zoom-in effect on hover
+                  opacity: 1;
+                }
+              }
+
+              // Optional: Add hover effects to the whole .img-longest container for interaction
+              &:hover {
+                transform: scale(1.02); // Slight scale-up on hover
+                opacity: 1; // Ensure full opacity on hover
+              }
+            }
+
+            img.img-down {
+              position: absolute;
+              bottom: 354px;
+              left: 254px;
+            }
+
+            .contain {
+              padding-top: 170px;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+
+              .btn {
+                border-radius: 12px;
+                padding: 8px 12px;
+                background: #9cfff8;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21.48px;
+                letter-spacing: -3%;
+                color: #0c0a09;
+              }
+
+              .wrap {
+                display: flex;
+                align-items: flex-end;
+
+                .hero-anime {
+                  width: 308.9px;
+                  height: 304px;
+                }
+              }
+            }
+          }
+
+          .right-main {
+            .contain {
+              .btn {
+                border-radius: 12px;
+                padding: 8px 12px;
+                background: #dcffa4;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21.48px;
+                letter-spacing: -3%;
+                color: #0c0a09;
+              }
+
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              width: 308.9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

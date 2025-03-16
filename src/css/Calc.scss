@@ -1,0 +1,21 @@
+.calc {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+    .bar {
+      width: 402.38px;
+      height: 40px;
+      background: #e2ab2b;
+    }
+  }
+}

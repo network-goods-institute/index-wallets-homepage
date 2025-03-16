@@ -1,0 +1,1319 @@
+.join-waitlist-section {
+  width: 100vw;
+  position: relative;
+  padding-top: 190px;
+  margin-bottom: 10px;
+}
+.join-waitlist-section .layer-blur {
+  position: absolute;
+  top: -10px;
+  width: 130vw;
+  height: 109px;
+  pointer-events: none;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.join-waitlist-section section {
+  max-width: 1102px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+}
+.join-waitlist-section section .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 410px;
+}
+.join-waitlist-section section .container .left-container {
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.join-waitlist-section section .container .left-container .wrapped-container {
+  height: 189px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+.join-waitlist-section section .container .left-container .wrapped-container img {
+  position: absolute;
+  left: 0;
+  top: -26px;
+}
+.join-waitlist-section section .container .left-container .wrapped-container p {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38.19px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  z-index: 1;
+  width: 463px;
+}
+.join-waitlist-section section .container .left-container .wrapped-container .btn {
+  width: 139px;
+  border-radius: 8px;
+  background: #fbd03d;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -3%;
+  line-height: 19.09px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #0c0a09;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
+}
+.join-waitlist-section section .container .left-container .wrapped-container .btn span {
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
+  position: absolute;
+  top: 100%;
+  left: 32px;
+  width: 100%;
+}
+.join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
+  transform: translateY(-180%);
+}
+.join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
+  transform: translateY(-180%);
+}
+.join-waitlist-section section .container .left-container h2 {
+  margin-top: 70px;
+  font-weight: 700;
+  font-size: 48px;
+}
+.join-waitlist-section section .container .right-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.join-waitlist-section section .container .right-container .wrapped-container {
+  display: flex;
+  gap: 10px;
+}
+.join-waitlist-section section .container .right-container .wrapped-container .card {
+  width: 216px;
+  height: 200px;
+  border-radius: 12px;
+  padding: 16px;
+  background: #caffe6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  overflow: hidden;
+}
+.join-waitlist-section section .container .right-container .wrapped-container .card img.no {
+  align-self: flex-start;
+}
+.join-waitlist-section section .container .right-container .wrapped-container .card p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  align-self: flex-start;
+}
+.join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
+  align-self: center;
+  justify-self: center;
+  width: 127.41px;
+  height: 112px;
+}
+.join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
+  width: 267px;
+  overflow: hidden;
+  background-color: #fff5d4;
+}
+.join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
+  position: absolute;
+  right: -13px;
+  top: 40px;
+  align-self: center;
+  justify-self: center;
+  width: 127.41px;
+  height: 90px;
+  overflow: hidden;
+}
+.join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
+  align-self: center;
+  justify-self: center;
+  width: 127.41px;
+  height: 112px;
+  overflow: hidden;
+}
+.join-waitlist-section section .container .right-container .main-card {
+  width: 495;
+  height: 200px;
+  border-radius: 12px;
+  padding: 16px;
+  background: #e9ddf6;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+.join-waitlist-section section .container .right-container .main-card img.no {
+  align-self: flex-start;
+}
+.join-waitlist-section section .container .right-container .main-card p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  align-self: flex-start;
+}
+.join-waitlist-section section .container .right-container .main-card .anime {
+  position: absolute;
+  top: -20px;
+  left: 180px;
+  align-self: center;
+  justify-self: center;
+  width: 210px;
+  height: 184px;
+}
+.join-waitlist-section section .form-waitlist {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 408px;
+  padding: 20px 40px;
+  gap: 40px;
+  border-radius: 12px;
+  background: #e7f0ff;
+  margin-top: 20px;
+}
+.join-waitlist-section section .form-waitlist .img-container {
+  flex: 1;
+}
+.join-waitlist-section section .form-waitlist form {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.join-waitlist-section section .form-waitlist form h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47.73px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  margin-bottom: 20px;
+}
+.join-waitlist-section section .form-waitlist form .input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.join-waitlist-section section .form-waitlist form .input label {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  margin-bottom: 0px;
+}
+.join-waitlist-section section .form-waitlist form .input input {
+  background: none;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+}
+.join-waitlist-section section .form-waitlist form .input input::-moz-placeholder {
+  color: #8a8a8e;
+}
+.join-waitlist-section section .form-waitlist form .input input::placeholder {
+  color: #8a8a8e;
+}
+.join-waitlist-section section .form-waitlist form .loader {
+  width: 100%;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background-color: #0c0a09;
+  border-radius: 12px;
+  padding: 18px 8px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -3%;
+  color: white;
+  cursor: wait;
+}
+.join-waitlist-section section .form-waitlist form .loader .anime {
+  height: 40px;
+  transform: scale(1.8);
+  position: relative;
+  top: -10px;
+}
+.join-waitlist-section section .form-waitlist form button {
+  width: 100%;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  background-color: #0c0a09;
+  border-radius: 12px;
+  padding: 18px 8px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -3%;
+  color: white;
+  cursor: pointer;
+}
+.join-waitlist-section section .form-waitlist-mb {
+  display: none;
+}
+@media (max-width: 575px) {
+  .join-waitlist-section {
+    width: 100vw;
+    position: relative;
+    padding: 0 16px;
+    padding-top: 30px;
+    margin-bottom: 10px;
+  }
+  .join-waitlist-section .layer-blur {
+    position: absolute;
+    top: -70px;
+    left: -10px;
+    width: 130vw;
+    height: 109px;
+    pointer-events: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .join-waitlist-section section {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+  }
+  .join-waitlist-section section .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .join-waitlist-section section .container .left-container {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container {
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container img {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    height: 152px;
+    width: 152px;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23.87px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    z-index: 1;
+    width: 100%;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn {
+    width: 88px;
+    border-radius: 8px;
+    background: #fbd03d;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -3%;
+    line-height: 14.32px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0c0a09;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn span {
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 32px;
+    width: 100%;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container h2 {
+    display: none;
+  }
+  .join-waitlist-section section .container .right-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container {
+    display: flex;
+    gap: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card {
+    width: 100%;
+    height: 173px;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: #caffe6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff5d4;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card {
+    height: 173px;
+    border-radius: 12px;
+    padding: 16px;
+    background: #e9ddf6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card img.no {
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .main-card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .main-card .anime {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    align-self: center;
+    justify-self: center;
+    width: 155px;
+    height: 136px;
+  }
+  .join-waitlist-section section .form-waitlist {
+    display: none;
+  }
+  .join-waitlist-section section .form-waitlist-mb {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    gap: 40px;
+    border-radius: 12px;
+    background: #e7f0ff;
+    margin-top: 10px;
+    height: 347px;
+    position: relative;
+  }
+  .join-waitlist-section section .form-waitlist-mb h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    text-align: center;
+  }
+  .join-waitlist-section section .form-waitlist-mb img {
+    width: 100%;
+    height: 208px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transform: scale(1.1);
+    position: absolute;
+    top: 70px;
+  }
+  .join-waitlist-section section .form-waitlist-mb .btn {
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    background: #0c0a09;
+    padding: 12px 8px;
+    font-weight: 500;
+    line-height: 16.71px;
+    font-size: 14px;
+    letter-spacing: -3%;
+    color: white;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .join-waitlist-section {
+    width: 100vw;
+    position: relative;
+    padding: 0 16px;
+    padding-top: 100px;
+    margin-bottom: 10px;
+  }
+  .join-waitlist-section .layer-blur {
+    position: absolute;
+    top: -90px;
+    width: 130vw;
+    height: 109px;
+    pointer-events: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: -10px;
+  }
+  .join-waitlist-section section {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+  }
+  .join-waitlist-section section .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .join-waitlist-section section .container .left-container {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container {
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container img {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    height: 152px;
+    width: 152px;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23.87px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    z-index: 1;
+    width: 100%;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn {
+    width: 88px;
+    border-radius: 8px;
+    background: #fbd03d;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -3%;
+    line-height: 14.32px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0c0a09;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn span {
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 32px;
+    width: 100%;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container h2 {
+    display: none;
+  }
+  .join-waitlist-section section .container .right-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container {
+    display: flex;
+    gap: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card {
+    width: 100%;
+    height: 173px;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: #caffe6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff5d4;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card {
+    height: 173px;
+    border-radius: 12px;
+    padding: 16px;
+    background: #e9ddf6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card img.no {
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .main-card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .main-card .anime {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    align-self: center;
+    justify-self: center;
+    width: 155px;
+    height: 136px;
+  }
+  .join-waitlist-section section .form-waitlist {
+    display: none;
+  }
+  .join-waitlist-section section .form-waitlist-mb {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    gap: 40px;
+    border-radius: 12px;
+    background: #e7f0ff;
+    margin-top: 10px;
+    height: 347px;
+    position: relative;
+  }
+  .join-waitlist-section section .form-waitlist-mb h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    text-align: center;
+  }
+  .join-waitlist-section section .form-waitlist-mb img {
+    width: 100%;
+    height: 208px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transform: scale(1.1);
+    position: absolute;
+    top: 70px;
+  }
+  .join-waitlist-section section .form-waitlist-mb .btn {
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    background: #0c0a09;
+    padding: 12px 8px;
+    font-weight: 500;
+    line-height: 16.71px;
+    font-size: 14px;
+    letter-spacing: -3%;
+    color: white;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .join-waitlist-section {
+    width: 100vw;
+    position: relative;
+    padding: 0 16px;
+    padding-top: 100px;
+    margin-bottom: 10px;
+  }
+  .join-waitlist-section .layer-blur {
+    position: absolute;
+    top: -120px;
+    width: 130vw;
+    height: 200px;
+    pointer-events: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+    left: -10px;
+    z-index: 10;
+  }
+  .join-waitlist-section section {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 10;
+  }
+  .join-waitlist-section section .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .join-waitlist-section section .container .left-container {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container {
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container img {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    height: 152px;
+    width: 152px;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23.87px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    z-index: 1;
+    width: 100%;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn {
+    width: 88px;
+    border-radius: 8px;
+    background: #fbd03d;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -3%;
+    line-height: 14.32px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0c0a09;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn span {
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 32px;
+    width: 100%;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container h2 {
+    display: none;
+  }
+  .join-waitlist-section section .container .right-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container {
+    display: flex;
+    gap: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card {
+    width: 100%;
+    height: 173px;
+    border-radius: 12px;
+    padding: 12px 16px;
+    background: #caffe6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff5d4;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
+    align-self: center;
+    justify-self: center;
+    width: 91.01px;
+    height: 80px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card {
+    height: 173px;
+    border-radius: 12px;
+    padding: 16px;
+    background: #e9ddf6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card img.no {
+    align-self: flex-start;
+    padding-top: 30px;
+  }
+  .join-waitlist-section section .container .right-container .main-card p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .main-card .anime {
+    position: absolute;
+    top: 0px;
+    left: 180px;
+    align-self: center;
+    justify-self: center;
+    width: 155px;
+    height: 136px;
+  }
+  .join-waitlist-section section .form-waitlist {
+    display: none;
+  }
+  .join-waitlist-section section .form-waitlist-mb {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    gap: 40px;
+    border-radius: 12px;
+    background: #e7f0ff;
+    margin-top: 10px;
+    height: 347px;
+    position: relative;
+  }
+  .join-waitlist-section section .form-waitlist-mb h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    text-align: center;
+  }
+  .join-waitlist-section section .form-waitlist-mb img {
+    width: 100%;
+    height: 208px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    transform: scale(1.1);
+    position: absolute;
+    top: 70px;
+  }
+  .join-waitlist-section section .form-waitlist-mb .btn {
+    border-radius: 12px;
+    width: 100%;
+    text-align: center;
+    background: #0c0a09;
+    padding: 12px 8px;
+    font-weight: 500;
+    line-height: 16.71px;
+    font-size: 14px;
+    letter-spacing: -3%;
+    color: white;
+  }
+}
+@media (min-width: 992px) and (max-width: 1102px) {
+  .join-waitlist-section {
+    padding: 0 50px;
+    padding-top: 190px;
+  }
+  .join-waitlist-section .layer-blur {
+    position: absolute;
+    top: -10px;
+    left: -20%;
+    width: 130vw;
+    height: 109px;
+    pointer-events: none;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .join-waitlist-section section {
+    width: 100%;
+    max-width: 100%;
+  }
+  .join-waitlist-section section .container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 410px;
+  }
+  .join-waitlist-section section .container .left-container {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container {
+    height: 189px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container img {
+    position: absolute;
+    left: 0;
+    top: -26px;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container p {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38.19px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    z-index: 1;
+    width: 400px;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn {
+    width: 139px;
+    border-radius: 8px;
+    background: #fbd03d;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -3%;
+    line-height: 19.09px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #0c0a09;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn span {
+    display: block;
+    transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 32px;
+    width: 100%;
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
+    transform: translateY(-180%);
+  }
+  .join-waitlist-section section .container .left-container h2 {
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 48px;
+  }
+  .join-waitlist-section section .container .right-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container {
+    display: flex;
+    gap: 10px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card {
+    width: 216px;
+    height: 200px;
+    border-radius: 12px;
+    padding: 16px;
+    background: #caffe6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
+    align-self: center;
+    justify-self: center;
+    width: 127.41px;
+    height: 112px;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
+    width: 267px;
+    overflow: hidden;
+    background-color: #fff5d4;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
+    position: absolute;
+    right: -13px;
+    top: 40px;
+    align-self: center;
+    justify-self: center;
+    width: 127.41px;
+    height: 90px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
+    align-self: center;
+    justify-self: center;
+    width: 127.41px;
+    height: 112px;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card {
+    width: 495;
+    height: 200px;
+    border-radius: 12px;
+    padding: 16px;
+    background: #e9ddf6;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  .join-waitlist-section section .container .right-container .main-card img.no {
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .main-card p {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    align-self: flex-start;
+  }
+  .join-waitlist-section section .container .right-container .main-card .anime {
+    position: absolute;
+    top: -20px;
+    left: 180px;
+    align-self: center;
+    justify-self: center;
+    width: 210px;
+    height: 184px;
+  }
+  .join-waitlist-section section .form-waitlist {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 408px;
+    padding: 20px 40px;
+    gap: 40px;
+    border-radius: 12px;
+    background: #e7f0ff;
+    margin-top: 20px;
+  }
+  .join-waitlist-section section .form-waitlist .img-container {
+    flex: 1;
+  }
+  .join-waitlist-section section .form-waitlist form {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .join-waitlist-section section .form-waitlist form .input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .join-waitlist-section section .form-waitlist form .input label {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    margin-bottom: 0px;
+  }
+  .join-waitlist-section section .form-waitlist form .input input {
+    background: none;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+  }
+  .join-waitlist-section section .form-waitlist form .input input::-moz-placeholder {
+    color: #8a8a8e;
+  }
+  .join-waitlist-section section .form-waitlist form .input input::placeholder {
+    color: #8a8a8e;
+  }
+  .join-waitlist-section section .form-waitlist form button {
+    width: 100%;
+    font-family: inherit;
+    border: none;
+    outline: none;
+    background-color: #0c0a09;
+    border-radius: 12px;
+    padding: 18px 8px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: white;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=JoinWaitlist.css.map */

@@ -1,0 +1,1291 @@
+.spread-the-love-section {
+  height: 970px;
+  width: 100%;
+  background: url("../assets/images/pg_bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 51px 0;
+  padding-bottom: 25px;
+
+  section {
+    width: 1102px;
+    margin: 0 auto;
+
+    .content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-bottom: 20px;
+
+      .btn {
+        border-radius: 12px;
+        padding: 8px 12px;
+        border: 1px solid #a856f7;
+        background: #eddaff;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23.87px;
+        letter-spacing: -3%;
+        color: #a856f7;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        text-transform: capitalize;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 54px;
+        letter-spacing: -3%;
+        color: #0c0a09;
+        text-align: center;
+        position: relative;
+
+        h2.mb {
+          display: none;
+        }
+
+        img {
+          position: absolute;
+          right: 10px;
+          bottom: 12px;
+        }
+      }
+    }
+
+    .wrapper {
+      width: 100%;
+      padding-top: 15px;
+
+      .first-contain {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 162px;
+
+        .first-vector {
+          height: 258.39px;
+          width: 205.74px;
+          position: relative;
+          overflow: hidden;
+          //   background: green;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .contain {
+            width: 100%;
+
+            .upper {
+              position: absolute;
+              right: 10px;
+              top: 10px;
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                letter-spacing: -3%;
+                font-style: italic;
+                color: #0c0a09;
+              }
+
+              img.first {
+                position: absolute;
+                right: -10px;
+                top: 0;
+              }
+
+              img.second {
+                position: absolute;
+                right: 15px;
+                top: 50px;
+              }
+            }
+
+            .lower {
+              width: 100%;
+              height: 240.39px;
+              display: flex;
+              align-items: flex-end;
+              justify-content: space-between;
+
+              .sent {
+                width: 54px;
+                height: 86px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+
+                h4 {
+                  font-size: 16px;
+                  font-weight: 600;
+                  line-height: 19.09px;
+                  letter-spacing: -3%;
+                  font-style: italic;
+                  color: #0c0a09;
+                }
+
+                p {
+                  font-size: 16px;
+                  font-weight: 400;
+                  line-height: 19.09px;
+                  letter-spacing: -3%;
+                  font-style: italic;
+                  color: #0c0a09;
+                }
+              }
+
+              .clip-anime {
+                width: 173px;
+                height: 240.39px;
+                overflow: hidden;
+              }
+
+              .hero-anime {
+                width: 164px;
+                height: 240.39px;
+                transform: scale(1.4) translateX(10px) translateY(-1px);
+              }
+
+              //   .hero-anime {
+              //     width: 162px;
+              //     height: 240.39px;
+              //     transform: scale(2.15) translateX(38px) translateY(-3px);
+              //   }
+            }
+          }
+        }
+      }
+
+      .second-contain {
+        width: 479px;
+        height: 256.5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        flex-direction: column;
+
+        .contain {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          position: relative;
+          justify-content: center;
+
+          img.stat {
+            position: absolute;
+            left: 220px;
+            top: 50px;
+          }
+        }
+
+        .hero-anime {
+          width: 309px;
+          height: 239.39px;
+        }
+
+        p.top-left {
+          position: absolute;
+          left: 100px;
+          top: 10px;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19.09px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+          font-style: italic;
+        }
+
+        .top-right {
+          position: absolute;
+          right: 0;
+          top: 10px;
+
+          p {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            transform: translate(-50%, -50%);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.09px;
+            letter-spacing: -3%;
+            color: #000000;
+            font-style: italic;
+          }
+        }
+
+        .left-bottom {
+          //   width: 92px;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.09px;
+            letter-spacing: -3%;
+            color: #000000;
+            font-style: italic;
+          }
+
+          img {
+            margin-bottom: 10px;
+            position: relative;
+            left: 49.79px;
+          }
+        }
+      }
+
+      .second-part {
+        padding-left: 0;
+        margin-top: 140px;
+      }
+
+      .text-quote {
+        margin: 0 auto;
+        width: 579px;
+        margin-top: 50px;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 38.19px;
+        letter-spacing: -3%;
+        color: #0c0a09;
+        text-align: center;
+      }
+    }
+  }
+
+  h2.mb {
+    display: none;
+  }
+
+  @media (max-width: 575px) {
+    & {
+      height: 1565px;
+      width: 100%;
+      background: url("../assets/images/pg_bg.png");
+      background-size: cover;
+      background-position: center;
+      padding: 51px 0;
+      padding-bottom: 25px;
+      padding-top: 20px;
+
+      section {
+        width: 100%;
+        margin: 0 auto;
+
+        .content {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          .btn {
+            border-radius: 12px;
+            padding: 8px 12px;
+            border: 1px solid #a856f7;
+            background: #eddaff;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14.32px;
+            letter-spacing: -3%;
+            color: #a856f7;
+            margin-bottom: 10px;
+          }
+
+          h2 {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 26px;
+            letter-spacing: -3%;
+            color: #0c0a09;
+            text-align: center;
+            position: relative;
+            display: none;
+
+            &.mb {
+              display: block;
+            }
+
+            img {
+              position: absolute;
+              right: 70px;
+              bottom: 5px;
+              width: 18.26px;
+              height: 20px;
+            }
+          }
+        }
+
+        .wrapper {
+          width: 100%;
+          padding-top: 15px;
+
+          .first-contain {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 0px;
+
+            .first-vector {
+              height: 258.39px;
+              width: 205.74px;
+              position: relative;
+              overflow: hidden;
+              //   background: green;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .contain {
+                width: 100%;
+
+                .upper {
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+
+                  p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.09px;
+                    letter-spacing: -3%;
+                    font-style: italic;
+                    color: #0c0a09;
+                  }
+
+                  img.first {
+                    position: absolute;
+                    right: -10px;
+                    top: 0;
+                  }
+
+                  img.second {
+                    position: absolute;
+                    right: 15px;
+                    top: 50px;
+                  }
+                }
+
+                .lower {
+                  width: 100%;
+                  height: 240.39px;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+
+                  .sent {
+                    width: 54px;
+                    height: 86px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    h4 {
+                      font-size: 16px;
+                      font-weight: 600;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                      color: #0c0a09;
+                    }
+
+                    p {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                    }
+                  }
+
+                  .clip-anime {
+                    width: 167px;
+                    height: 240.39px;
+                    overflow: hidden;
+                  }
+
+                  .hero-anime {
+                    width: 162px;
+                    height: 240.39px;
+                    transform: scale(1.4) translateX(10px) translateY(-1px);
+                  }
+
+                  //   .hero-anime {
+                  //     width: 162px;
+                  //     height: 240.39px;
+                  //     transform: scale(2.15) translateX(38px) translateY(-3px);
+                  //   }
+                }
+              }
+            }
+          }
+
+          .second-contain {
+            width: 479px;
+            height: 256.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            flex-direction: column;
+
+            .contain {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              position: relative;
+              justify-content: center;
+              right: -20px;
+              margin-top: 80px;
+            }
+
+            .hero-anime {
+              width: 309px;
+              height: 239.39px;
+            }
+
+            p.top-left {
+              position: absolute;
+              left: 100px;
+              top: 10px;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19.09px;
+              letter-spacing: -3%;
+              color: #0c0a09;
+              font-style: italic;
+            }
+
+            .top-right {
+              position: absolute;
+              right: 80px;
+              top: -30px;
+              transform: scale(0.8);
+
+              p {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                letter-spacing: -3%;
+
+                font-style: italic;
+              }
+            }
+
+            .left-bottom {
+              //   width: 92px;
+              position: absolute;
+              left: 15px;
+              bottom: -25px;
+
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.32px;
+                letter-spacing: -3%;
+
+                position: relative;
+                right: -50px;
+                font-style: italic;
+              }
+
+              img {
+                margin-bottom: 0px;
+                position: relative;
+                left: 49.79px;
+              }
+            }
+          }
+
+          .text-quote {
+            margin: 0 auto;
+            margin-top: 120px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.09px;
+            letter-spacing: -3%;
+            color: #0c0a09;
+            text-align: center;
+            width: 290px;
+          }
+
+          .second-part {
+            padding-left: 0;
+            margin-top: 80px;
+
+            .second-contain {
+              &:first-child {
+                margin-bottom: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    & {
+      height: 1565px;
+      width: 100%;
+      background: url("../assets/images/pg_bg.png");
+      background-size: cover;
+      background-position: center;
+      padding: 51px 0;
+      padding-bottom: 25px;
+      padding-top: 20px;
+
+      section {
+        width: 100%;
+        margin: 0 auto;
+
+        .content {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          .btn {
+            border-radius: 12px;
+            padding: 8px 12px;
+            border: 1px solid #a856f7;
+            background: #eddaff;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 14.32px;
+            letter-spacing: -3%;
+            color: #a856f7;
+            margin-bottom: 10px;
+          }
+
+          h2 {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 26px;
+            letter-spacing: -3%;
+            color: #0c0a09;
+            text-align: center;
+            position: relative;
+            display: none;
+
+            &.mb {
+              display: block;
+            }
+
+            img {
+              position: absolute;
+              right: 70px;
+              bottom: 5px;
+              width: 18.26px;
+              height: 20px;
+            }
+          }
+        }
+
+        .wrapper {
+          width: 100%;
+          padding-top: 15px;
+
+          .first-contain {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-direction: column;
+            padding-left: 0px;
+
+            .first-vector {
+              height: 258.39px;
+              width: 205.74px;
+              position: relative;
+              overflow: hidden;
+              //   background: green;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .contain {
+                width: 100%;
+
+                .upper {
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+
+                  p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.09px;
+                    letter-spacing: -3%;
+                    font-style: italic;
+                    color: #0c0a09;
+                  }
+
+                  img.first {
+                    position: absolute;
+                    right: -10px;
+                    top: 0;
+                  }
+
+                  img.second {
+                    position: absolute;
+                    right: 15px;
+                    top: 50px;
+                  }
+                }
+
+                .lower {
+                  width: 100%;
+                  height: 240.39px;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+
+                  .sent {
+                    width: 54px;
+                    height: 86px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    h4 {
+                      font-size: 16px;
+                      font-weight: 600;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                      color: #0c0a09;
+                    }
+
+                    p {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                    }
+                  }
+
+                  .clip-anime {
+                    width: 167px;
+                    height: 240.39px;
+                    overflow: hidden;
+                  }
+
+                  .hero-anime {
+                    width: 162px;
+                    height: 240.39px;
+                    transform: scale(1.4) translateX(10px) translateY(-1px);
+                  }
+
+                  //   .hero-anime {
+                  //     width: 162px;
+                  //     height: 240.39px;
+                  //     transform: scale(2.15) translateX(38px) translateY(-3px);
+                  //   }
+                }
+              }
+            }
+          }
+
+          .second-contain {
+            width: 479px;
+            height: 256.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            flex-direction: column;
+
+            .contain {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              position: relative;
+              justify-content: center;
+              right: -20px;
+              margin-top: 80px;
+            }
+
+            .hero-anime {
+              width: 309px;
+              height: 239.39px;
+            }
+
+            p.top-left {
+              position: absolute;
+              left: 100px;
+              top: 10px;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19.09px;
+              letter-spacing: -3%;
+              color: #0c0a09;
+              font-style: italic;
+            }
+
+            .top-right {
+              position: absolute;
+              right: 80px;
+              top: -30px;
+              transform: scale(0.8);
+
+              p {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                letter-spacing: -3%;
+
+                font-style: italic;
+              }
+            }
+
+            .left-bottom {
+              //   width: 92px;
+              position: absolute;
+              left: 15px;
+              bottom: -25px;
+
+              p {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14.32px;
+                letter-spacing: -3%;
+
+                position: relative;
+                right: -50px;
+                font-style: italic;
+              }
+
+              img {
+                margin-bottom: 0px;
+                position: relative;
+                left: 49.79px;
+              }
+            }
+          }
+
+          .text-quote {
+            margin: 0 auto;
+            margin-top: 120px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19.09px;
+            letter-spacing: -3%;
+            color: #0c0a09;
+            text-align: center;
+          }
+
+          .second-part {
+            padding-left: 0;
+            margin-top: 80px;
+
+            .second-contain {
+              &:first-child {
+                margin-bottom: 80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    & {
+      padding: 0 50px;
+      padding: 51px 0;
+      padding-bottom: 25px;
+
+      section {
+        width: 90%;
+        margin: 0 auto;
+
+        .content {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          .btn {
+            border-radius: 12px;
+            padding: 8px 12px;
+            border: 1px solid #a856f7;
+            background: #eddaff;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23.87px;
+            letter-spacing: -3%;
+            color: #a856f7;
+            margin-bottom: 10px;
+          }
+
+          h2 {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 54px;
+            letter-spacing: -3%;
+            color: #0c0a09;
+            text-align: center;
+            position: relative;
+
+            img {
+              position: absolute;
+              right: -40px;
+              bottom: 10px;
+            }
+          }
+        }
+
+        .wrapper {
+          width: 100%;
+          padding-top: 15px;
+
+          .first-contain {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 62px;
+
+            .first-vector {
+              height: 258.39px;
+              width: 205.74px;
+              position: relative;
+              overflow: hidden;
+              //   background: green;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .contain {
+                width: 100%;
+
+                .upper {
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+
+                  p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.09px;
+                    letter-spacing: -3%;
+                    font-style: italic;
+                    color: #0c0a09;
+                  }
+
+                  img.first {
+                    position: absolute;
+                    right: -10px;
+                    top: 0;
+                  }
+
+                  img.second {
+                    position: absolute;
+                    right: 15px;
+                    top: 50px;
+                  }
+                }
+
+                .lower {
+                  width: 100%;
+                  height: 240.39px;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+
+                  .sent {
+                    width: 54px;
+                    height: 86px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    h4 {
+                      font-size: 16px;
+                      font-weight: 600;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                      color: #0c0a09;
+                    }
+
+                    p {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                    }
+                  }
+
+                  .clip-anime {
+                    width: 167px;
+                    height: 240.39px;
+                    overflow: hidden;
+                  }
+
+                  .hero-anime {
+                    width: 162px;
+                    height: 240.39px;
+                    transform: scale(1.4) translateX(10px) translateY(-1px);
+                  }
+
+                  //   .hero-anime {
+                  //     width: 162px;
+                  //     height: 240.39px;
+                  //     transform: scale(2.15) translateX(38px) translateY(-3px);
+                  //   }
+                }
+              }
+            }
+          }
+
+          .second-contain {
+            width: 479px;
+            height: 256.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            flex-direction: column;
+
+            .contain {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              position: relative;
+              justify-content: center;
+            }
+
+            .hero-anime {
+              width: 309px;
+              height: 239.39px;
+            }
+
+            p.top-left {
+              position: absolute;
+              left: 100px;
+              top: 10px;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19.09px;
+              letter-spacing: -3%;
+              color: #0c0a09;
+              font-style: italic;
+            }
+
+            .top-right {
+              position: absolute;
+              right: 0;
+              top: 10px;
+
+              p {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                letter-spacing: -3%;
+
+                font-style: italic;
+              }
+            }
+
+            .left-bottom {
+              //   width: 92px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                letter-spacing: -3%;
+
+                font-style: italic;
+              }
+
+              img {
+                margin-bottom: 10px;
+                position: relative;
+                left: 49.79px;
+              }
+            }
+          }
+
+          .second-part {
+            padding-left: 0;
+            margin-top: 140px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1102px) {
+    & {
+      padding: 0 50px;
+      padding: 51px 0;
+      padding-bottom: 25px;
+
+      section {
+        width: 90%;
+        margin: 0 auto;
+
+        .content {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          margin-bottom: 20px;
+
+          .btn {
+            border-radius: 12px;
+            padding: 8px 12px;
+            border: 1px solid #a856f7;
+            background: #eddaff;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23.87px;
+            letter-spacing: -3%;
+            color: #a856f7;
+            margin-bottom: 10px;
+          }
+
+          h2 {
+            text-transform: capitalize;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 54px;
+            letter-spacing: -3%;
+            color: #0c0a09;
+            text-align: center;
+            position: relative;
+
+            img {
+              position: absolute;
+              right: -40px;
+              bottom: 10px;
+            }
+          }
+        }
+
+        .wrapper {
+          width: 100%;
+          padding-top: 15px;
+
+          .first-contain {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 62px;
+
+            .first-vector {
+              height: 258.39px;
+              width: 205.74px;
+              position: relative;
+              overflow: hidden;
+              //   background: green;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+
+              .contain {
+                width: 100%;
+
+                .upper {
+                  position: absolute;
+                  right: 10px;
+                  top: 10px;
+
+                  p {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19.09px;
+                    letter-spacing: -3%;
+                    font-style: italic;
+                    color: #0c0a09;
+                  }
+
+                  img.first {
+                    position: absolute;
+                    right: -10px;
+                    top: 0;
+                  }
+
+                  img.second {
+                    position: absolute;
+                    right: 15px;
+                    top: 50px;
+                  }
+                }
+
+                .lower {
+                  width: 100%;
+                  height: 240.39px;
+                  display: flex;
+                  align-items: flex-end;
+                  justify-content: space-between;
+
+                  .sent {
+                    width: 54px;
+                    height: 86px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    h4 {
+                      font-size: 16px;
+                      font-weight: 600;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                      color: #0c0a09;
+                    }
+
+                    p {
+                      font-size: 16px;
+                      font-weight: 400;
+                      line-height: 19.09px;
+                      letter-spacing: -3%;
+                      font-style: italic;
+                    }
+                  }
+
+                  .clip-anime {
+                    width: 167px;
+                    height: 240.39px;
+                    overflow: hidden;
+                  }
+
+                  .hero-anime {
+                    width: 162px;
+                    height: 240.39px;
+                    transform: scale(1.4) translateX(10px) translateY(-1px);
+                  }
+
+                  //   .hero-anime {
+                  //     width: 162px;
+                  //     height: 240.39px;
+                  //     transform: scale(2.15) translateX(38px) translateY(-3px);
+                  //   }
+                }
+              }
+            }
+          }
+
+          .second-contain {
+            width: 479px;
+            height: 256.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            flex-direction: column;
+
+            .contain {
+              width: 100%;
+              display: flex;
+              align-items: center;
+              position: relative;
+              justify-content: center;
+            }
+
+            .hero-anime {
+              width: 309px;
+              height: 239.39px;
+            }
+
+            p.top-left {
+              position: absolute;
+              left: 100px;
+              top: 10px;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19.09px;
+              letter-spacing: -3%;
+              color: #0c0a09;
+              font-style: italic;
+            }
+
+            .top-right {
+              position: absolute;
+              right: 0;
+              top: 10px;
+
+              p {
+                position: absolute;
+                top: 50px;
+                left: 50px;
+                transform: translate(-50%, -50%);
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                letter-spacing: -3%;
+
+                font-style: italic;
+              }
+            }
+
+            .left-bottom {
+              //   width: 92px;
+              position: absolute;
+              left: 0;
+              bottom: 0;
+
+              p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19.09px;
+                letter-spacing: -3%;
+
+                font-style: italic;
+              }
+
+              img {
+                margin-bottom: 10px;
+                position: relative;
+                left: 49.79px;
+              }
+            }
+          }
+
+          .second-part {
+            padding-left: 0;
+            margin-top: 140px;
+          }
+        }
+      }
+    }
+  }
+}

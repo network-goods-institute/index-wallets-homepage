@@ -1,0 +1,110 @@
+.spread-the-love-section {
+  width: 100vw;
+}
+.spread-the-love-section .spread-section {
+  background: url("../assets/images/spreadthelove_bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 0 112px;
+  padding-top: 115px;
+}
+.spread-the-love-section .spread-section .container {
+  max-width: 1102px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 100px;
+  padding-bottom: 60px;
+}
+.spread-the-love-section .spread-section .container .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.spread-the-love-section .spread-section .container .content .btn {
+  border-radius: 12px;
+  padding: 8px 12px;
+  border: 1px solid #a856f7;
+  background: #eddaff;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.87px;
+  letter-spacing: -3%;
+  color: #a856f7;
+  margin-bottom: 10px;
+}
+.spread-the-love-section .spread-section .container .content h2 {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  text-align: center;
+  position: relative;
+}
+.spread-the-love-section .spread-section .container .content h2 img {
+  position: absolute;
+}
+.spread-the-love-section .spread-section .container .content h2 img:first-child {
+  left: -20px;
+  top: -15px;
+}
+.spread-the-love-section .spread-section .container .content h2 img:last-child {
+  right: -40px;
+  bottom: 10px;
+}
+.spread-the-love-section .spread-section .container .wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.spread-the-love-section .spread-section .container .wrapper .left-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.spread-the-love-section .spread-section .container .wrapper .left-content .details {
+  height: 400px;
+}
+.spread-the-love-section .spread-section .container .wrapper .left-content .details h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38.19px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+.spread-the-love-section .spread-section .container .wrapper .left-content .details p {
+  line-height: 28.64px;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: -3%;
+  color: #8a8a8e;
+  width: 357px;
+}
+.spread-the-love-section .spread-section .container .wrapper .right-content {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  transform: translateX(37px);
+  justify-content: center;
+}
+.spread-the-love-section .spread-section .container .wrapper .right-content .anime-container {
+  height: 368px;
+  width: 480px;
+  background: #e2ebf7;
+  border-radius: 12px;
+}
+.spread-the-love-section .spread-section .container .wrapper .right-content .anime-container .hero-anime {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=SpreadTheLoveSection.css.map */

@@ -1,0 +1,558 @@
+.apply-waitlist {
+  width: 100%;
+  padding: 40px 112px;
+}
+.apply-waitlist section {
+  background: #0046be;
+  max-width: 1102px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 12px;
+  height: 368px;
+}
+.apply-waitlist section .container {
+  width: 100%;
+  height: 100%;
+  background: url("../assets/images/pg_bg.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.apply-waitlist section .container .left-section {
+  padding: 90px;
+  padding-right: 0;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.apply-waitlist section .container .left-section h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38.19px;
+  letter-spacing: -3%;
+  color: #ffffff;
+}
+.apply-waitlist section .container .left-section p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  color: #ffffff;
+}
+.apply-waitlist section .container .left-section .bottom {
+  display: flex;
+  align-items: flex-start;
+}
+.apply-waitlist section .container .left-section .bottom .btn {
+  padding: 16px 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.09px;
+  letter-spacing: -3%;
+  text-decoration: none;
+}
+.apply-waitlist section .container .left-section .bottom .btn {
+  padding: 16px 32px;
+  border-radius: 12px;
+  background: #fbd03d;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -3%;
+  line-height: 19.09px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #0c0a09;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.apply-waitlist section .container .left-section .bottom .btn span {
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.apply-waitlist section .container .left-section .bottom .btn .hover-text {
+  position: absolute;
+  top: 100%;
+  left: 32px;
+  width: 100%;
+}
+.apply-waitlist section .container .left-section .bottom .btn:hover {
+  transform: scale(1.08) rotate(1deg);
+}
+.apply-waitlist section .container .left-section .bottom .btn:hover span:first-child {
+  transform: translateY(-180%);
+}
+.apply-waitlist section .container .left-section .bottom .btn:hover .hover-text {
+  transform: translateY(-180%);
+}
+.apply-waitlist section .container .left-section .bottom .bee {
+  display: none;
+  left: 30px;
+  position: relative;
+  transform: rotate(-15deg);
+}
+.apply-waitlist section .container .left-section .text-read {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  color: #ffffff;
+}
+.apply-waitlist section .container .left-section .text-read a {
+  color: white;
+}
+.apply-waitlist section .container .right-section {
+  padding-right: 100px;
+  position: relative;
+}
+.apply-waitlist section .container .right-section img.exited {
+  width: 464px;
+  height: 368px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.apply-waitlist section .container .right-section img:nth-child(2) {
+  position: absolute;
+  right: 60px;
+  top: 30px;
+  transform: rotate(-15deg);
+}
+.apply-waitlist .wrap p.mb {
+  display: none;
+}
+@media (max-width: 575px) {
+  .apply-waitlist {
+    width: 100%;
+    padding: 0 16px;
+  }
+  .apply-waitlist section {
+    background: #0046be;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 453px;
+  }
+  .apply-waitlist section .container {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/pg_bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .apply-waitlist section .container .left-section {
+    padding: 24px 16px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .apply-waitlist section .container .left-section h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #ffffff;
+  }
+  .apply-waitlist section .container .left-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #ffffff;
+    width: 95%;
+    display: none;
+    margin-top: 5px;
+  }
+  .apply-waitlist section .container .left-section p.mb {
+    display: block;
+  }
+  .apply-waitlist section .container .left-section .bottom {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  .apply-waitlist section .container .left-section .bottom .btn {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -3%;
+    line-height: 14.32px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn span {
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    width: 100%;
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover {
+    transform: scale(1.08) rotate(1deg);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover span:first-child {
+    transform: translateY(-180%);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover .hover-text {
+    transform: translateY(-180%);
+  }
+  .apply-waitlist section .container .left-section .bottom img {
+    width: 57px;
+    height: 56px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+  }
+  .apply-waitlist section .container .left-section .bottom .bee {
+    display: block;
+    font-weight: 400;
+    font-size: 104px;
+    line-height: 124.11px;
+  }
+  .apply-waitlist section .container .left-section .text-read {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    top: -20px;
+  }
+  .apply-waitlist section .container .right-section {
+    padding-right: 0;
+    position: relative;
+    width: 100%;
+  }
+  .apply-waitlist section .container .right-section img.exited {
+    width: 100%;
+    height: 350px;
+    transform: scale(0.8);
+    position: relative;
+    top: -100px;
+  }
+  .apply-waitlist section .container .right-section img:nth-child(2) {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    width: 48px;
+    height: 48px;
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 769px) {
+  .apply-waitlist {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .apply-waitlist section {
+    background: #0046be;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 453px;
+  }
+  .apply-waitlist section .container {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/pg_bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .apply-waitlist section .container .left-section {
+    padding: 24px 16px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .apply-waitlist section .container .left-section h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #ffffff;
+  }
+  .apply-waitlist section .container .left-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #ffffff;
+    width: 95%;
+    display: none;
+    margin-top: 5px;
+  }
+  .apply-waitlist section .container .left-section p.mb {
+    display: block;
+  }
+  .apply-waitlist section .container .left-section .bottom {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  .apply-waitlist section .container .left-section .bottom .btn {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -3%;
+    line-height: 14.32px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn span {
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    width: 100%;
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover {
+    transform: scale(1.08) rotate(1deg);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover span:first-child {
+    transform: translateY(-180%);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover .hover-text {
+    transform: translateY(-180%);
+  }
+  .apply-waitlist section .container .left-section .bottom img {
+    width: 57px;
+    height: 56px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+  }
+  .apply-waitlist section .container .left-section .bottom .bee {
+    display: block;
+    font-weight: 400;
+    font-size: 104px;
+    line-height: 124.11px;
+  }
+  .apply-waitlist section .container .left-section .text-read {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    top: -20px;
+  }
+  .apply-waitlist section .container .right-section {
+    padding-right: 0;
+    position: relative;
+    width: 100%;
+  }
+  .apply-waitlist section .container .right-section img.exited {
+    width: 100%;
+    height: 550px;
+    transform: scale(0.6);
+    position: relative;
+    top: -180px;
+  }
+  .apply-waitlist section .container .right-section img:nth-child(2) {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    width: 48px;
+    height: 48px;
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .apply-waitlist {
+    width: 100%;
+    padding: 0 50px;
+  }
+  .apply-waitlist section {
+    background: #0046be;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    height: 453px;
+  }
+  .apply-waitlist section .container {
+    width: 100%;
+    height: 100%;
+    background: url("../assets/images/pg_bg.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .apply-waitlist section .container .left-section {
+    padding: 24px 16px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .apply-waitlist section .container .left-section h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #ffffff;
+  }
+  .apply-waitlist section .container .left-section p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #ffffff;
+    width: 95%;
+    display: none;
+    margin-top: 5px;
+  }
+  .apply-waitlist section .container .left-section p.mb {
+    display: block;
+  }
+  .apply-waitlist section .container .left-section .bottom {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+  }
+  .apply-waitlist section .container .left-section .bottom .btn {
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -3%;
+    line-height: 14.32px;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn span {
+    display: block;
+    transition: transform 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 12px;
+    width: 100%;
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover {
+    transform: scale(1.08) rotate(1deg);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover span:first-child {
+    transform: translateY(-180%);
+  }
+  .apply-waitlist section .container .left-section .bottom .btn:hover .hover-text {
+    transform: translateY(-180%);
+  }
+  .apply-waitlist section .container .left-section .bottom img {
+    width: 57px;
+    height: 56px;
+    position: relative;
+    top: -20px;
+    left: 20px;
+  }
+  .apply-waitlist section .container .left-section .bottom .bee {
+    display: block;
+    font-weight: 400;
+    font-size: 104px;
+    line-height: 124.11px;
+  }
+  .apply-waitlist section .container .left-section .text-read {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #ffffff;
+    width: 100%;
+    position: relative;
+    top: -20px;
+  }
+  .apply-waitlist section .container .right-section {
+    padding-right: 0;
+    position: relative;
+    width: 100%;
+  }
+  .apply-waitlist section .container .right-section img.exited {
+    width: 100%;
+    height: 550px;
+    transform: scale(0.6);
+    position: relative;
+    top: -180px;
+  }
+  .apply-waitlist section .container .right-section img:nth-child(2) {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    width: 48px;
+    height: 48px;
+    display: none;
+  }
+}
+@media (min-width: 992px) and (max-width: 1102px) {
+  .apply-waitlist {
+    padding: 40px 50px;
+  }
+  .apply-waitlist section {
+    background: #0046be;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    height: 368px;
+  }
+}/*# sourceMappingURL=ApplyWaitlist.css.map */

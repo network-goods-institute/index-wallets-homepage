@@ -1,0 +1,167 @@
+.page-not-found {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: url("../assets/images/hero_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+.page-not-found section {
+  max-width: 1102px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.page-not-found section img {
+  height: 304px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 383.3px;
+}
+.page-not-found section h1 {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 47.73px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+.page-not-found section p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.87px;
+  letter-spacing: -3%;
+  color: #8a8a8e;
+  margin-bottom: 20px;
+  width: 522px;
+  text-align: center;
+}
+.page-not-found section .btn {
+  align-self: center;
+  margin-top: 0;
+  padding: 14px 16px;
+  border-radius: 8px;
+  background: #0c0a09;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -3%;
+  line-height: 19.09px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  overflow: hidden;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d9d9d9;
+  transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.page-not-found section .btn span {
+  display: block;
+  transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.page-not-found section .btn span img {
+  position: relative;
+  top: 2px;
+  margin-right: 4px;
+}
+.page-not-found section .btn .hover-text {
+  position: absolute;
+  top: 100%;
+  left: 14px;
+  width: 100%;
+}
+.page-not-found section .btn:hover {
+  transform: scale(1.08) rotate(1deg);
+}
+.page-not-found section .btn:hover span:first-child {
+  transform: translateY(-150%);
+}
+.page-not-found section .btn:hover .hover-text {
+  transform: translateY(-150%);
+}
+@media (max-width: 575px) {
+  .page-not-found section {
+    padding: 0 16px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .page-not-found section img {
+    height: 231px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 352px;
+  }
+  .page-not-found section h1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.64px;
+    letter-spacing: -3%;
+    color: #0c0a09;
+    margin-top: 10px;
+    margin-bottom: 12px;
+  }
+  .page-not-found section p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    color: #8a8a8e;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+  }
+  .page-not-found section .btn {
+    align-self: center;
+    margin-top: 0;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: #0c0a09;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -3%;
+    line-height: 14.32px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    overflow: hidden;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d9d9d9;
+    transition: all 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .page-not-found section .btn span {
+    display: block;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  }
+  .page-not-found section .btn span img {
+    position: relative;
+    top: 2px;
+    margin-right: 4px;
+  }
+  .page-not-found section .btn .hover-text {
+    position: absolute;
+    top: 100%;
+    left: 14px;
+    width: 100%;
+  }
+  .page-not-found section .btn:hover {
+    transform: scale(1.08) rotate(1deg);
+  }
+  .page-not-found section .btn:hover span:first-child {
+    transform: translateY(-150%);
+  }
+  .page-not-found section .btn:hover .hover-text {
+    transform: translateY(-150%);
+  }
+}/*# sourceMappingURL=PageNotFound.css.map */

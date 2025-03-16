@@ -1,0 +1,299 @@
+.effect-section {
+  width: 100vw;
+  background: #ffd03e;
+  padding: 64px 112px;
+  padding-top: 0;
+}
+.effect-section section {
+  max-width: 1102px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.effect-section section .first-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 570px;
+  position: relative;
+}
+.effect-section section .first-container .left-part {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-top: 64px;
+  position: relative;
+}
+.effect-section section .first-container .left-part img {
+  position: absolute;
+  left: -112px;
+  top: 0;
+  pointer-events: none;
+}
+.effect-section section .first-container .left-part .btn {
+  z-index: 1;
+  border-radius: 12px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #31290b;
+  border: 1px solid #fbd03d;
+  color: #fbd03d;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23.87px;
+  letter-spacing: -3%;
+  margin-bottom: 20px;
+}
+.effect-section section .first-container .left-part p {
+  font-weight: 700;
+  z-index: 1;
+  font-size: 45px;
+  line-height: 54px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  text-transform: capitalize;
+}
+.effect-section section .first-container .right-part img {
+  position: relative;
+  right: -40px;
+}
+.effect-section section .first-container .path {
+  position: absolute;
+  left: 20px;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.effect-section section .second-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  padding-bottom: 200px;
+}
+.effect-section section .second-container .left-part {
+  flex: 1;
+}
+.effect-section section .second-container .left-part p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  margin-bottom: 10px;
+}
+.effect-section section .second-container .left-part .path {
+  margin-left: 30px;
+  position: relative;
+}
+.effect-section section .second-container .left-part .path p {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  line-height: 21.48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  bottom: 3px;
+}
+.effect-section section .second-container .left-part .path p img {
+  transform: translateY(2px);
+}
+.effect-section section .second-container .left-part .path img.first {
+  height: 225px;
+  width: 600px;
+}
+.effect-section section .second-container .left-part .path img.second {
+  position: relative;
+  top: 8px;
+}
+.effect-section section .second-container .right-part {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  bottom: -45px;
+}
+.effect-section section .second-container .right-part img {
+  position: absolute;
+  top: -150px;
+  left: 140px;
+}
+.effect-section section .second-container .right-part p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+}
+.effect-section section .third-container {
+  width: 100%;
+}
+.effect-section section .third-container .container {
+  width: 100%;
+}
+.effect-section section .third-container .container .main {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.effect-section section .third-container .container .main .left-main .wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.effect-section section .third-container .container .main .left-main .wrap .contain {
+  width: 301.81px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.effect-section section .third-container .container .main .left-main .wrap .contain .btn {
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #ffeba8;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.48px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+}
+.effect-section section .third-container .container .main .left-main .wrap .contain .anime-container {
+  width: 301.81px;
+  height: 280px;
+}
+.effect-section section .third-container .container .main .left-main .wrap .contain .anime-container .hero-anime {
+  width: 301.81px;
+  height: 304px;
+  transform: translateY(-23px);
+}
+.effect-section section .third-container .container .main .left-main .wrap p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+  width: 310px;
+}
+.effect-section section .third-container .container .main .middle-main {
+  width: 100%;
+  padding-top: 80px;
+  position: relative;
+}
+.effect-section section .third-container .container .main .middle-main .stats {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+  transition: 0.5s all ease-in-out;
+  transition-delay: 0.5s;
+}
+.effect-section section .third-container .container .main .middle-main .stats.not-active {
+  width: 220px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.6s ease-out, transform 0.8s ease-in-out;
+}
+.effect-section section .third-container .container .main .middle-main .stats.not-active:hover {
+  transform: scale(1.05);
+}
+.effect-section section .third-container .container .main .middle-main .stats.not-active img {
+  z-index: 2;
+}
+.effect-section section .third-container .container .main .middle-main .stats.not-active img:nth-child(2) {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transform: translateX(10px);
+}
+.effect-section section .third-container .container .main .middle-main .stats.not-active img:nth-child(1) {
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  opacity: 1;
+  transform: translateY(5px);
+}
+.effect-section section .third-container .container .main .middle-main .stats.not-active.not-active img:nth-child(2) {
+  transition-delay: 0.4s;
+}
+.effect-section section .third-container .container .main .middle-main .stats img:nth-child(2) {
+  opacity: 1;
+  transform: translateX(20px);
+  transition: 0.5s all ease-in-out;
+}
+.effect-section section .third-container .container .main .middle-main .img-longest {
+  width: 100%;
+  overflow: hidden;
+  transition: width 0.5s ease-in-out, transform 0.6s ease-in-out, opacity 0.6s ease-out;
+}
+.effect-section section .third-container .container .main .middle-main .img-longest.not-active {
+  width: 220px;
+  opacity: 0.7;
+  transform: scale(0.95);
+  transition: width 0.5s ease-in-out, opacity 0.6s ease-out, transform 0.6s ease-in-out;
+}
+.effect-section section .third-container .container .main .middle-main .img-longest img.img-line {
+  width: 516px;
+  transition: width 0.6s ease-in-out, transform 0.6s ease-in-out;
+}
+.effect-section section .third-container .container .main .middle-main .img-longest img.img-line:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.effect-section section .third-container .container .main .middle-main .img-longest:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+.effect-section section .third-container .container .main .middle-main img.img-down {
+  position: absolute;
+  bottom: 354px;
+  left: 254px;
+}
+.effect-section section .third-container .container .main .middle-main .contain {
+  padding-top: 170px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.effect-section section .third-container .container .main .middle-main .contain .btn {
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: #9cfff8;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.48px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+}
+.effect-section section .third-container .container .main .middle-main .contain .wrap {
+  display: flex;
+  align-items: flex-end;
+}
+.effect-section section .third-container .container .main .middle-main .contain .wrap .hero-anime {
+  width: 308.9px;
+  height: 304px;
+}
+.effect-section section .third-container .container .main .right-main .contain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 308.9px;
+}
+.effect-section section .third-container .container .main .right-main .contain .btn {
+  border-radius: 12px;
+  padding: 8px 12px;
+  background: #dcffa4;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.48px;
+  letter-spacing: -3%;
+  color: #0c0a09;
+}/*# sourceMappingURL=TheEffectSection.css.map */

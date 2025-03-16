@@ -1,0 +1,272 @@
+.wallet-entries {
+  height: 812px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/pg_bg.png");
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+
+  .contain {
+    width: 1102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28.64px;
+      letter-spacing: -3%;
+      color: #8a8a8e;
+      margin-bottom: 10px;
+    }
+
+    .txt {
+      font-weight: 600;
+      font-style: italic;
+      line-height: 19.09px;
+      letter-spacing: -3%;
+      color: #0c0a09;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      position: relative;
+
+      .pay-btn {
+        position: absolute;
+        top: 100px;
+        right: -150px;
+        height: 88px;
+        width: 88px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        justify-content: center;
+
+        .btn {
+          height: 88px;
+          width: 88px;
+          background: #ffffff;
+          border-radius: 50%;
+          border: 1px solid #d9d9d9;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          justify-content: center;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19.09px;
+          letter-spacing: -3%;
+        }
+      }
+
+      .hero-anime {
+        height: 400px;
+        width: 407px;
+      }
+
+      .statitics {
+        .stat {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          margin-bottom: 15px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          span {
+            margin-left: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21.48px;
+            letter-spacing: -3%;
+            font-style: italic;
+            gap: 3px;
+
+            img {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    & {
+      height: 400px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url("../assets/images/pg_bg.png");
+      background-size: cover;
+      background-position: center;
+      flex: 1;
+
+      .contain {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19.09px;
+          letter-spacing: -3%;
+          color: #8a8a8e;
+          margin-bottom: 10px;
+        }
+
+        .txt {
+          font-weight: 600;
+          font-style: italic;
+          line-height: 16.71px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+
+        .wrapper {
+          display: flex;
+          justify-content: flex-end;
+          align-items: flex-end;
+          position: relative;
+
+          .pay-btn {
+            position: absolute;
+            top: 100px;
+            right: -150px;
+            height: 88px;
+            width: 88px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            justify-content: center;
+
+            .btn {
+              height: 88px;
+              width: 88px;
+              background: #ffffff;
+              border-radius: 50%;
+              border: 1px solid #d9d9d9;
+              display: flex;
+              align-items: center;
+              cursor: pointer;
+              justify-content: center;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19.09px;
+              letter-spacing: -3%;
+            }
+          }
+
+          .hero-anime {
+            height: 168.37px;
+            width: 165.37px;
+          }
+
+          .statitics {
+            width: 129.13px;
+            height: 96px;
+
+            .stat {
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-bottom: 8px;
+
+              &:last-child {
+                margin-bottom: 0;
+              }
+
+              .img-1 {
+                width: 53.45px;
+                height: 27.14px;
+              }
+
+              .img-2 {
+                width: 63.17px;
+                height: 27.14px;
+              }
+
+              .img-3 {
+                width: 92.32px;
+                height: 27.14px;
+              }
+
+              span {
+                margin-left: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 600;
+                font-size: 9.19px;
+                line-height: 10.97px;
+                letter-spacing: -3%;
+                font-style: italic;
+
+                img {
+                  margin-left: 5px;
+                  width: 15.27px;
+                  height: 15.27px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+  }
+
+  @media (min-width: 769px) and (max-width: 991px) {
+  }
+
+  @media (min-width: 992px) and (max-width: 1102px) {
+  }
+}

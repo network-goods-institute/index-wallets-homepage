@@ -1,0 +1,863 @@
+.input-price {
+  height: 812px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/pg_bg.png");
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+
+  .contain {
+    width: 1102px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 57.28px;
+      letter-spacing: -3%;
+      color: #0c0a09;
+      margin-bottom: 5px;
+    }
+
+    p {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28.64px;
+      letter-spacing: -3%;
+      color: #8a8a8e;
+      margin-bottom: 15px;
+    }
+
+    .custom-slider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+
+      .slider {
+        -webkit-appearance: none; /* Remove default styling */
+        appearance: none;
+        width: 232px;
+        height: 4px;
+        background: #e9ddf6;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.2s;
+        position: relative;
+        border-radius: 8px;
+        margin-right: 6px;
+      }
+
+      /* Custom track styling for WebKit browsers */
+      .slider::-webkit-slider-runnable-track {
+        height: 4px;
+        border-radius: 8px;
+        background: linear-gradient(
+          to right,
+          #0c0a09 var(--progress),
+          #e9ddf6 var(--progress)
+        );
+      }
+
+      /* Custom track styling for Firefox */
+      .slider::-moz-range-track {
+        height: 2px;
+        border-radius: 8px;
+        background: linear-gradient(
+          to right,
+          #0c0a09 var(--progress),
+          #e9ddf6 var(--progress)
+        );
+      }
+
+      /* Thumb (Draggable ball) */
+      .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        background: #0c0a09;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+        margin-top: -11px; /* Adjust to align thumb with track */
+      }
+
+      .slider::-moz-range-thumb {
+        width: 24px;
+        height: 24px;
+        background: #0c0a09;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .sign {
+        font-weight: 400;
+        line-height: 28.64px;
+        letter-spacing: -3%;
+        font-size: 24px;
+        color: #8a8a8e;
+      }
+
+      .slide-input {
+        padding-left: 6px;
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: -3%;
+        line-height: 47.73px;
+        color: #0c0a09;
+        width: 100px;
+      }
+    }
+
+    .txt {
+      font-weight: 600;
+      font-style: italic;
+      line-height: 19.09px;
+      letter-spacing: -3%;
+      color: #0c0a09;
+      font-size: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      display: none;
+
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+    }
+
+    .receive-stats {
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+
+      .hero-anime {
+        height: 400px;
+        width: 407px;
+      }
+
+      .txt-row {
+        position: absolute;
+        right: 50px;
+        bottom: -70px;
+        text-wrap: wrap;
+        font-weight: 600;
+        font-style: italic;
+        line-height: 19.09px;
+        letter-spacing: -3%;
+        color: #0c0a09;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        .rw-1 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-bottom: 5px;
+        }
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        }
+      }
+
+      &.received-price {
+        .new-stats {
+          left: -30px;
+        }
+      }
+
+      .new-stats {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 8px;
+        position: relative;
+        top: -10px;
+
+        .row {
+          display: flex;
+          gap: 8px;
+
+          .bar {
+            height: 40px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+
+            span {
+              font-weight: 600;
+              font-size: 18px;
+              font-style: italic;
+              line-height: 21.48px;
+              letter-spacing: -3%;
+              color: #0c0a09;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 80px;
+              position: relative;
+              gap: 3px;
+            }
+          }
+
+          // .left-bar {
+          //   border-top-left-radius: 15px;
+          //   border-bottom-left-radius: 15px;
+          // }
+
+          // .right-bar {
+          //   border-top-right-radius: 15px;
+          //   border-bottom-right-radius: 15px;
+          // }
+        }
+      }
+    }
+
+    .contents {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      flex-direction: column;
+
+      h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 38.19px;
+        letter-spacing: -3%;
+        color: #0c0a09;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .text {
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.64px;
+        letter-spacing: -3%;
+        color: #8a8a8e;
+        text-align: center;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
+  .text-mb {
+    display: none;
+  }
+
+  @media (max-width: 575px) {
+    & {
+      height: 400px;
+      width: 100%;
+      display: flex;
+      padding: 0 16px;
+
+      .contain {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h2 {
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 57.28px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+          margin-bottom: 5px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19.09px;
+          letter-spacing: -3%;
+          color: #8a8a8e;
+          text-align: center;
+          margin-bottom: 5px;
+          width: 311px;
+        }
+
+        .custom-slider {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px;
+
+          .slider {
+            -webkit-appearance: none; /* Remove default styling */
+            appearance: none;
+            width: 154.67px;
+            height: 2.67px;
+            background: #e9ddf6;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.2s;
+            position: relative;
+            border-radius: 8px;
+            margin-right: 6px;
+          }
+
+          /* Custom track styling for WebKit browsers */
+          .slider::-webkit-slider-runnable-track {
+            height: 2.67px;
+            border-radius: 8px;
+            background: linear-gradient(
+              to right,
+              #0c0a09 var(--progress),
+              #e9ddf6 var(--progress)
+            );
+          }
+
+          /* Custom track styling for Firefox */
+          .slider::-moz-range-track {
+            height: 2.67px;
+            border-radius: 8px;
+            background: linear-gradient(
+              to right,
+              #0c0a09 var(--progress),
+              #e9ddf6 var(--progress)
+            );
+          }
+
+          /* Thumb (Draggable ball) */
+          .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 25px;
+            height: 25px;
+            background: #0c0a09;
+            border-radius: 50%;
+            cursor: pointer;
+            position: relative;
+            margin-top: -12px; /* Adjust to align thumb with track */
+          }
+
+          .slider::-moz-range-thumb {
+            width: 25px;
+            height: 25px;
+            background: #0c0a09;
+            border-radius: 50%;
+            cursor: pointer;
+          }
+
+          .sign {
+            position: relative;
+            top: -3px;
+
+            img {
+              width: 7px;
+              height: 11.12px;
+            }
+          }
+
+          .slide-input {
+            padding-left: 4px;
+            font-weight: 600;
+            font-size: 24px;
+            letter-spacing: -3%;
+            line-height: 28.64px;
+            color: #0c0a09;
+            width: 100px;
+          }
+        }
+
+        .p {
+          width: 100%;
+        }
+
+        .txt {
+          font-weight: 600;
+          font-style: italic;
+          line-height: 16.71px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+
+          span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            img {
+              width: 18px;
+              height: 18px;
+            }
+          }
+        }
+
+        .receive-stats {
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+
+          .txt-row {
+            display: none;
+          }
+
+          &.received-price {
+            display: flex;
+
+            .new-stats {
+              left: 10px;
+            }
+          }
+
+          .hero-anime {
+            height: 172px;
+            width: 175.12px;
+
+            &.input-anime {
+              display: none;
+            }
+
+            &.first {
+              display: none;
+            }
+          }
+
+          .new-stats {
+            width: 175.97px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            flex-direction: column;
+            gap: 5px;
+            position: relative;
+            top: -10px;
+
+            &.input-stats {
+              transform: scale(1.5);
+              margin-top: 40px;
+              top: 10px;
+            }
+
+            .row {
+              display: flex;
+              gap: 5px;
+
+              .bar {
+                height: 20px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+
+                span {
+                  font-weight: 600;
+                  font-size: 7.85px;
+                  font-style: italic;
+                  line-height: 9.37px;
+                  letter-spacing: -3%;
+                  color: #0c0a09;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  width: 80px;
+                  gap: 2px;
+
+                  img:nth-child(1) {
+                    width: 5px;
+                    height: 8px;
+                  }
+
+                  img:nth-child(2) {
+                    width: 13.04px;
+                    height: 13.04px;
+                  }
+                }
+              }
+
+              // .left-bar {
+              //   border-top-left-radius: 15px;
+              //   border-bottom-left-radius: 15px;
+              // }
+
+              // .right-bar {
+              //   border-top-right-radius: 15px;
+              //   border-bottom-right-radius: 15px;
+              // }
+            }
+          }
+        }
+
+        .contents {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 10px;
+          flex-direction: column;
+
+          h2 {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 23.87px;
+            letter-spacing: -3%;
+            color: #0c0a09;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 343px;
+
+            span {
+              img {
+                width: 8px;
+                height: 12.71px;
+              }
+            }
+          }
+
+          .text {
+            margin-top: 15px;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 28.64px;
+            letter-spacing: -3%;
+            color: #8a8a8e;
+            text-align: center;
+            margin-bottom: 15px;
+            display: none;
+          }
+
+          .text-mb {
+            display: block;
+            text-align: center;
+            font-weight: 400;
+            letter-spacing: -3%;
+            color: #8a8a8e;
+            font-size: 16px;
+            line-height: 19.09px;
+            width: 343px;
+          }
+
+          .finisher {
+            width: 115.53px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) and (max-width: 768px) {
+    height: 812px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/pg_bg.png");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+
+    .contain {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      h2 {
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 57.28px;
+        letter-spacing: -3%;
+        color: #0c0a09;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28.64px;
+        letter-spacing: -3%;
+        color: #8a8a8e;
+        margin-bottom: 15px;
+      }
+
+      .custom-slider {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        .slider {
+          -webkit-appearance: none; /* Remove default styling */
+          appearance: none;
+          width: 232px;
+          height: 4px;
+          background: #e9ddf6;
+          border-radius: 8px;
+          outline: none;
+          transition: 0.2s;
+          position: relative;
+          border-radius: 8px;
+          margin-right: 6px;
+        }
+
+        /* Custom track styling for WebKit browsers */
+        .slider::-webkit-slider-runnable-track {
+          height: 4px;
+          border-radius: 8px;
+          background: linear-gradient(
+            to right,
+            #0c0a09 var(--progress),
+            #e9ddf6 var(--progress)
+          );
+        }
+
+        /* Custom track styling for Firefox */
+        .slider::-moz-range-track {
+          height: 2px;
+          border-radius: 8px;
+          background: linear-gradient(
+            to right,
+            #0c0a09 var(--progress),
+            #e9ddf6 var(--progress)
+          );
+        }
+
+        /* Thumb (Draggable ball) */
+        .slider::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 24px;
+          height: 24px;
+          background: #0c0a09;
+          border-radius: 50%;
+          cursor: pointer;
+          position: relative;
+          margin-top: -11px; /* Adjust to align thumb with track */
+        }
+
+        .slider::-moz-range-thumb {
+          width: 24px;
+          height: 24px;
+          background: #0c0a09;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+
+        .sign {
+          font-weight: 400;
+          line-height: 28.64px;
+          letter-spacing: -3%;
+          font-size: 24px;
+          color: #8a8a8e;
+        }
+
+        .slide-input {
+          padding-left: 6px;
+          font-weight: 600;
+          font-size: 40px;
+          letter-spacing: -3%;
+          line-height: 47.73px;
+          color: #0c0a09;
+          width: 100px;
+        }
+      }
+
+      .txt {
+        font-weight: 600;
+        font-style: italic;
+        line-height: 19.09px;
+        letter-spacing: -3%;
+        color: #0c0a09;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        }
+      }
+
+      .receive-stats {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+
+        .txt-row {
+          display: none;
+        }
+
+        &.received-price {
+          display: flex;
+
+          .new-stats {
+            width: 250px;
+            margin-right: 80px;
+            left: 40px;
+            transform: scale(0.8);
+          }
+        }
+
+        .hero-anime {
+          height: 400px;
+          width: 407px;
+
+          &.input-anime {
+            display: none;
+          }
+
+          &.first {
+            display: none;
+          }
+        }
+
+        .new-stats {
+          width: 400px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          flex-direction: column;
+          gap: 8px;
+          position: relative;
+          top: -10px;
+          left: 25px;
+
+          &.input-stats {
+            transform: scale(1.3);
+            margin-top: 80px;
+            top: 10px;
+            left: -40px;
+          }
+
+          .row {
+            display: flex;
+            gap: 8px;
+
+            .bar {
+              height: 40px;
+              border-radius: 20px;
+              display: flex;
+              align-items: center;
+
+              span {
+                font-weight: 600;
+                font-size: 18px;
+                font-style: italic;
+                line-height: 21.48px;
+                letter-spacing: -3%;
+                color: #0c0a09;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 80px;
+                position: relative;
+
+                img {
+                  margin-left: 5px;
+                }
+              }
+            }
+
+            // .left-bar {
+            //   border-top-left-radius: 15px;
+            //   border-bottom-left-radius: 15px;
+            // }
+
+            // .right-bar {
+            //   border-top-right-radius: 15px;
+            //   border-bottom-right-radius: 15px;
+            // }
+          }
+        }
+      }
+
+      .contents {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        flex-direction: column;
+
+        h2 {
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 38.19px;
+          letter-spacing: -3%;
+          color: #0c0a09;
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        .text {
+          margin-top: 15px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 28.64px;
+          letter-spacing: -3%;
+          color: #8a8a8e;
+          text-align: center;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 769px) and (max-width: 991px) {
+    .received-price {
+      &.received-price {
+        display: flex;
+
+        .new-stats {
+          width: 250px;
+          margin-right: 80px;
+          left: 40px;
+          transform: scale(0.8);
+        }
+      }
+
+      .hero-anime {
+        height: 400px;
+        width: 407px;
+
+        &.input-anime {
+          display: none;
+        }
+
+        &.first {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) and (max-width: 1102px) {
+  }
+}

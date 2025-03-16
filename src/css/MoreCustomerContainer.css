@@ -1,0 +1,248 @@
+.more-customers-container {
+  width: 100%;
+}
+.more-customers-container section {
+  width: 1102px;
+  margin: auto;
+}
+.more-customers-container section .first-container {
+  margin: 0 auto;
+  width: 997px;
+  height: 421px;
+  background: url("../assets/images/doesthis1.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+.more-customers-container section .first-container.fifth-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.more-customers-container section .first-container.fifth-container h3 {
+  text-transform: capitalize;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: -3%;
+  line-height: 54px;
+  text-align: center;
+  width: 831px;
+  position: relative;
+}
+.more-customers-container section .first-container.fifth-container h3 img.purple {
+  position: absolute;
+  top: -50px;
+  left: 100px;
+}
+.more-customers-container section .first-container.fifth-container h3 img.orange {
+  position: absolute;
+  bottom: -50px;
+  right: 180px;
+}
+@media (max-width: 575px) {
+  .more-customers-container {
+    padding: 0 16px;
+    padding-top: 50px;
+  }
+  .more-customers-container section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .more-customers-container section .first-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+    background: url("../assets/images/does_bg_mb.png");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  .more-customers-container section .first-container.fifth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 244px;
+    background: url("../assets/images/image 14.png");
+  }
+  .more-customers-container section .first-container.fifth-container h3 {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -3%;
+    line-height: 36px;
+    text-align: center;
+    width: 327px;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.purple {
+    top: -25.2px;
+    left: 40px;
+    width: 39.69px;
+    height: 20px;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.orange {
+    bottom: -30px;
+    right: 40px;
+    width: 30px;
+    height: 32.41px;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .more-customers-container {
+    padding: 0 16px;
+    padding-top: 50px;
+  }
+  .more-customers-container section {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .more-customers-container section .first-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+    background: url("../assets/images/does_bg_mb.png");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+  }
+  .more-customers-container section .first-container.fifth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 244px;
+    background: url("../assets/images/image 14.png");
+  }
+  .more-customers-container section .first-container.fifth-container h3 {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -3%;
+    line-height: 36px;
+    text-align: center;
+    width: 70%;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.purple {
+    top: -25.2px;
+    left: 40px;
+    width: 39.69px;
+    height: 20px;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.orange {
+    bottom: -40px;
+    right: 40px;
+    width: 30px;
+    height: 32.41px;
+  }
+}
+@media (min-width: 769px) and (max-width: 991px) {
+  .more-customers-container {
+    padding: 0 16px;
+    padding-top: 102px;
+  }
+  .more-customers-container .desktop-text {
+    display: none;
+  }
+  .more-customers-container section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .more-customers-container section .first-container {
+    margin: 0 auto;
+    width: 100%;
+    height: 550px;
+    background: url("../assets/images/doesthis1.png");
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+  .more-customers-container section .first-container.fifth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 244px;
+    background: url("../assets/images/image 14.png");
+  }
+  .more-customers-container section .first-container.fifth-container h3 {
+    text-transform: capitalize;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -3%;
+    line-height: 36px;
+    text-align: center;
+    width: 70%;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.purple {
+    top: -25.2px;
+    left: 40px;
+    width: 39.69px;
+    height: 20px;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.orange {
+    bottom: -40px;
+    right: 40px;
+    width: 30px;
+    height: 32.41px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1102px) {
+  .more-customers-container {
+    padding-top: 82px;
+  }
+  .more-customers-container section {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .more-customers-container section .first-container {
+    margin: 0 auto;
+    width: 90%;
+    height: 421px;
+    background: url("../assets/images/doesthis1.png");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+  .more-customers-container section .first-container.fifth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .more-customers-container section .first-container.fifth-container h3 {
+    text-transform: capitalize;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -3%;
+    line-height: 54px;
+    text-align: center;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.purple {
+    position: absolute;
+    top: -50px;
+    left: 100px;
+  }
+  .more-customers-container section .first-container.fifth-container h3 img.orange {
+    position: absolute;
+    bottom: -50px;
+    right: 180px;
+  }
+}/*# sourceMappingURL=MoreCustomerContainer.css.map */

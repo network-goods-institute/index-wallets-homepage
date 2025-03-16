@@ -1,0 +1,97 @@
+.how-does-it-work {
+  height: 812px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../assets/images/pg_bg.png");
+  background-size: cover;
+  background-position: center;
+  flex: 1;
+}
+.how-does-it-work .contain {
+  width: 1102px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.how-does-it-work .contain h1 {
+  position: relative;
+  font-weight: 900;
+  font-size: 120px;
+  line-height: 124px;
+  letter-spacing: -6px;
+  text-align: center;
+  font-family: "Sp-Pro-Rounded", sans-serif;
+  color: #0c0a09;
+}
+.how-does-it-work .contain h1 img {
+  position: absolute;
+  right: -20px;
+  top: 12px;
+}
+.how-does-it-work .contain p {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.64px;
+  letter-spacing: -3%;
+  margin-top: 20px;
+  color: #78716c;
+}
+.how-does-it-work .contain p.txt {
+  margin-top: 15px;
+}
+@media (max-width: 575px) {
+  .how-does-it-work {
+    height: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("../assets/images/pg_bg.png");
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+  }
+  .how-does-it-work .contain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .how-does-it-work .contain img.vector {
+    width: 47.63px;
+    height: 24px;
+  }
+  .how-does-it-work .contain h1 {
+    position: relative;
+    font-weight: 900;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -3px;
+    text-align: center;
+    font-family: "Sp-Pro-Rounded", sans-serif;
+    color: #0c0a09;
+  }
+  .how-does-it-work .contain h1 img {
+    position: absolute;
+    right: -10px;
+    top: 6px;
+    width: 40.5px;
+    height: 18px;
+  }
+  .how-does-it-work .contain img.vector-2 {
+    width: 84px;
+    height: 14px;
+  }
+  .how-does-it-work .contain p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19.09px;
+    letter-spacing: -3%;
+    margin-top: 10px;
+    color: #78716c;
+  }
+}/*# sourceMappingURL=HowDoesItWork.css.map */
