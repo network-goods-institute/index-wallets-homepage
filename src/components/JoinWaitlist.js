@@ -308,8 +308,7 @@ const JoinWaitlist = ({ JoinWaitlistRef, name, setName, email, setEmail }) => {
             <div className="wrapped-container">
               <img src="/images/wailtlist_bg.png" alt="" />
               <p>
-                Index wallets are a simple way to get businesses to fund what
-                your community wants.
+                Index wallets get businesses to fund what your community wants.
               </p>
               <Link to="/join-waitlist" className="btn">
                 <span>Get Started</span>
