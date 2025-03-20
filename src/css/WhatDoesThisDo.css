@@ -624,13 +624,13 @@
   }
   .what-does-section section .first-container.second-container .main-container-mb-second {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     position: relative;
     top: 20px;
   }
   .what-does-section section .first-container.second-container .main-container-mb-second p {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 14.32px;
     text-align: right;
@@ -651,7 +651,7 @@
     align-items: center;
     justify-content: flex-end;
     position: relative;
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   .what-does-section section .first-container.second-container .right-container .container .wrap {
     position: absolute;
@@ -676,16 +676,18 @@
     margin-bottom: 5px;
   }
   .what-does-section section .first-container.second-container .right-container .container .wrap .group img {
-    transform: scale(0.9) translateX(-30px);
+    transform: scale(1) translateX(-30px);
   }
   .what-does-section section .first-container.second-container .right-container .container .hero-anime {
     height: 270.67px;
-    width: 254.91px;
-    transform: translateY(40px);
+    width: 254px;
+    transform: scale(0.8) translateY(40px);
   }
   .what-does-section section .first-container.third-container {
     margin-bottom: 0;
     position: relative;
+    height: 0px;
+    background: none;
   }
   .what-does-section section .first-container.third-container .arrow-1 {
     display: none;
@@ -705,6 +707,7 @@
   }
   .what-does-section section .first-container.third-container .main-container-mb-second {
     top: 30px;
+    display: none;
   }
   .what-does-section section .first-container.third-container .main-container {
     height: 100%;
@@ -732,11 +735,14 @@
   }
   .what-does-section section .first-container.third-container .right-container {
     top: 30px;
+    display: none;
   }
   .what-does-section section .first-container.fourth-container {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     position: relative;
     background-size: cover;
+    height: 600px;
+    background: url("../assets/images/does_bg_mb.png");
   }
   .what-does-section section .first-container.fourth-container img.arrow {
     display: none;
@@ -747,6 +753,7 @@
     top: -610px;
     left: 50%;
     transform: translateY(0) translateX(-50%) scale(1.3);
+    display: none;
   }
   .what-does-section section .first-container.fourth-container .float-content.second {
     display: block;
@@ -792,6 +799,7 @@
   }
   .what-does-section section .first-container.fourth-container .left-container .no {
     opacity: 0;
+    position: relative;
   }
   .what-does-section section .first-container.fourth-container .left-container .hero-anime {
     opacity: 0;
@@ -801,9 +809,11 @@
   }
   .what-does-section section .first-container.fourth-container .main-container-mb-second {
     top: -150px;
+    display: flex;
   }
   .what-does-section section .first-container.fourth-container .right-container {
     top: -150px;
+    display: block;
   }
   .what-does-section section .first-container.fourth-container .right-container .text {
     font-weight: 500;
@@ -818,6 +828,7 @@
   }
   .what-does-section section .first-container.fifth-container {
     margin-bottom: 0px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -849,18 +860,19 @@
     width: 327px;
   }
   .what-does-section section .extra-space-container {
-    height: 150px;
+    height: 180px;
     overflow: hidden;
     width: 100%;
     position: relative;
-    top: -53px;
+    top: -8px;
     display: block;
   }
   .what-does-section section .extra-space-container .extra-space {
     height: 600px;
-    background: url("../assets/images/does_bg_mb.png");
-    background-position: top;
-    background-size: cover;
+    background-color: white;
+    background-image: linear-gradient(#f3f3f3 1px, transparent 1px), linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
   }
 }
 @media (min-width: 576px) and (max-width: 768px) {
@@ -1172,6 +1184,8 @@
   .what-does-section section .first-container.third-container {
     margin-bottom: 0;
     position: relative;
+    height: 0px;
+    background: none;
   }
   .what-does-section section .first-container.third-container .arrow-1 {
     display: none;
@@ -1191,6 +1205,7 @@
   }
   .what-does-section section .first-container.third-container .main-container-mb-second {
     top: 30px;
+    display: none;
   }
   .what-does-section section .first-container.third-container .main-container {
     height: 100%;
@@ -1218,10 +1233,18 @@
   }
   .what-does-section section .first-container.third-container .right-container {
     top: 30px;
+    display: none;
   }
   .what-does-section section .first-container.fourth-container {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     position: relative;
+    background-size: cover;
+    height: 600px;
+    background: url("../assets/images/doesthis1.png");
+    background-color: white;
+    background-image: linear-gradient(#f3f3f3 1px, transparent 1px), linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+    background-size: 62px 62px;
+    background-position: calc(50% - 1px) top; /* Moves the image 10px to the right */
   }
   .what-does-section section .first-container.fourth-container img.arrow {
     display: none;
@@ -1232,12 +1255,13 @@
     top: -610px;
     left: 50%;
     transform: translateY(0) translateX(-50%) scale(1.3);
+    display: none;
   }
   .what-does-section section .first-container.fourth-container .float-content.second {
     display: block;
     top: 10px;
-    left: 38%;
-    transform: translateY(0) translateX(-38%) scale(1.3);
+    left: 20%;
+    transform: translateY(0) translateX(-20%) scale(1.3);
   }
   .what-does-section section .first-container.fourth-container .float-content p {
     position: absolute;
@@ -1253,6 +1277,9 @@
   }
   .what-does-section section .first-container.fourth-container .float-content p.mb {
     display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12.32px;
   }
   .what-does-section section .first-container.fourth-container .float-content .hero-anime {
     width: 142px;
@@ -1273,7 +1300,9 @@
     pointer-events: none;
   }
   .what-does-section section .first-container.fourth-container .left-container .no {
-    opacity: 0;
+    opacity: 1;
+    position: relative;
+    top: -180px;
   }
   .what-does-section section .first-container.fourth-container .left-container .hero-anime {
     opacity: 0;
@@ -1283,9 +1312,11 @@
   }
   .what-does-section section .first-container.fourth-container .main-container-mb-second {
     top: -150px;
+    display: flex;
   }
   .what-does-section section .first-container.fourth-container .right-container {
     top: -150px;
+    display: block;
   }
   .what-does-section section .first-container.fourth-container .right-container .text {
     font-weight: 500;
@@ -1300,6 +1331,7 @@
   }
   .what-does-section section .first-container.fifth-container {
     margin-bottom: 0px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1330,11 +1362,11 @@
     text-align: center;
   }
   .what-does-section section .extra-space-container {
-    height: 150px;
+    height: 180px;
     overflow: hidden;
     width: 100%;
     position: relative;
-    top: -53px;
+    top: -8px;
     display: block;
   }
   .what-does-section section .extra-space-container .extra-space {
@@ -1655,6 +1687,8 @@
   .what-does-section section .first-container.third-container {
     margin-bottom: 0;
     position: relative;
+    height: 0px;
+    background: none;
   }
   .what-does-section section .first-container.third-container .arrow-1 {
     display: none;
@@ -1674,6 +1708,7 @@
   }
   .what-does-section section .first-container.third-container .main-container-mb-second {
     top: 30px;
+    display: none;
   }
   .what-does-section section .first-container.third-container .main-container {
     height: 100%;
@@ -1701,10 +1736,18 @@
   }
   .what-does-section section .first-container.third-container .right-container {
     top: 30px;
+    display: none;
   }
   .what-does-section section .first-container.fourth-container {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     position: relative;
+    background-size: cover;
+    height: 600px;
+    background: url("../assets/images/doesthis1.png");
+    background-color: white;
+    background-image: linear-gradient(#f3f3f3 1px, transparent 1px), linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+    background-size: 62px 62px;
+    background-position: calc(50% - 1px) top; /* Moves the image 10px to the right */
   }
   .what-does-section section .first-container.fourth-container img.arrow {
     display: none;
@@ -1715,12 +1758,13 @@
     top: -610px;
     left: 50%;
     transform: translateY(0) translateX(-50%) scale(1.3);
+    display: none;
   }
   .what-does-section section .first-container.fourth-container .float-content.second {
     display: block;
     top: 10px;
-    left: 38%;
-    transform: translateY(0) translateX(-38%) scale(1.3);
+    left: 20%;
+    transform: translateY(0) translateX(-20%) scale(1.3);
   }
   .what-does-section section .first-container.fourth-container .float-content p {
     position: absolute;
@@ -1736,6 +1780,9 @@
   }
   .what-does-section section .first-container.fourth-container .float-content p.mb {
     display: block;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12.32px;
   }
   .what-does-section section .first-container.fourth-container .float-content .hero-anime {
     width: 142px;
@@ -1756,7 +1803,9 @@
     pointer-events: none;
   }
   .what-does-section section .first-container.fourth-container .left-container .no {
-    opacity: 0;
+    opacity: 1;
+    position: relative;
+    top: -180px;
   }
   .what-does-section section .first-container.fourth-container .left-container .hero-anime {
     opacity: 0;
@@ -1766,9 +1815,11 @@
   }
   .what-does-section section .first-container.fourth-container .main-container-mb-second {
     top: -150px;
+    display: flex;
   }
   .what-does-section section .first-container.fourth-container .right-container {
     top: -150px;
+    display: block;
   }
   .what-does-section section .first-container.fourth-container .right-container .text {
     font-weight: 500;
@@ -1783,6 +1834,7 @@
   }
   .what-does-section section .first-container.fifth-container {
     margin-bottom: 0px;
+    margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1813,11 +1865,11 @@
     text-align: center;
   }
   .what-does-section section .extra-space-container {
-    height: 150px;
+    height: 180px;
     overflow: hidden;
     width: 100%;
     position: relative;
-    top: -53px;
+    top: -8px;
     display: block;
   }
   .what-does-section section .extra-space-container .extra-space {

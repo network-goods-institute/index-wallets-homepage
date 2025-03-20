@@ -20,7 +20,7 @@ const WalletEntries = ({ setActiveIndex }) => {
         onMouseMove={() => setIsLive(true)}
         onMouseLeave={() => setIsLive(false)}
       >
-        <p>If someone has a wallet with these entries</p>
+        <p>If a customer has a wallet with these entries</p>
         <span className="txt">
           <span>
             Tree: 36 <img src="/svgs/tree.svg" alt="" />

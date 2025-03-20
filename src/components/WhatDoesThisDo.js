@@ -239,6 +239,7 @@ const WhatDoesThisDo = () => {
           </div>
           <div className="first-container second-container third-container fourth-container">
             <img src="/svgs/curved_2.svg" alt="" className="arrow" />
+
             <div className="float-content">
               <p>
                 Customer checks the price
@@ -255,7 +256,7 @@ const WhatDoesThisDo = () => {
             </div>
             <div className="left-container">
               <div className="no">
-                <img src="/svgs/does_2.svg" alt="" />
+                <img src="/svgs/does_3.svg" alt="" />
               </div>
               <p>
                 customer gets the <br />

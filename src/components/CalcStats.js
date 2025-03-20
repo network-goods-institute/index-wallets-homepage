@@ -110,7 +110,7 @@ const CalcStats = ({ value, received = false, inputStat = false }) => {
   };
 
   return (
-    <div className={`new-stats ${inputStat && "input-stats"}`}>
+    <div className={`new-stats calc-stats ${inputStat && "input-stats"}`}>
       <div className="row">
         <div
           className="left-padding bar"
