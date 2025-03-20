@@ -43,6 +43,7 @@ const WhatDoesThisDo = () => {
   return (
     <div className="what-does-section">
       <section>
+        <CalcForToken />
         <motion.div
           ref={refContent}
           initial={{ opacity: 0, y: 80 }}
@@ -322,7 +323,6 @@ const WhatDoesThisDo = () => {
             <div className="extra-space"></div>
           </div>
         </motion.div>
-        <CalcForToken />
         <motion.div
           ref={refFourthContainer}
           initial={{ opacity: 0, y: 80 }}

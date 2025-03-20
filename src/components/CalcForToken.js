@@ -78,6 +78,10 @@ const CalcForToken = () => {
       }}
       className="calc-for-token"
     >
+      <div className="change-prices">
+        <h2>Your values change prices</h2>
+      </div>
+
       <CalcStats value={growthValue} inputStat={true} />
 
       <div className="right-container">

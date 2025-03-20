@@ -111,6 +111,7 @@ const Stats = ({ value, received = false, inputStat = false }) => {
             width: leftBarTreeLength(),
             background: "#049952",
             display: received && "none",
+            opacity: ".25",
           }}
         ></div>
         <div
@@ -142,6 +143,7 @@ const Stats = ({ value, received = false, inputStat = false }) => {
             width: leftBarEthLength(),
             background: "#627EEA",
             display: received && "none",
+            opacity: ".25",
           }}
         ></div>
         <div
@@ -173,6 +175,7 @@ const Stats = ({ value, received = false, inputStat = false }) => {
             width: leftBarUsdtLength(),
             background: "#409AFD",
             display: received && "none",
+            opacity: ".25",
           }}
         ></div>
         <div

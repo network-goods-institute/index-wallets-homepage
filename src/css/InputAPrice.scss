@@ -80,18 +80,18 @@
       .slider::-webkit-slider-thumb {
         -webkit-appearance: none;
         appearance: none;
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
         background: #0c0a09;
         border-radius: 50%;
         cursor: pointer;
         position: relative;
-        margin-top: -11px; /* Adjust to align thumb with track */
+        margin-top: -14px; /* Adjust to align thumb with track */
       }
 
       .slider::-moz-range-thumb {
-        width: 24px;
-        height: 24px;
+        width: 30px;
+        height: 30px;
         background: #0c0a09;
         border-radius: 50%;
         cursor: pointer;
