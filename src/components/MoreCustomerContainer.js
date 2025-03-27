@@ -8,8 +8,7 @@ const MoreCustomerContainer = () => {
         <div className="first-container fifth-container">
           <h3>
             <img src="/svgs/smile_.svg" className="purple" alt="" />
-            With Index Wallets, Your Community's Health Literally Contributes To
-            Your Wealth
+            With Index Wallets, Your Community's Health Underpins Your Wealth
             <img src="/svgs/Vector@2x.svg" className="orange" alt="" />
           </h3>
         </div>

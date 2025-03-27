@@ -122,6 +122,7 @@ const CalcStats = ({ value, received = false, inputStat = false }) => {
             width: rightBarTreeLength(),
             background: "#049952",
             display: received && "none",
+            opacity: 0.5,
           }}
         ></div>
         <div
@@ -150,6 +151,7 @@ const CalcStats = ({ value, received = false, inputStat = false }) => {
             width: rightBarEthLength(),
             background: "#627EEA",
             display: received && "none",
+            opacity: 0.5,
           }}
         ></div>
         <div
@@ -175,6 +177,7 @@ const CalcStats = ({ value, received = false, inputStat = false }) => {
             width: rightBarUsdtLength(),
             background: "#409AFD",
             display: received && "none",
+            opacity: 0.5,
           }}
         ></div>
         <div

@@ -74,41 +74,40 @@ const WhatDoesThisDo = () => {
             ease: [0.16, 1, 0.3, 1],
             staggerChildren: 0.15,
           }}
-          className="first-container"
+          className="first-container first-main"
         >
           <div className="left-container">
             <div className="no">
               <img src="/svgs/does_1.svg" alt="" />
-            </div>
-            <Lottie animationData={HeroAnime} className="hero-anime first" />
-          </div>
-          <div className="main-container">
-            <img src="/svgs/does_tree.svg" alt="" className="tree" />
-            <div className="cycle">
-              <img src="/svgs/does_curve_arrow.svg" alt="" />
               <p>
                 Customer donates to a cause
                 <br /> Receives donation receipts
               </p>
+            </div>
+            <Lottie animationData={HeroAnime} className="hero-anime first" />
+          </div>
+          <div className="main-container cycle-container">
+            <img src="/svgs/does_tree.svg" alt="" className="tree" />
+            <div className="cycle">
+              <img src="/svgs/does_curve_arrow.svg" alt="" />
               <img src="/svgs/does_curve_arrow_2.svg" alt="" />
             </div>
             <div className="txt">$</div>
           </div>
-          <div className="main-container-mb">
+          <div className="main-container-mb cycle-container">
             <div className="txt">$</div>
             <div className="cycle">
               <img src="/svgs/Group 62.svg" alt="" />
-              <p style={{ textAlign: "center" }}>
-                Customer donates to a cause
-                <br /> Receives donation receipts
-              </p>
               <img src="/svgs/Group 60.svg" alt="" />
             </div>
             <img src="/svgs/does_tree.svg" alt="" className="tree" />
           </div>
           <div className="right-container">
-            <img src="/images/people_world.png" className="world-img" alt="" />
-            <p className="first_p">Reforestation</p>
+            <div className="card">
+              <div className="banner">Donate</div>
+              <img src="/images/green_leaf.png" className="world-img" alt="" />
+              <p className="first_p">River Basin Reforestation</p>
+            </div>
           </div>
         </motion.div>
         <motion.div
@@ -128,18 +127,19 @@ const WhatDoesThisDo = () => {
           <div className="left-container">
             <div className="no">
               <img src="/svgs/does_2.svg" alt="" />
+              <p>
+                Customer gets the <br />
+                price for pizza
+              </p>
             </div>
-            <p className="p-second">
-              Customer gets the <br />
-              price for pizza
-            </p>
+
             <Lottie animationData={HeroAnime2} className="hero-anime" />
           </div>
           <div className="main-container-mb-second">
             <p>
               Payment to
               <br />
-              Frenzy Pies
+              Joe’s Pies
             </p>
             <img src="/svgs/Group 68.svg" alt="" className="arrow" />
             <img
@@ -159,20 +159,16 @@ const WhatDoesThisDo = () => {
                 <div className="img">
                   <img src="/svgs/does_str_arrow.svg" alt="" />
                 </div>
-                <p>Payment to Frenzy Pies</p>
+                <p>Payment to Joe’s Pies</p>
               </div>
             </div>
           </div>
-          <div className="right-container">
+          <div className="right-container second-right-container">
             <div className="container">
               <div className="wrap">
                 <img src="/svgs/Frenzy valuation_desktop.svg" alt="" />
                 <div className="group">
-                  <div className="info">
-                    Welcome to <br />
-                    Frenzy Pies
-                  </div>
-                  <img src="/svgs/Group 84.svg" alt="" />
+                  <img src="/svgs/welcome_joe's.svg" alt="" />
                 </div>
               </div>
               <Lottie animationData={HeroAnime3} className="hero-anime" />
@@ -191,22 +187,24 @@ const WhatDoesThisDo = () => {
           }}
         >
           <div className="first-container second-container third-container">
-            <img src="/svgs/curved_1.svg" alt="" className="arrow-1" />
+            <img src="/svgs/arroww.svg" alt="" className="arrow-1" />
             <div className="left-container">
               <div className="no">
                 <img src="/svgs/does_3.svg" alt="" />
+                <p>
+                  Customer checks the price
+                  <br />
+                  from a competitor
+                </p>
               </div>
-              <p>
-                Customer gets the <br />
-                price for a pizza
-              </p>
+
               <Lottie animationData={HeroAnime2} className="hero-anime" />
             </div>
             <div className="main-container-mb-second">
               <p>
                 Payment to
                 <br />
-                Frenzy Pies
+                Joe’s Pies
               </p>
               <img src="/svgs/Group 68.svg" alt="" className="arrow" />
               <img
@@ -218,7 +216,7 @@ const WhatDoesThisDo = () => {
             <div className="main-container">
               <div className="container">
                 <img src="/svgs/Frenzy payment_ Desktop_1.svg" alt="" />
-                <p>Payment to Frenzy Pies</p>
+                <p>Payment to Joe’s Pies</p>
               </div>
             </div>
             <div className="right-container">
@@ -226,11 +224,7 @@ const WhatDoesThisDo = () => {
                 <div className="wrap">
                   <img src="/svgs/Frenzy valuation_desktop.svg" alt="" />
                   <div className="group">
-                    <div className="info">
-                      Welcome to <br />
-                      Frenzy Pies
-                    </div>
-                    <img src="/svgs/Group 84.svg" alt="" />
+                    <img src="/svgs/welcome_joe's.svg" alt="" />
                   </div>
                 </div>
                 <Lottie animationData={HeroAnime3} className="hero-anime" />
@@ -238,43 +232,33 @@ const WhatDoesThisDo = () => {
             </div>
           </div>
           <div className="first-container second-container third-container fourth-container">
-            <img src="/svgs/curved_2.svg" alt="" className="arrow" />
-
-            <div className="float-content">
+            <div className="no no-block">
+              <img src="/svgs/does_3.svg" alt="" />
               <p>
                 Customer checks the price
                 <br />
                 from a competitor
               </p>
-              <p className="mb">
-                Customer gets <br />
-                the price from
-                <br />
-                Frenzy Pies
-              </p>
+            </div>
+
+            <img src="/svgs/arroww2.svg" alt="" className="arrow" />
+
+            <div className="float-content">
               <Lottie animationData={HeroAnime2} className="hero-anime" />
             </div>
             <div className="left-container">
               <div className="no">
                 <img src="/svgs/does_3.svg" alt="" />
+                <p>
+                  Customer checks the price
+                  <br />
+                  from a competitor
+                </p>
               </div>
-              <p>
-                customer gets the <br />
-                price for a pizza
-              </p>
+
               <Lottie animationData={HeroAnime2} className="hero-anime" />
             </div>
             <div className="float-content second">
-              <p>
-                Customer checks the price
-                <br />
-                from a competitor
-              </p>
-              <p className="mb">
-                Customer checks <br />
-                the price from a <br />
-                competitor
-              </p>
               <Lottie animationData={HeroAnime2} className="hero-anime" />
             </div>
             <div className="main-container-mb-second">
@@ -292,8 +276,9 @@ const WhatDoesThisDo = () => {
             </div>
             <div className="main-container">
               <div className="container">
-                <img src="/svgs/Forest payment_ Desktop_2.svg" alt="" />
+                <img className="deal" src="/svgs/better_deal.svg" alt="" />
                 <p>Payment to Forest Pizza</p>
+                <img src="/svgs/Forest payment_ Desktop_2.svg" alt="" />
               </div>
             </div>
             <div className="right-container">
@@ -301,27 +286,29 @@ const WhatDoesThisDo = () => {
                 <div className="wrap">
                   <img src="/svgs/Forest valuation_desktop_f.svg" alt="" />
                   <div className="group">
-                    <div className="info">
-                      Welcome to <br />
-                      Forest Pizza
-                    </div>
-                    <img src="/svgs/Group 84.svg" alt="" />
+                    <img src="/svgs/welcome_forest.svg" alt="" />
                   </div>
                 </div>
                 <Lottie animationData={HeroAnime4} className="hero-anime" />
               </div>
-              <p className="text">
-                It’s cheaper for the customer to buy from Forest Pizza, because
-                they value the reforestation donation receipt!
-              </p>
-              <p className="desktop-text">
-                It’s cheaper for the customer to buy from Forest Pizza, because
-                they value the reforestation donation receipt!
-              </p>
             </div>
           </div>
           <div className="extra-space-container">
-            <div className="extra-space"></div>
+            <div className="extra-space">
+              <h2>
+                It’s cheaper for the customer to buy from Forest Pizza, because
+                they value reforestation!
+              </h2>
+              <p>
+                Typically, businesses compete on price and quality. But with an
+                index payments, businesses can compete on values alignment with
+                their customers.
+                <br /> <br /> As you can see, it’s literally cheaper to buy from
+                values aligned vendors, because they value your donation
+                receipts.
+              </p>
+              <img src="/svgs/dash.svg" alt="" />
+            </div>
           </div>
         </motion.div>
         <motion.div

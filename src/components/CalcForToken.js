@@ -79,6 +79,7 @@ const CalcForToken = () => {
       className="calc-for-token"
     >
       <div className="change-prices">
+        <div className="banner">See it in action</div>
         <h2>Your values change prices</h2>
       </div>
 

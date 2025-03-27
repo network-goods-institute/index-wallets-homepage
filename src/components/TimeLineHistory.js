@@ -16,7 +16,7 @@ const TimeLineHistory = () => {
     { date: "AUG 2023", event: "Index wallets preprint published" },
     {
       date: "FEB 2024",
-      event: "Index wallets research funded by 100k grant BlueYard",
+      event: "Index wallets research funded by 100k BlueYard grant",
     },
     {
       date: "JUL 2024",

@@ -59,6 +59,17 @@
 
         .no {
           transform: translateX(15px);
+          display: flex;
+          gap: 18.86px;
+
+          p {
+            font-style: italic;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 100%;
+            letter-spacing: -0.03em;
+            color: #0c0a09;
+          }
         }
 
         .hero-anime {
@@ -71,6 +82,10 @@
       .main-container {
         position: relative;
 
+        &.cycle-container {
+          left: -50px;
+        }
+
         .container {
           p {
             font-weight: 400;
@@ -79,16 +94,16 @@
 
         img.tree {
           position: absolute;
-          left: 0;
-          top: -15px;
+          top: 15px;
+          left: -40px;
         }
 
         .txt {
           position: absolute;
-          bottom: 20px;
+          bottom: 30px;
           right: 0;
           font-weight: 600;
-          font-size: 32px;
+          font-size: 50.09px;
           font-style: italic;
           line-height: 38.19px;
           color: #0c0a09;
@@ -112,12 +127,12 @@
           img {
             &:first-child {
               position: relative;
-              bottom: -10px;
+              bottom: -20px;
             }
 
             &:last-child {
               position: relative;
-              top: -10px;
+              top: -20px;
             }
           }
         }
@@ -128,10 +143,11 @@
       }
 
       .right-container {
-        width: 326px;
+        width: 234.28260803222656px;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
         flex-direction: column;
 
         p {
@@ -142,9 +158,52 @@
           color: #0c0a09;
         }
 
-        .world-img {
-          width: 326px;
-          height: 326px;
+        .card {
+          padding: 13.62px;
+          width: 100%;
+          height: 264.14px;
+          background: #ffffff;
+          border-radius: 12.6962px;
+          filter: drop-shadow(0px 4.2814px 4.2814px rgba(0, 0, 0, 0.25));
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          position: relative;
+          margin-right: 50px;
+
+          .banner {
+            position: absolute;
+            right: -10px;
+            top: -5px;
+            padding: 8.5628px;
+            background: #eddaff;
+            border: 1.07035px solid #a856f7;
+            border-radius: 8.5628px;
+            font-weight: 400;
+            font-size: 12.8442px;
+            line-height: 100%;
+            text-align: center;
+            letter-spacing: -0.03em;
+            color: #a856f7;
+          }
+
+          .world-img {
+            width: 100%;
+            flex: 1;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 9.9px;
+          }
+
+          p {
+            font-weight: 500;
+            font-size: 19.2663px;
+            line-height: 100%;
+            letter-spacing: -0.03em;
+            color: #0c0a09;
+            margin-top: 9.21px;
+          }
         }
       }
 
@@ -160,6 +219,21 @@
 
           .no {
             transform: translateX(15px);
+            display: flex;
+            flex-direction: row;
+            gap: 18.86px;
+
+            p {
+              font-style: italic;
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 100%;
+              letter-spacing: -0.03em;
+              color: #0c0a09;
+              position: relative;
+              top: 0;
+              left: 0;
+            }
           }
 
           .hero-anime {
@@ -239,15 +313,6 @@
 
               .group {
                 margin-top: 75px;
-
-                .info {
-                  font-size: 16px;
-                  font-weight: 400;
-                  line-height: 19.09px;
-                  letter-spacing: -3%;
-                  color: #0c0a09;
-                  margin-bottom: 15px;
-                }
               }
             }
 
@@ -270,7 +335,6 @@
             pointer-events: none;
           }
           p {
-            opacity: 0;
             pointer-events: none;
           }
         }
@@ -285,7 +349,8 @@
           height: 100%;
           padding-top: 90px;
           position: relative;
-          right: -100px;
+          right: -60px;
+          top: 80px;
 
           .container {
             p {
@@ -319,7 +384,7 @@
         img.arrow {
           position: absolute;
           left: 303.52px;
-          top: -90px;
+          top: 40px;
         }
 
         .float-content {
@@ -369,6 +434,20 @@
           }
         }
 
+        .main-container {
+          top: -40px;
+
+          img.deal {
+            position: absolute;
+            top: 20px;
+            left: -90px;
+          }
+
+          p {
+            margin-bottom: 10px;
+          }
+        }
+
         .right-container {
           .desktop-text {
             position: absolute;
@@ -415,6 +494,51 @@
         }
       }
     }
+
+    .extra-space-container {
+      height: 457px;
+      margin: 0 auto;
+      width: 997px;
+      overflow: hidden;
+      position: relative;
+      top: -103px;
+      display: block;
+
+      .extra-space {
+        height: 421px;
+        background: url("../assets/images/doesthis1.png");
+        background-position: top;
+        background-size: cover;
+        padding-top: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        h2 {
+          width: 783px;
+          font-weight: 600;
+          font-size: 32px;
+          line-height: 100%;
+          text-align: center;
+          letter-spacing: -0.03em;
+          color: #0c0a09;
+          line-height: 38px;
+          margin-bottom: 16px;
+        }
+
+        p {
+          width: 821px;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 29px;
+          text-align: center;
+          letter-spacing: -0.03em;
+          color: #8a8a8e;
+          margin-bottom: 27px;
+        }
+      }
+    }
   }
 
   .main-container-mb-second {
@@ -441,21 +565,8 @@
     display: none;
   }
 
-  .extra-space-container {
-    height: 100px;
-    margin: 0 auto;
-    width: 997px;
-    overflow: hidden;
-    position: relative;
-    top: -103px;
-    display: block;
-
-    .extra-space {
-      height: 421px;
-      background: url("../assets/images/doesthis1.png");
-      background-position: top;
-      background-size: cover;
-    }
+  .no-block {
+    display: none;
   }
 
   @media (max-width: 575px) {
@@ -516,6 +627,10 @@
           margin-bottom: 50px;
           z-index: 1;
 
+          &.first-main {
+            height: 570px;
+          }
+
           .left-container {
             height: 100%;
             display: flex;
@@ -530,7 +645,21 @@
               transform: translateX(0px);
               width: 53.79px;
               height: 32px;
-              transform: scale(0.6);
+              position: relative;
+
+              img {
+                transform: scale(0.6);
+              }
+
+              p {
+                position: absolute;
+                top: 0;
+                width: 200px;
+                // width: 163px;
+                left: 70px;
+                font-size: 14px;
+                line-height: 100%;
+              }
             }
 
             .hero-anime {
@@ -539,7 +668,7 @@
                 height: 155px;
                 transform: translateY(0);
                 position: absolute;
-                top: -10px;
+                top: 15px;
                 left: 50%;
                 transform: translateY(0) translateX(-50%) scale(1.8);
               }
@@ -598,12 +727,17 @@
           .main-container-mb {
             display: block;
             position: relative;
-            margin-top: 179px;
+            margin-top: 199px;
+
+            &.cycle-container {
+              top: -50px;
+            }
 
             .cycle {
               display: flex;
               align-items: center;
               justify-content: center;
+              gap: 50px;
 
               p {
                 font-weight: 400;
@@ -647,7 +781,7 @@
           }
 
           .right-container {
-            width: 326px;
+            width: 158.62661743164062px;
             height: 100%;
             display: flex;
             align-items: center;
@@ -659,16 +793,51 @@
               line-height: 14.32px;
               letter-spacing: -3%;
               color: #0c0a09;
-
-              &.first_p {
-                position: relative;
-                top: -20px;
-              }
             }
 
-            .world-img {
-              width: 200px;
-              height: 200px;
+            .card {
+              padding: 8.98px;
+              width: 100%;
+              height: 176px;
+              border-radius: 8.35px;
+              filter: drop-shadow(0px 4.2814px 4.2814px rgba(0, 0, 0, 0.25));
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              margin-right: 0;
+              position: relative;
+              top: -20px;
+
+              .banner {
+                position: absolute;
+                right: -10px;
+                top: -5px;
+                padding: 5.63px;
+                background: #eddaff;
+                border: 1.07035px solid #a856f7;
+                border-radius: 5.63px;
+                font-weight: 400;
+                font-size: 8.45px;
+                line-height: 100%;
+                text-align: center;
+                letter-spacing: -0.03em;
+                color: #a856f7;
+              }
+
+              .world-img {
+                width: 100%;
+                flex: 1;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 6.51px;
+              }
+
+              p {
+                font-size: 12.67px;
+                color: #0c0a09;
+                margin-top: 6.06px;
+              }
             }
           }
 
@@ -689,9 +858,22 @@
                 transform: translateX(0px);
                 width: 53.79px;
                 height: 32px;
-                transform: scale(0.6);
-              }
+                position: relative;
 
+                img {
+                  transform: scale(0.6);
+                }
+
+                p {
+                  position: absolute;
+                  top: 0;
+                  width: 200px;
+                  // width: 163px;
+                  left: 70px;
+                  font-size: 14px;
+                  line-height: 100%;
+                }
+              }
               .hero-anime {
                 position: absolute;
                 top: 10px;
@@ -721,29 +903,6 @@
 
             .main-container {
               display: none;
-
-              .container {
-                .wrap {
-                  position: relative;
-                  top: 0px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-
-                  .img {
-                    height: 49.5px;
-                    width: 250.27px;
-                  }
-
-                  p {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 19.09px;
-                    letter-spacing: -3%;
-                    color: #0c0a09;
-                  }
-                }
-              }
             }
 
             .main-container-mb-second {
@@ -770,6 +929,10 @@
               position: relative;
               top: 20px;
 
+              &.second-right-container {
+                left: 20%;
+              }
+
               .container {
                 height: 333.42px;
                 width: 286.62px;
@@ -792,19 +955,6 @@
 
                   .group {
                     margin-top: 85px;
-
-                    .info {
-                      font-size: 10px;
-                      font-weight: 400;
-                      line-height: 11.93px;
-                      letter-spacing: -3%;
-                      color: #0c0a09;
-                      margin-bottom: 5px;
-                    }
-
-                    img {
-                      transform: scale(1) translateX(-30px);
-                    }
                   }
                 }
 
@@ -833,7 +983,6 @@
                 pointer-events: none;
               }
               p {
-                opacity: 0;
                 pointer-events: none;
               }
             }
@@ -881,6 +1030,7 @@
 
             .right-container {
               top: 30px;
+              left: -16%;
 
               display: none;
             }
@@ -1031,7 +1181,7 @@
         }
 
         .extra-space-container {
-          height: 180px;
+          height: 370.9999694824231px;
           overflow: hidden;
           width: 100%;
           position: relative;
@@ -1039,12 +1189,34 @@
           display: block;
 
           .extra-space {
+            padding-top: 54px;
             height: 600px;
             background-color: white;
             background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
               linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
             background-size: 30px 30px;
             background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
+            h2 {
+              width: 90%;
+              max-width: 407px;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+            }
+
+            p {
+              width: 90%;
+              max-width: 327px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              margin-bottom: 10px;
+            }
+
+            img {
+              transform: scale(0.8);
+            }
           }
         }
       }
@@ -1099,14 +1271,22 @@
           margin: 0 auto;
           width: 100%;
           height: 550px;
-          background: url("../assets/images/doesthis1.png");
-          background-position: top;
-          background-size: cover;
+          background-color: white;
+          background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
+            linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+          background-size: 30px 30px;
+          background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 50px;
+          z-index: 1;
+
+          &.first-main {
+            height: 570px;
+          }
 
           .left-container {
             height: 100%;
@@ -1122,7 +1302,21 @@
               transform: translateX(0px);
               width: 53.79px;
               height: 32px;
-              transform: scale(0.6);
+              position: relative;
+
+              img {
+                transform: scale(0.6);
+              }
+
+              p {
+                position: absolute;
+                top: 0;
+                width: 200px;
+                // width: 163px;
+                left: 70px;
+                font-size: 14px;
+                line-height: 100%;
+              }
             }
 
             .hero-anime {
@@ -1131,7 +1325,7 @@
                 height: 155px;
                 transform: translateY(0);
                 position: absolute;
-                top: -10px;
+                top: 15px;
                 left: 50%;
                 transform: translateY(0) translateX(-50%) scale(1.8);
               }
@@ -1190,12 +1384,17 @@
           .main-container-mb {
             display: block;
             position: relative;
-            margin-top: 179px;
+            margin-top: 199px;
+
+            &.cycle-container {
+              top: -50px;
+            }
 
             .cycle {
               display: flex;
               align-items: center;
               justify-content: center;
+              gap: 50px;
 
               p {
                 font-weight: 400;
@@ -1239,7 +1438,7 @@
           }
 
           .right-container {
-            width: 326px;
+            width: 158.62661743164062px;
             height: 100%;
             display: flex;
             align-items: center;
@@ -1251,16 +1450,51 @@
               line-height: 14.32px;
               letter-spacing: -3%;
               color: #0c0a09;
-
-              &.first_p {
-                position: relative;
-                top: -20px;
-              }
             }
 
-            .world-img {
-              width: 200px;
-              height: 200px;
+            .card {
+              padding: 8.98px;
+              width: 100%;
+              height: 176px;
+              border-radius: 8.35px;
+              filter: drop-shadow(0px 4.2814px 4.2814px rgba(0, 0, 0, 0.25));
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              margin-right: 0;
+              position: relative;
+              top: -20px;
+
+              .banner {
+                position: absolute;
+                right: -10px;
+                top: -5px;
+                padding: 5.63px;
+                background: #eddaff;
+                border: 1.07035px solid #a856f7;
+                border-radius: 5.63px;
+                font-weight: 400;
+                font-size: 8.45px;
+                line-height: 100%;
+                text-align: center;
+                letter-spacing: -0.03em;
+                color: #a856f7;
+              }
+
+              .world-img {
+                width: 100%;
+                flex: 1;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 6.51px;
+              }
+
+              p {
+                font-size: 12.67px;
+                color: #0c0a09;
+                margin-top: 6.06px;
+              }
             }
           }
 
@@ -1281,7 +1515,21 @@
                 transform: translateX(0px);
                 width: 53.79px;
                 height: 32px;
-                transform: scale(0.6);
+                position: relative;
+
+                img {
+                  transform: scale(0.6);
+                }
+
+                p {
+                  position: absolute;
+                  top: 0;
+                  width: 200px;
+                  // width: 163px;
+                  left: 70px;
+                  font-size: 14px;
+                  line-height: 100%;
+                }
               }
 
               .hero-anime {
@@ -1305,7 +1553,7 @@
                 color: #0c0a09;
 
                 &.p-second {
-                  right: 180px;
+                  right: 40px;
                   top: 30px;
                 }
               }
@@ -1313,40 +1561,17 @@
 
             .main-container {
               display: none;
-
-              .container {
-                .wrap {
-                  position: relative;
-                  top: 0px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-
-                  .img {
-                    height: 49.5px;
-                    width: 250.27px;
-                  }
-
-                  p {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 19.09px;
-                    letter-spacing: -3%;
-                    color: #0c0a09;
-                  }
-                }
-              }
             }
 
             .main-container-mb-second {
               display: flex;
-              align-items: center;
+              align-items: flex-start;
               justify-content: center;
               position: relative;
               top: 20px;
 
               p {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 400;
                 line-height: 14.32px;
                 text-align: right;
@@ -1362,6 +1587,10 @@
               position: relative;
               top: 20px;
 
+              &.second-right-container {
+                left: 20%;
+              }
+
               .container {
                 height: 333.42px;
                 width: 286.62px;
@@ -1369,7 +1598,7 @@
                 align-items: center;
                 justify-content: flex-end;
                 position: relative;
-                transform: scale(0.8);
+                transform: scale(0.9);
 
                 .wrap {
                   position: absolute;
@@ -1384,26 +1613,13 @@
 
                   .group {
                     margin-top: 85px;
-
-                    .info {
-                      font-size: 10px;
-                      font-weight: 400;
-                      line-height: 11.93px;
-                      letter-spacing: -3%;
-                      color: #0c0a09;
-                      margin-bottom: 5px;
-                    }
-
-                    img {
-                      transform: scale(0.9) translateX(-30px);
-                    }
                   }
                 }
 
                 .hero-anime {
                   height: 270.67px;
-                  width: 254.91px;
-                  transform: translateY(40px);
+                  width: 254px;
+                  transform: scale(0.8) translateY(40px);
                 }
               }
             }
@@ -1424,8 +1640,8 @@
                 opacity: 0;
                 pointer-events: none;
               }
+
               p {
-                opacity: 0;
                 pointer-events: none;
               }
             }
@@ -1473,6 +1689,7 @@
 
             .right-container {
               top: 30px;
+              left: -12%;
 
               display: none;
             }
@@ -1484,12 +1701,38 @@
             background-size: cover;
             // top: -300px;
             height: 600px;
-            background: url("../assets/images/doesthis1.png");
+            // background: url("../assets/images/does_bg_mb.png");
             background-color: white;
             background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
               linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
-            background-size: 62px 62px;
-            background-position: calc(50% - 1px) top; /* Moves the image 10px to the right */
+            background-size: 30px 30px;
+            background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
+            .no-block {
+              display: flex;
+              position: absolute;
+              left: 25px;
+              top: 0;
+
+              transform: translateX(0px);
+              width: 53.79px;
+              height: 32px;
+
+              img {
+                transform: scale(0.6);
+              }
+
+              p {
+                position: absolute;
+                top: 0;
+                width: 200px;
+                // width: 163px;
+                left: 50px;
+                font-size: 14px;
+                line-height: 100%;
+                font-style: italic;
+              }
+            }
 
             img.arrow {
               display: none;
@@ -1506,8 +1749,8 @@
               &.second {
                 display: block;
                 top: 10px;
-                left: 20%;
-                transform: translateY(0) translateX(-20%) scale(1.3);
+                left: 50%;
+                transform: translateY(0) translateX(-50%) scale(1.3);
               }
 
               p {
@@ -1551,9 +1794,9 @@
               pointer-events: none;
 
               .no {
-                opacity: 1;
+                opacity: 0;
                 position: relative;
-                top: -180px;
+                // top: -200px;
               }
 
               .hero-anime {
@@ -1622,12 +1865,13 @@
               letter-spacing: -3%;
               line-height: 36px;
               text-align: center;
+              width: 327px;
             }
           }
         }
 
         .extra-space-container {
-          height: 180px;
+          height: 370.9999694824231px;
           overflow: hidden;
           width: 100%;
           position: relative;
@@ -1635,12 +1879,34 @@
           display: block;
 
           .extra-space {
+            padding-top: 54px;
             height: 600px;
-            background: url("../assets/images/doesthis1.png");
-            background-position: top;
-            background-size: cover;
-            position: relative;
-            top: -35px;
+            background-color: white;
+            background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
+              linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+            background-size: 30px 30px;
+            background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
+            h2 {
+              width: 90%;
+              max-width: 407px;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+            }
+
+            p {
+              width: 90%;
+              max-width: 327px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              margin-bottom: 10px;
+            }
+
+            img {
+              transform: scale(0.8);
+            }
           }
         }
       }
@@ -1657,7 +1923,7 @@
       }
 
       section {
-        width: 100%;
+        width: 90%;
         margin: 0 auto;
 
         .content {
@@ -1695,14 +1961,22 @@
           margin: 0 auto;
           width: 100%;
           height: 550px;
-          background: url("../assets/images/doesthis1.png");
-          background-position: top;
-          background-size: cover;
+          background-color: white;
+          background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
+            linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+          background-size: 30px 30px;
+          background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
           display: flex;
           flex-direction: column;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 50px;
+          z-index: 1;
+
+          &.first-main {
+            height: 570px;
+          }
 
           .left-container {
             height: 100%;
@@ -1718,7 +1992,21 @@
               transform: translateX(0px);
               width: 53.79px;
               height: 32px;
-              transform: scale(0.6);
+              position: relative;
+
+              img {
+                transform: scale(0.6);
+              }
+
+              p {
+                position: absolute;
+                top: 0;
+                width: 200px;
+                // width: 163px;
+                left: 70px;
+                font-size: 14px;
+                line-height: 100%;
+              }
             }
 
             .hero-anime {
@@ -1727,7 +2015,7 @@
                 height: 155px;
                 transform: translateY(0);
                 position: absolute;
-                top: -10px;
+                top: 15px;
                 left: 50%;
                 transform: translateY(0) translateX(-50%) scale(1.8);
               }
@@ -1786,12 +2074,17 @@
           .main-container-mb {
             display: block;
             position: relative;
-            margin-top: 179px;
+            margin-top: 199px;
+
+            &.cycle-container {
+              top: -50px;
+            }
 
             .cycle {
               display: flex;
               align-items: center;
               justify-content: center;
+              gap: 50px;
 
               p {
                 font-weight: 400;
@@ -1835,7 +2128,7 @@
           }
 
           .right-container {
-            width: 326px;
+            width: 158.62661743164062px;
             height: 100%;
             display: flex;
             align-items: center;
@@ -1847,16 +2140,51 @@
               line-height: 14.32px;
               letter-spacing: -3%;
               color: #0c0a09;
-
-              &.first_p {
-                position: relative;
-                top: -20px;
-              }
             }
 
-            .world-img {
-              width: 200px;
-              height: 200px;
+            .card {
+              padding: 8.98px;
+              width: 100%;
+              height: 176px;
+              border-radius: 8.35px;
+              filter: drop-shadow(0px 4.2814px 4.2814px rgba(0, 0, 0, 0.25));
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              margin-right: 0;
+              position: relative;
+              top: -20px;
+
+              .banner {
+                position: absolute;
+                right: -10px;
+                top: -5px;
+                padding: 5.63px;
+                background: #eddaff;
+                border: 1.07035px solid #a856f7;
+                border-radius: 5.63px;
+                font-weight: 400;
+                font-size: 8.45px;
+                line-height: 100%;
+                text-align: center;
+                letter-spacing: -0.03em;
+                color: #a856f7;
+              }
+
+              .world-img {
+                width: 100%;
+                flex: 1;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 6.51px;
+              }
+
+              p {
+                font-size: 12.67px;
+                color: #0c0a09;
+                margin-top: 6.06px;
+              }
             }
           }
 
@@ -1877,7 +2205,21 @@
                 transform: translateX(0px);
                 width: 53.79px;
                 height: 32px;
-                transform: scale(0.6);
+                position: relative;
+
+                img {
+                  transform: scale(0.6);
+                }
+
+                p {
+                  position: absolute;
+                  top: 0;
+                  width: 200px;
+                  // width: 163px;
+                  left: 70px;
+                  font-size: 14px;
+                  line-height: 100%;
+                }
               }
 
               .hero-anime {
@@ -1901,7 +2243,7 @@
                 color: #0c0a09;
 
                 &.p-second {
-                  right: 220px;
+                  right: 40px;
                   top: 30px;
                 }
               }
@@ -1909,40 +2251,17 @@
 
             .main-container {
               display: none;
-
-              .container {
-                .wrap {
-                  position: relative;
-                  top: 0px;
-                  display: flex;
-                  flex-direction: column;
-                  align-items: flex-start;
-
-                  .img {
-                    height: 49.5px;
-                    width: 250.27px;
-                  }
-
-                  p {
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 19.09px;
-                    letter-spacing: -3%;
-                    color: #0c0a09;
-                  }
-                }
-              }
             }
 
             .main-container-mb-second {
               display: flex;
-              align-items: center;
+              align-items: flex-start;
               justify-content: center;
               position: relative;
               top: 20px;
 
               p {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 400;
                 line-height: 14.32px;
                 text-align: right;
@@ -1958,6 +2277,10 @@
               position: relative;
               top: 20px;
 
+              &.second-right-container {
+                left: 20%;
+              }
+
               .container {
                 height: 333.42px;
                 width: 286.62px;
@@ -1965,7 +2288,7 @@
                 align-items: center;
                 justify-content: flex-end;
                 position: relative;
-                transform: scale(0.8);
+                transform: scale(0.9);
 
                 .wrap {
                   position: absolute;
@@ -1980,26 +2303,13 @@
 
                   .group {
                     margin-top: 85px;
-
-                    .info {
-                      font-size: 10px;
-                      font-weight: 400;
-                      line-height: 11.93px;
-                      letter-spacing: -3%;
-                      color: #0c0a09;
-                      margin-bottom: 5px;
-                    }
-
-                    img {
-                      transform: scale(0.9) translateX(-30px);
-                    }
                   }
                 }
 
                 .hero-anime {
                   height: 270.67px;
-                  width: 254.91px;
-                  transform: translateY(40px);
+                  width: 254px;
+                  transform: scale(0.8) translateY(40px);
                 }
               }
             }
@@ -2020,8 +2330,8 @@
                 opacity: 0;
                 pointer-events: none;
               }
+
               p {
-                opacity: 0;
                 pointer-events: none;
               }
             }
@@ -2069,6 +2379,7 @@
 
             .right-container {
               top: 30px;
+              left: -12%;
 
               display: none;
             }
@@ -2080,12 +2391,38 @@
             background-size: cover;
             // top: -300px;
             height: 600px;
-            background: url("../assets/images/doesthis1.png");
+            // background: url("../assets/images/does_bg_mb.png");
             background-color: white;
             background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
               linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
-            background-size: 62px 62px;
-            background-position: calc(50% - 1px) top; /* Moves the image 10px to the right */
+            background-size: 30px 30px;
+            background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
+            .no-block {
+              display: flex;
+              position: absolute;
+              left: 25px;
+              top: 0;
+
+              transform: translateX(0px);
+              width: 53.79px;
+              height: 32px;
+
+              img {
+                transform: scale(0.6);
+              }
+
+              p {
+                position: absolute;
+                top: 0;
+                width: 200px;
+                // width: 163px;
+                left: 50px;
+                font-size: 14px;
+                line-height: 100%;
+                font-style: italic;
+              }
+            }
 
             img.arrow {
               display: none;
@@ -2102,8 +2439,8 @@
               &.second {
                 display: block;
                 top: 10px;
-                left: 20%;
-                transform: translateY(0) translateX(-20%) scale(1.3);
+                left: 50%;
+                transform: translateY(0) translateX(-50%) scale(1.3);
               }
 
               p {
@@ -2147,9 +2484,9 @@
               pointer-events: none;
 
               .no {
-                opacity: 1;
+                opacity: 0;
                 position: relative;
-                top: -180px;
+                // top: -200px;
               }
 
               .hero-anime {
@@ -2218,12 +2555,13 @@
               letter-spacing: -3%;
               line-height: 36px;
               text-align: center;
+              width: 327px;
             }
           }
         }
 
         .extra-space-container {
-          height: 180px;
+          height: 370.9999694824231px;
           overflow: hidden;
           width: 100%;
           position: relative;
@@ -2231,12 +2569,34 @@
           display: block;
 
           .extra-space {
+            padding-top: 54px;
             height: 600px;
-            background: url("../assets/images/doesthis1.png");
-            background-position: top;
-            background-size: cover;
-            position: relative;
-            top: -35px;
+            background-color: white;
+            background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
+              linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+            background-size: 30px 30px;
+            background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
+            h2 {
+              width: 90%;
+              max-width: 407px;
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 29px;
+            }
+
+            p {
+              width: 90%;
+              max-width: 327px;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 19px;
+              margin-bottom: 10px;
+            }
+
+            img {
+              transform: scale(0.8);
+            }
           }
         }
       }
@@ -2286,7 +2646,6 @@
         .first-container {
           margin: 0 auto;
           width: 90%;
-          height: 421px;
           background: url("../assets/images/doesthis1.png");
           background-position: center;
           background-size: cover;
@@ -2305,6 +2664,17 @@
 
             .no {
               transform: translateX(15px);
+              display: flex;
+              gap: 18.86px;
+
+              p {
+                font-style: italic;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                color: #0c0a09;
+              }
             }
 
             .hero-anime {
@@ -2317,18 +2687,28 @@
           .main-container {
             position: relative;
 
+            &.cycle-container {
+              left: -50px;
+            }
+
+            .container {
+              p {
+                font-weight: 400;
+              }
+            }
+
             img.tree {
               position: absolute;
-              left: 0;
-              top: -15px;
+              top: 15px;
+              left: -40px;
             }
 
             .txt {
               position: absolute;
-              bottom: 20px;
+              bottom: 30px;
               right: 0;
               font-weight: 600;
-              font-size: 32px;
+              font-size: 50.09px;
               font-style: italic;
               line-height: 38.19px;
               color: #0c0a09;
@@ -2346,27 +2726,33 @@
                 line-height: 21.48px;
                 letter-spacing: -3%;
                 color: #0c0a09;
+                text-align: center;
               }
 
               img {
                 &:first-child {
                   position: relative;
-                  bottom: -10px;
+                  bottom: -20px;
                 }
 
                 &:last-child {
                   position: relative;
-                  top: -10px;
+                  top: -20px;
                 }
               }
             }
           }
 
+          .main-container-mb {
+            display: none;
+          }
+
           .right-container {
-            width: 326px;
+            width: 234.28260803222656px;
             height: 100%;
             display: flex;
             align-items: center;
+            justify-content: center;
             flex-direction: column;
 
             p {
@@ -2375,6 +2761,54 @@
               line-height: 21.48px;
               letter-spacing: -3%;
               color: #0c0a09;
+            }
+
+            .card {
+              padding: 13.62px;
+              width: 100%;
+              height: 264.14px;
+              background: #ffffff;
+              border-radius: 12.6962px;
+              filter: drop-shadow(0px 4.2814px 4.2814px rgba(0, 0, 0, 0.25));
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-between;
+              position: relative;
+              margin-right: 50px;
+
+              .banner {
+                position: absolute;
+                right: -10px;
+                top: -5px;
+                padding: 8.5628px;
+                background: #eddaff;
+                border: 1.07035px solid #a856f7;
+                border-radius: 8.5628px;
+                font-weight: 400;
+                font-size: 12.8442px;
+                line-height: 100%;
+                text-align: center;
+                letter-spacing: -0.03em;
+                color: #a856f7;
+              }
+
+              .world-img {
+                width: 100%;
+                flex: 1;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 9.9px;
+              }
+
+              p {
+                font-weight: 500;
+                font-size: 19.2663px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                color: #0c0a09;
+                margin-top: 9.21px;
+              }
             }
           }
 
@@ -2415,6 +2849,11 @@
               padding-top: 191px;
 
               .container {
+                .stat-img {
+                  position: relative;
+                  left: 40px;
+                }
+
                 .wrap {
                   position: relative;
                   top: -30px;
@@ -2428,7 +2867,7 @@
                   }
 
                   p {
-                    font-weight: 500;
+                    font-weight: 400;
                     font-size: 16px;
                     line-height: 19.09px;
                     letter-spacing: -3%;
@@ -2463,19 +2902,15 @@
                   justify-content: space-between;
 
                   .group {
-                    margin-top: 85px;
+                    margin-top: 75px;
 
                     .info {
-                      font-size: 10px;
+                      font-size: 16px;
                       font-weight: 400;
-                      line-height: 11.93px;
+                      line-height: 19.09px;
                       letter-spacing: -3%;
                       color: #0c0a09;
-                      margin-bottom: 5px;
-                    }
-
-                    img {
-                      transform: scale(0.9) translateX(-30px);
+                      margin-bottom: 15px;
                     }
                   }
                 }
@@ -2499,14 +2934,13 @@
                 pointer-events: none;
               }
               p {
-                opacity: 0;
                 pointer-events: none;
               }
             }
 
             img.arrow-1 {
               position: absolute;
-              left: 300.88px;
+              left: 220.88px;
               top: 180px;
             }
 
@@ -2514,7 +2948,8 @@
               height: 100%;
               padding-top: 90px;
               position: relative;
-              right: -100px;
+              right: -40px;
+              top: 80px;
 
               .container {
                 p {
@@ -2547,8 +2982,8 @@
 
             img.arrow {
               position: absolute;
-              left: 303.52px;
-              top: -90px;
+              left: 220.52px;
+              top: 60px;
             }
 
             .float-content {
@@ -2597,19 +3032,39 @@
                 opacity: 0;
               }
             }
+
+            .main-container {
+              top: -40px;
+            }
+
+            .right-container {
+              .desktop-text {
+                position: absolute;
+                bottom: -50px;
+                right: 150px;
+                text-align: center;
+                font-weight: 500;
+                font-size: 32px;
+                line-height: 38.19px;
+                letter-spacing: -3%;
+                width: 744px;
+              }
+            }
           }
 
           &.fifth-container {
-            margin-bottom: 100px;
+            margin-bottom: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             position: relative;
+            position: relative;
+            top: -40px;
 
             img.purple {
               position: absolute;
               top: 67.01px;
-              left: 800.53px;
+              left: 911.53px;
             }
 
             img.orange {
@@ -2627,6 +3082,10 @@
               text-align: center;
             }
           }
+        }
+
+        .extra-space-container {
+          width: 90%;
         }
       }
     }
