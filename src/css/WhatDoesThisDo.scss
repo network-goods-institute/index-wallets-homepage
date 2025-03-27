@@ -49,6 +49,10 @@
       align-items: center;
       margin-bottom: 70px;
 
+      p {
+        font-style: italic;
+      }
+
       .left-container {
         height: 100%;
         display: flex;
@@ -261,12 +265,12 @@
           .container {
             .stat-img {
               position: relative;
-              left: 40px;
+              left: 0px;
             }
 
             .wrap {
               position: relative;
-              top: -30px;
+              top: 0px;
               display: flex;
               flex-direction: column;
               align-items: flex-start;
@@ -274,6 +278,8 @@
               .img {
                 height: 49.5px;
                 width: 250.27px;
+                position: relative;
+                top: -20px;
               }
 
               p {
@@ -282,6 +288,7 @@
                 line-height: 19.09px;
                 letter-spacing: -3%;
                 color: #0c0a09;
+                margin-top: 10px;
               }
             }
           }
@@ -1042,7 +1049,37 @@
             background-size: cover;
             // top: -300px;
             height: 600px;
-            background: url("../assets/images/does_bg_mb.png");
+            background-color: white;
+            background-image: linear-gradient(#f3f3f3 1px, transparent 1px),
+              linear-gradient(90deg, #f3f3f3 1px, transparent 1px);
+            background-size: 30px 30px;
+            background-position: calc(50% - 15px) top; /* Moves the image 10px to the right */
+
+            .no-block {
+              display: flex;
+              position: absolute;
+              left: 25px;
+              top: 0;
+
+              transform: translateX(0px);
+              width: 53.79px;
+              height: 32px;
+
+              img {
+                transform: scale(0.6);
+              }
+
+              p {
+                position: absolute;
+                top: 0;
+                width: 200px;
+                // width: 163px;
+                left: 50px;
+                font-size: 14px;
+                line-height: 100%;
+                font-style: italic;
+              }
+            }
 
             img.arrow {
               display: none;
@@ -1122,6 +1159,16 @@
             .main-container-mb-second {
               top: -150px;
               display: flex;
+
+              img.deal_mb {
+                position: absolute;
+                left: -45px;
+                top: -10px;
+              }
+
+              p {
+                align-self: center;
+              }
             }
 
             .right-container {
@@ -1812,6 +1859,16 @@
             .main-container-mb-second {
               top: -150px;
               display: flex;
+
+              img.deal_mb {
+                position: absolute;
+                left: -45px;
+                top: -10px;
+              }
+
+              p {
+                align-self: center;
+              }
             }
 
             .right-container {
@@ -2502,6 +2559,16 @@
             .main-container-mb-second {
               top: -150px;
               display: flex;
+
+              img.deal_mb {
+                position: absolute;
+                left: -45px;
+                top: -10px;
+              }
+
+              p {
+                align-self: center;
+              }
             }
 
             .right-container {
@@ -2851,12 +2918,12 @@
               .container {
                 .stat-img {
                   position: relative;
-                  left: 40px;
+                  left: 0px;
                 }
 
                 .wrap {
                   position: relative;
-                  top: -30px;
+                  top: 0px;
                   display: flex;
                   flex-direction: column;
                   align-items: flex-start;
@@ -2864,6 +2931,8 @@
                   .img {
                     height: 49.5px;
                     width: 250.27px;
+                    position: relative;
+                    top: -20px;
                   }
 
                   p {
@@ -2872,6 +2941,7 @@
                     line-height: 19.09px;
                     letter-spacing: -3%;
                     color: #0c0a09;
+                    margin-top: 10px;
                   }
                 }
               }

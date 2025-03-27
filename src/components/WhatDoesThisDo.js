@@ -156,10 +156,10 @@ const WhatDoesThisDo = () => {
                 alt=""
               />
               <div className="wrap">
+                <p>Payment to Joe’s Pies</p>
                 <div className="img">
                   <img src="/svgs/does_str_arrow.svg" alt="" />
                 </div>
-                <p>Payment to Joe’s Pies</p>
               </div>
             </div>
           </div>
@@ -262,6 +262,7 @@ const WhatDoesThisDo = () => {
               <Lottie animationData={HeroAnime2} className="hero-anime" />
             </div>
             <div className="main-container-mb-second">
+              <img className="deal_mb" src="/svgs/deal_mb.svg" alt="" />
               <p>
                 Payment to
                 <br />
