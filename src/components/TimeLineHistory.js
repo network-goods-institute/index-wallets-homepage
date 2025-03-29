@@ -40,7 +40,7 @@ const TimeLineHistory = () => {
     },
     {
       date: "EST. APR 2025",
-      event: "First implementation of index wallets goes live on Delta",
+      event: "First implementation of index wallets goes live on delta",
     },
     { date: "EST. MAY 2025", event: "First index payment to a local business" },
     {
