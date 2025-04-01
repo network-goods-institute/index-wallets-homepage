@@ -33,9 +33,9 @@ const TimeLineHistory = () => {
       event:
         "Index wallets game built by Volky with design by Lauren Herbert, William Fischer, and Julian Feder",
     },
-    { date: "FEB 2025", event: "Website built by Stephen Sowunmi" },
+    { date: "MAR 2025", event: "Website built by Stephen Sowunmi" },
     {
-      date: "MAR 2025",
+      date: "APR 2025",
       event: "Index wallets whitepaper published",
     },
     {
