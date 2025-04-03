@@ -65,6 +65,7 @@ const JoinWaitlistPage = ({ name, setName, email, setEmail }) => {
   const [indexWallet, setIndexWallet] = useState("");
   const [loadBool, setLoadBool] = useState(false);
   const [direction, setDirection] = useState(1);
+  const [whitepaperBool, setWhitepaperBool] = useState(false);
 
   const JoinWaitlistRef = useRef();
   const pageSectionRef = useRef();
@@ -691,6 +692,8 @@ const JoinWaitlistPage = ({ name, setName, email, setEmail }) => {
         pageSectionRef={pageSectionRef}
         JoinWaitlistRef={JoinWaitlistRef}
         faqRef={faqRef}
+        setWhitepaperBool={setWhitepaperBool}
+        whitepaperBool={whitepaperBool}
       />
       <Header
         pageSectionRef={pageSectionRef}
@@ -700,6 +703,8 @@ const JoinWaitlistPage = ({ name, setName, email, setEmail }) => {
         openMenu={openMenu}
         setEmail={setEmail}
         setName={setName}
+        setWhitepaperBool={setWhitepaperBool}
+        whitepaperBool={whitepaperBool}
       />
       <div className="field-container">
         <AnimatePresence mode="wait" custom={direction}>

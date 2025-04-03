@@ -2,7 +2,7 @@ import React from "react";
 import "../css/ApplyWaitlist.css";
 import { Link } from "react-router-dom";
 
-const ApplyWaitlist = () => {
+const ApplyWaitlist = ({ whitepaperBool, setWhitepaperBool }) => {
   return (
     <div className="apply-waitlist">
       <section>
@@ -26,7 +26,17 @@ const ApplyWaitlist = () => {
               <img src="/svgs/🐝.svg" className="bee" alt="" />
             </div>
             <div className="text-read">
-              Not ready? <Link to="#">Read the whitepaper first</Link>
+              Not ready?{" "}
+              <Link
+                to="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setWhitepaperBool(!whitepaperBool);
+                }}
+              >
+                Read the whitepaper first
+              </Link>
             </div>
           </div>
           <div className="right-section">

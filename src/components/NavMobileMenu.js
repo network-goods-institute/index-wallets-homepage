@@ -1,16 +1,23 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
-const NavMobileMenu = ({
-  openMenu,
-  setOpenMenu,
-  JoinWaitlistRef,
-  pageSectionRef,
-  faqRef,
-}) => {
+const NavMobileMenu = ({ openMenu, setOpenMenu, pageSectionRef, faqRef }) => {
   const navigate = useNavigate();
   const location = useLocation();
+
+  const [validEmail, setValidEmail] = useState(false);
+  const [whitepaperEmail, setWhitePaperEmail] = useState("");
+  const [submissionSuccess, setsubmissionSuccess] = useState(false);
+  const [whitepaperBool, setWhitepaperBool] = useState(false);
+
+  useEffect(() => {
+    if (whitepaperEmail) {
+      setValidEmail(true);
+    } else {
+      setValidEmail(false);
+    }
+  }, [whitepaperEmail]);
 
   // Function to scroll to a section after navigation
   const scrollToSection = (ref) => {
@@ -53,6 +60,12 @@ const NavMobileMenu = ({
       scrollToSection(faqRef);
     }
   }, [location]);
+
+  const submitWhitepaper = (e) => {
+    e.preventDefault();
+
+    setsubmissionSuccess(true);
+  };
 
   return (
     <AnimatePresence>
@@ -104,7 +117,14 @@ const NavMobileMenu = ({
                 visible: { opacity: 1, y: 0 },
               }}
             >
-              <Link className="wrap">
+              <Link
+                className="wrap"
+                href="#"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setWhitepaperBool(!whitepaperBool);
+                }}
+              >
                 <motion.img
                   src="/svgs/paper.svg"
                   alt=""
@@ -115,6 +135,60 @@ const NavMobileMenu = ({
                 Read Whitepaper
               </Link>
             </motion.div>
+            {whitepaperBool && (
+              <motion.form
+                className="whitepaper-container"
+                initial={{ opacity: 0, scale: 0.8, y: 20 }}
+                animate={{ opacity: 1, scale: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.8, y: 20 }}
+                transition={{
+                  duration: 0.6,
+                  ease: [0.16, 1, 0.3, 1],
+                }}
+                onSubmit={submitWhitepaper}
+              >
+                {!submissionSuccess ? (
+                  <>
+                    <h2>We are still working on the whitepaper</h2>
+                    <p>Enter your email to join the waitlist</p>
+                    <input
+                      type="email"
+                      placeholder="abe@whitehouse.gov"
+                      value={whitepaperEmail}
+                      onChange={(e) => setWhitePaperEmail(e.target.value)}
+                      required
+                    />
+                    <motion.button
+                      className={`btn ${validEmail && "active"}`}
+                      type="submit"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <span>
+                        Submit <img src="/svgs/join_arrow.svg" alt="" />
+                      </span>
+                      <span className="hover-text">
+                        Submit <img src="/svgs/join_arrow.svg" alt="" />
+                      </span>
+                    </motion.button>
+                  </>
+                ) : (
+                  <>
+                    <div className="wrap">
+                      <div className="content">
+                        <h2>Email added successfully</h2>
+                        <p>you’ve been added to the waitlist</p>
+                      </div>
+                      <img
+                        src="/svgs/confettin.svg"
+                        alt="confetti"
+                        className="success"
+                      />
+                    </div>
+                  </>
+                )}
+              </motion.form>
+            )}
             <motion.div
               variants={{
                 hidden: { opacity: 0, y: 10 },

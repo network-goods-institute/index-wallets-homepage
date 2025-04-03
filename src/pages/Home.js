@@ -17,6 +17,7 @@ import TimeLineHistory from "../components/TimeLineHistory";
 
 const Home = ({ name, setName, email, setEmail }) => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [whitepaperBool, setWhitepaperBool] = useState(false);
 
   const JoinWaitlistRef = useRef();
   const pageSectionRef = useRef();
@@ -50,6 +51,8 @@ const Home = ({ name, setName, email, setEmail }) => {
         pageSectionRef={pageSectionRef}
         JoinWaitlistRef={JoinWaitlistRef}
         faqRef={faqRef}
+        setWhitepaperBool={setWhitepaperBool}
+        whitepaperBool={whitepaperBool}
       />
       <Header
         pageSectionRef={pageSectionRef}
@@ -59,6 +62,8 @@ const Home = ({ name, setName, email, setEmail }) => {
         openMenu={openMenu}
         setEmail={setEmail}
         setName={setName}
+        setWhitepaperBool={setWhitepaperBool}
+        whitepaperBool={whitepaperBool}
       />
       <HeroSection />
       <JoinWaitlist
@@ -89,7 +94,10 @@ const Home = ({ name, setName, email, setEmail }) => {
         <img src="/svgs/Vector 21.svg" alt="" />
       </div>
       <HistorySection /> */}
-      <ApplyWaitlist />
+      <ApplyWaitlist
+        setWhitepaperBool={setWhitepaperBool}
+        whitepaperBool={whitepaperBool}
+      />
       <Footer pageSectionRef={pageSectionRef} faqRef={faqRef} />
     </div>
   );
