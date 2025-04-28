@@ -1,3 +1,5 @@
+/* global emailjs */
+
 import React, { useEffect, useRef, useState } from "react";
 import {
   AnimatePresence,
@@ -6,7 +8,34 @@ import {
   useTransform,
 } from "framer-motion";
 import { Link, useNavigate, useLocation } from "react-router-dom";
+import Loader from "../assets/animation/loading.json";
+import Lottie from "lottie-react";
+import { toast, Slide } from "react-toastify";
 import "../css/Header.css";
+
+const initializeEmailJS = () => {
+  if (window.emailjs) {
+    window.emailjs.init({
+      publicKey: "tPKCypl8yp-nAQQnD",
+      // Do not allow headless browsers
+      blockHeadless: true,
+      blockList: {
+        // Block the suspended emails
+        list: ["foo@emailjs.com", "bar@emailjs.com"],
+        // The variable contains the email address
+        watchVariable: "userEmail",
+      },
+      limitRate: {
+        // Set the limit rate for the application
+        id: "app",
+        // Allow 1 request per 10s
+        throttle: 10000,
+      },
+    });
+  } else {
+    console.error("EmailJS library not loaded");
+  }
+};
 
 const Header = ({
   JoinWaitlistRef,
@@ -25,11 +54,16 @@ const Header = ({
   const [validEmail, setValidEmail] = useState(false);
   const [whitepaperEmail, setWhitePaperEmail] = useState("");
   const [submissionSuccess, setsubmissionSuccess] = useState(false);
+  const [loadBool, setLoadBool] = useState(false);
 
   const navigate = useNavigate();
   const location = useLocation();
 
   const formRef = useRef(null);
+
+  useEffect(() => {
+    initializeEmailJS();
+  }, []);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -122,7 +156,243 @@ const Header = ({
   const submitWhitepaper = (e) => {
     e.preventDefault();
 
-    setsubmissionSuccess(true);
+    e.preventDefault();
+    const scriptURL =
+      // "https://script.google.com/macros/s/AKfycbxmVi5AGHTbdVncaVi21OPfRQzup0omMQbk90C8xZgSSxvy7JDLn_qaS9Vm2HMm2bx4WA/exec";
+      // "https://script.google.com/macros/s/AKfycbxvoA46ox9AaNMHwesEcRYyJLft3b0muHLXDF69kg6V6uiajMSAXR6gW7dMagz4VZgq/exec";
+      "https://script.google.com/macros/s/AKfycbymo_FfHv7yyI4rnaE01lGr_E0bzBflC0e0aHcM2PQm1Y184r1xCy-FhbHFDcvEb-uY/exec";
+    const formData = {
+      email: whitepaperEmail,
+    };
+
+    setLoadBool(true);
+
+    fetch(scriptURL, {
+      method: "POST",
+      mode: "cors",
+      body: JSON.stringify(formData),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === "updated") {
+          emailjs
+            .send("service_u4ptrdl", "template_r7qorsi", {
+              whitepaperEmail,
+            })
+            .then((response) => {
+              if (response.status === 200) {
+                setLoadBool(false);
+                setsubmissionSuccess(true);
+              } else {
+                setLoadBool(false);
+                toast.error(
+                  "Something went wrong on our end. Please try again later. 🔄",
+                  {
+                    position: "top-center",
+                    icon: "🚨",
+                    transition: Slide,
+                    autoClose: 4000,
+                    hideProgressBar: true,
+                    closeOnClick: false,
+                    draggable: false,
+                    closeButton: false, // No close icon for a cleaner UI
+                    style: {
+                      background: "rgba(255, 45, 85, 0.85)", // Vibrant, modern red-pink
+                      backdropFilter: "blur(20px)", // Premium frosted glass effect
+                      color: "#fff",
+                      borderRadius: "16px",
+                      fontWeight: "600",
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: "14px",
+                      letterSpacing: "0.3px",
+                      padding: "14px 20px",
+                      boxShadow: "0px 12px 35px rgba(255, 45, 85, 0.5)", // Soft neon glow
+                      border: "1px solid rgba(255, 255, 255, 0.2)",
+                    },
+                    progressStyle: {
+                      background: "linear-gradient(to right, #ff7eb3, #ff416c)", // Smooth animated gradient
+                      height: "3px",
+                    },
+                  }
+                );
+              }
+            })
+            .catch((err) => {
+              setLoadBool(false);
+              toast.error(
+                "Something went wrong on our end. Please try again later. 🔄",
+                {
+                  position: "top-center",
+                  icon: "🚨",
+                  transition: Slide,
+                  autoClose: 4000,
+                  hideProgressBar: true,
+                  closeOnClick: false,
+                  draggable: false,
+                  closeButton: false, // No close icon for a cleaner UI
+                  style: {
+                    background: "rgba(255, 45, 85, 0.85)", // Vibrant, modern red-pink
+                    backdropFilter: "blur(20px)", // Premium frosted glass effect
+                    color: "#fff",
+                    borderRadius: "16px",
+                    fontWeight: "600",
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "14px",
+                    letterSpacing: "0.3px",
+                    padding: "14px 20px",
+                    boxShadow: "0px 12px 35px rgba(255, 45, 85, 0.5)", // Soft neon glow
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
+                  },
+                  progressStyle: {
+                    background: "linear-gradient(to right, #ff7eb3, #ff416c)", // Smooth animated gradient
+                    height: "3px",
+                  },
+                }
+              );
+            });
+        } else if (data.status === "new entry added") {
+          emailjs
+            .send("service_u4ptrdl", "template_l6glhou", {
+              whitepaperEmail,
+            })
+            .then((response) => {
+              if (response.status === 200) {
+                setLoadBool(false);
+                setsubmissionSuccess(true);
+              } else {
+                setLoadBool(false);
+                toast.error(
+                  "Something went wrong on our end. Please try again later. 🔄",
+                  {
+                    position: "top-center",
+                    icon: "🚨",
+                    transition: Slide,
+                    autoClose: 4000,
+                    hideProgressBar: true,
+                    closeOnClick: false,
+                    draggable: false,
+                    closeButton: false, // No close icon for a cleaner UI
+                    style: {
+                      background: "rgba(255, 45, 85, 0.85)", // Vibrant, modern red-pink
+                      backdropFilter: "blur(20px)", // Premium frosted glass effect
+                      color: "#fff",
+                      borderRadius: "16px",
+                      fontWeight: "600",
+                      fontFamily: "'Inter', sans-serif",
+                      fontSize: "14px",
+                      letterSpacing: "0.3px",
+                      padding: "14px 20px",
+                      boxShadow: "0px 12px 35px rgba(255, 45, 85, 0.5)", // Soft neon glow
+                      border: "1px solid rgba(255, 255, 255, 0.2)",
+                    },
+                    progressStyle: {
+                      background: "linear-gradient(to right, #ff7eb3, #ff416c)", // Smooth animated gradient
+                      height: "3px",
+                    },
+                  }
+                );
+              }
+            })
+            .catch((err) => {
+              setLoadBool(false);
+              toast.error(
+                "Something went wrong on our end. Please try again later. 🔄",
+                {
+                  position: "top-center",
+                  icon: "🚨",
+                  transition: Slide,
+                  autoClose: 4000,
+                  hideProgressBar: true,
+                  closeOnClick: false,
+                  draggable: false,
+                  closeButton: false, // No close icon for a cleaner UI
+                  style: {
+                    background: "rgba(255, 45, 85, 0.85)", // Vibrant, modern red-pink
+                    backdropFilter: "blur(20px)", // Premium frosted glass effect
+                    color: "#fff",
+                    borderRadius: "16px",
+                    fontWeight: "600",
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: "14px",
+                    letterSpacing: "0.3px",
+                    padding: "14px 20px",
+                    boxShadow: "0px 12px 35px rgba(255, 45, 85, 0.5)", // Soft neon glow
+                    border: "1px solid rgba(255, 255, 255, 0.2)",
+                  },
+                  progressStyle: {
+                    background: "linear-gradient(to right, #ff7eb3, #ff416c)", // Smooth animated gradient
+                    height: "3px",
+                  },
+                }
+              );
+            });
+        } else {
+          setLoadBool(false);
+          toast.error(
+            "Something went wrong on our end. Please try again later. 🔄",
+            {
+              position: "top-center",
+              icon: "🚨",
+              transition: Slide,
+              autoClose: 4000,
+              hideProgressBar: true,
+              closeOnClick: false,
+              draggable: false,
+              closeButton: false, // No close icon for a cleaner UI
+              style: {
+                background: "rgba(255, 45, 85, 0.85)", // Vibrant, modern red-pink
+                backdropFilter: "blur(20px)", // Premium frosted glass effect
+                color: "#fff",
+                borderRadius: "16px",
+                fontWeight: "600",
+                fontFamily: "'Inter', sans-serif",
+                fontSize: "14px",
+                letterSpacing: "0.3px",
+                padding: "14px 20px",
+                boxShadow: "0px 12px 35px rgba(255, 45, 85, 0.5)", // Soft neon glow
+                border: "1px solid rgba(255, 255, 255, 0.2)",
+              },
+              progressStyle: {
+                background: "linear-gradient(to right, #ff7eb3, #ff416c)", // Smooth animated gradient
+                height: "3px",
+              },
+            }
+          );
+        }
+      })
+      .catch((error) => {
+        setLoadBool(false);
+        toast.error(
+          "Something went wrong on our end. Please try again later. 🔄",
+          {
+            position: "top-center",
+            icon: "🚨",
+            transition: Slide,
+            autoClose: 4000,
+            hideProgressBar: true,
+            closeOnClick: false,
+            draggable: false,
+            closeButton: false, // No close icon for a cleaner UI
+            style: {
+              background: "rgba(255, 45, 85, 0.85)", // Vibrant, modern red-pink
+              backdropFilter: "blur(20px)", // Premium frosted glass effect
+              color: "#fff",
+              borderRadius: "16px",
+              fontWeight: "600",
+              fontFamily: "'Inter', sans-serif",
+              fontSize: "14px",
+              letterSpacing: "0.3px",
+              padding: "14px 20px",
+              boxShadow: "0px 12px 35px rgba(255, 45, 85, 0.5)", // Soft neon glow
+              border: "1px solid rgba(255, 255, 255, 0.2)",
+            },
+            progressStyle: {
+              background: "linear-gradient(to right, #ff7eb3, #ff416c)", // Smooth animated gradient
+              height: "3px",
+            },
+          }
+        );
+      });
   };
 
   return (
@@ -217,19 +487,25 @@ const Header = ({
                     onChange={(e) => setWhitePaperEmail(e.target.value)}
                     required
                   />
-                  <motion.button
-                    className={`btn ${validEmail && "active"}`}
-                    type="submit"
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    <span>
-                      Submit <img src="/svgs/join_arrow.svg" alt="" />
-                    </span>
-                    <span className="hover-text">
-                      Submit <img src="/svgs/join_arrow.svg" alt="" />
-                    </span>
-                  </motion.button>
+                  {!loadBool ? (
+                    <motion.button
+                      className={`btn ${validEmail && "active"}`}
+                      type="submit"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <span>
+                        Submit <img src="/svgs/join_arrow.svg" alt="" />
+                      </span>
+                      <span className="hover-text">
+                        Submit <img src="/svgs/join_arrow.svg" alt="" />
+                      </span>
+                    </motion.button>
+                  ) : (
+                    <div className="loader namefield">
+                      <Lottie animationData={Loader} className="anime" />
+                    </div>
+                  )}
                 </>
               ) : (
                 <>

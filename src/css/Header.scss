@@ -187,6 +187,42 @@ header {
       }
     }
 
+    .loader {
+      height: 34px;
+      width: 81px;
+      align-self: center;
+      padding: 16px;
+      border-radius: 8px;
+      background: #0c0a09;
+      cursor: wait;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+
+      &.skip {
+        background: transparent;
+        border: 1px solid #d9d9d9;
+        color: #0c0a09;
+        width: 61px;
+      }
+
+      .anime {
+        height: 30px;
+        transform: scale(1.8);
+        position: relative;
+        top: 3px;
+      }
+
+      &.submit {
+        width: 79px;
+      }
+    }
+
     .btn {
       padding: 12px;
       border-radius: 8px;

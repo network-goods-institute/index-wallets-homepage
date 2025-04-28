@@ -302,7 +302,7 @@ const WhatDoesThisDo = () => {
               </h2>
               <p>
                 Typically, businesses compete on price and quality. But with an
-                index payments, businesses can compete on values alignment with
+                index payment, businesses can compete on values alignment with
                 their customers.
                 <br /> <br /> As you can see, it’s literally cheaper to buy from
                 values aligned vendors, because they value your donation
