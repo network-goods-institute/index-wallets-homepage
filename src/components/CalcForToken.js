@@ -8,8 +8,8 @@ import CalcStats from "./CalcStats";
 const CalcForToken = () => {
   const refContent = useRef(null);
   const isInView = useInView(refContent, {
-    once: false,
-    margin: "-10% 0px -10% 0px",
+    once: true,
+    amount: 0.1,
   });
 
   const barHeight = 214.4; // Total height of .bar
