@@ -13,7 +13,7 @@ import NavMobileMenu from "../components/NavMobileMenu";
 import MoreCustomerContainer from "../components/MoreCustomerContainer";
 import TimeLineHistory from "../components/TimeLineHistory";
 
-const Home = ({ name, setName, email, setEmail }) => {
+const Home = ({ name, setName, email, setEmail, isLoading }) => {
   const [openMenu, setOpenMenu] = useState(false);
   const [whitepaperBool, setWhitepaperBool] = useState(false);
 
@@ -53,6 +53,7 @@ const Home = ({ name, setName, email, setEmail }) => {
         setName={setName}
         setWhitepaperBool={setWhitepaperBool}
         whitepaperBool={whitepaperBool}
+        isLoading={isLoading}
       />
       <HeroSection />
       <JoinWaitlist

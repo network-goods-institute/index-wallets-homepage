@@ -47,6 +47,7 @@ const Header = ({
   setName,
   whitepaperBool,
   setWhitepaperBool,
+  isLoading,
 }) => {
   const { scrollY } = useScroll();
 
@@ -383,69 +384,97 @@ const Header = ({
 
   return (
     <motion.header
+      className={isLoading ? "loading-mode" : ""}
       style={{
         position: "fixed",
         top: topPosition,
       }}
       transition={{ ease: "backInOut", duration: 0.00005 }}
     >
-      {!openMenu ? (
-        <Link
-          to="/"
-          onClick={() => {
-            setWhitePaperEmail("");
-            setName("");
-          }}
-          className="logo"
-        >
-          <img src="/svgs/index_logo.svg" alt="" />
-          <h2>Index Wallets</h2>
-        </Link>
+      {isLoading ? (
+        <div className="loading-header">
+          <div className="loading-brand">
+            <div className="loading-logo-container">
+              <img src="/svgs/index_logo.svg" alt="" className="loading-logo-img" />
+              <div className="logo-shimmer"></div>
+            </div>
+            <div className="loading-text-container">
+              <h2 className="loading-title">Index Wallets</h2>
+              <div className="loading-subtitle">
+                <span className="loading-word">Loading</span>
+                <div className="loading-dots-enhanced">
+                  <span className="dot-1"></span>
+                  <span className="dot-2"></span>
+                  <span className="dot-3"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="loading-progress">
+            <div className="progress-bar"></div>
+          </div>
+        </div>
       ) : (
-        <div className="close">Close</div>
+        <>
+          {!openMenu ? (
+            <Link
+              to="/"
+              onClick={() => {
+                setWhitePaperEmail("");
+                setName("");
+              }}
+              className="logo"
+            >
+              <img src="/svgs/index_logo.svg" alt="" />
+              <h2>Index Wallets</h2>
+            </Link>
+          ) : (
+            <div className="close">Close</div>
+          )}
+          <div className="links">
+            <Link to="/" onClick={handleScrollToHowItWorks} className="hover-link">
+              <span>How does it work?</span>
+              <span className="hover-text">How does it work?</span>
+            </Link>
+            <Link to="/" onClick={handleScrollToFAQ} className="hover-link">
+              <span>FAQ</span>
+              <span className="hover-text">FAQ</span>
+            </Link>
+            <Link
+              href="#"
+              onClick={(e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                setWhitepaperBool(!whitepaperBool);
+              }}
+            >
+              <span>
+                <div className="wrap">
+                  <img src="/svgs/paper.svg" alt="" />
+                  Read Whitepaper
+                </div>
+              </span>
+              <span className="hover-text">
+                <div className="wrap">
+                  <img src="/svgs/paper.svg" alt="" />
+                  Read Whitepaper
+                </div>
+              </span>
+            </Link>
+          </div>
+          <Link
+            to="/join-waitlist"
+            onClick={() => {
+              setEmail("");
+              setName("");
+            }}
+            className="btn"
+          >
+            <span>Join Waitlist</span>
+            <span className="hover-text">Join Waitlist</span>
+          </Link>
+        </>
       )}
-      <div className="links">
-        <Link to="/" onClick={handleScrollToHowItWorks} className="hover-link">
-          <span>How does it work?</span>
-          <span className="hover-text">How does it work?</span>
-        </Link>
-        <Link to="/" onClick={handleScrollToFAQ} className="hover-link">
-          <span>FAQ</span>
-          <span className="hover-text">FAQ</span>
-        </Link>
-        <Link
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            e.stopPropagation();
-            setWhitepaperBool(!whitepaperBool);
-          }}
-        >
-          <span>
-            <div className="wrap">
-              <img src="/svgs/paper.svg" alt="" />
-              Read Whitepaper
-            </div>
-          </span>
-          <span className="hover-text">
-            <div className="wrap">
-              <img src="/svgs/paper.svg" alt="" />
-              Read Whitepaper
-            </div>
-          </span>
-        </Link>
-      </div>
-      <Link
-        to="/join-waitlist"
-        onClick={() => {
-          setEmail("");
-          setName("");
-        }}
-        className="btn"
-      >
-        <span>Join Waitlist</span>
-        <span className="hover-text">Join Waitlist</span>
-      </Link>
 
       {whitepaperBool && (
         <AnimatePresence>
@@ -498,7 +527,7 @@ const Header = ({
                   <div className="wrap">
                     <div className="content">
                       <h2>Email added successfully</h2>
-                      <p>you’ve been added to the waitlist</p>
+                      <p>you've been added to the waitlist</p>
                     </div>
                     <img
                       src="/svgs/confettin.svg"
