@@ -384,7 +384,6 @@ const Header = ({
 
   return (
     <motion.header
-      className={isLoading ? "loading-mode" : ""}
       style={{
         position: "fixed",
         top: topPosition,

@@ -934,38 +934,4 @@ header .progress-bar {
   }
 }
 
-header.loading-mode {
-  background: #0c0a09;
-  /* Dark background for high contrast */
-  color: #ffffff;
-  height: 70px;
-  /* Slightly taller to accommodate larger text */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
-}
-
-header.loading-mode .loading-title {
-  font-size: 22px;
-  color: #ffffff;
-}
-
-header.loading-mode .loading-word {
-  color: #ffffff;
-}
-
-header.loading-mode .loading-dots-enhanced span {
-  background: #fbd03d;
-  width: 4px;
-  height: 4px;
-}
-
-header.loading-mode .loading-progress {
-  width: 160px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-header.loading-mode .progress-bar {
-  background: linear-gradient(90deg, #fbd03d, #ffffff);
-}
-
 /*# sourceMappingURL=Header.css.map */
