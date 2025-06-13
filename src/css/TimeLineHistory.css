@@ -50,8 +50,8 @@
 }
 
 .timeline-history-section section .timeline-container .present-timeline.future .timeline-item .control .date-future {
-  left: -170%;
-  transform: translateX(170%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .timeline-history-section section .timeline-container .present-timeline .left-timeline {
@@ -93,19 +93,21 @@
 
 .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date {
   position: absolute;
-  bottom: -20px;
-  left: -40%;
-  transform: translateX(40%);
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
   text-wrap: nowrap;
   font-size: 18px;
   font-weight: 500;
   line-height: 21.48px;
   color: #8a8a8e;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date.date-long {
-  left: -105%;
-  transform: translateX(105%);
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .dent-arrow {
@@ -203,9 +205,10 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline.future .timeline-item .control.check .date-future {
-    left: -35%;
+    left: auto;
     margin-top: 10px;
-    transform: translateX(35%);
+    transform: none;
+    text-align: center;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .left-timeline {
@@ -258,21 +261,23 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date {
-    position: absolute;
-    bottom: -15px;
-    left: -40%;
-    transform: translateX(40%);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
     text-wrap: nowrap;
     font-size: 14px;
     font-weight: 500;
     line-height: 100%;
     color: #8a8a8e;
-    width: 200px;
+    text-align: center;
+    margin-top: 8px;
+    white-space: nowrap;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date.date-long {
-    left: -105%;
-    transform: translateX(105%);
+    left: auto;
+    transform: none;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .dent-arrow {
@@ -359,9 +364,10 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline.future .timeline-item .control.check .date-future {
-    left: -35%;
+    left: auto;
     margin-top: 10px;
-    transform: translateX(35%);
+    transform: none;
+    text-align: center;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .left-timeline {
@@ -412,21 +418,23 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date {
-    position: absolute;
-    bottom: -10px;
-    left: -40%;
-    transform: translateX(40%);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
     text-wrap: nowrap;
     font-size: 14px;
     font-weight: 500;
     line-height: 100%;
-    width: 86px;
     color: #8a8a8e;
+    text-align: center;
+    margin-top: 8px;
+    white-space: nowrap;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date.date-long {
-    left: -105%;
-    transform: translateX(105%);
+    left: auto;
+    transform: none;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .dent-arrow {
@@ -513,9 +521,10 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline.future .timeline-item .control.check .date-future {
-    left: -35%;
+    left: auto;
     margin-top: 10px;
-    transform: translateX(35%);
+    transform: none;
+    text-align: center;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .left-timeline {
@@ -566,21 +575,23 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date {
-    position: absolute;
-    bottom: -10px;
-    left: -40%;
-    transform: translateX(40%);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
     text-wrap: nowrap;
     font-size: 14px;
     font-weight: 500;
     line-height: 100%;
     color: #8a8a8e;
-    width: 86px;
+    text-align: center;
+    margin-top: 8px;
+    white-space: nowrap;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date.date-long {
-    left: -105%;
-    transform: translateX(105%);
+    left: auto;
+    transform: none;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .dent-arrow {
@@ -667,9 +678,10 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline.future .timeline-item .control.check .date-future {
-    left: -35%;
+    left: auto;
     margin-top: 10px;
-    transform: translateX(35%);
+    transform: none;
+    text-align: center;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .left-timeline {
@@ -720,21 +732,23 @@
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date {
-    position: absolute;
-    bottom: -10px;
-    left: -40%;
-    transform: translateX(40%);
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
     text-wrap: nowrap;
     font-size: 14px;
     font-weight: 500;
     line-height: 100%;
     color: #8a8a8e;
-    width: 86px;
+    text-align: center;
+    margin-top: 8px;
+    white-space: nowrap;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .date.date-long {
-    left: -105%;
-    transform: translateX(105%);
+    left: auto;
+    transform: none;
   }
 
   .timeline-history-section section .timeline-container .present-timeline .timeline-item .control .dent-arrow {
