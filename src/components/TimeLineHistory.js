@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "../css/TimeLineHistory.css";
 
 const TimeLineHistory = () => {
@@ -55,34 +54,12 @@ const TimeLineHistory = () => {
   return (
     <div className="timeline-history-section">
       <section>
-        <motion.img
-          initial={{ scaleX: 1.5, opacity: 0, filter: "blur(10px)" }}
-          whileInView={{
-            scaleX: 1,
-            opacity: 1,
-            filter: "blur(0px)",
-          }}
-          transition={{
-            duration: 0.8,
-            ease: [0.16, 1, 0.3, 1],
-          }}
-          viewport={{ once: true, amount: 0.1 }}
+        <img
           src="/svgs/Timeline of Index Wallets.svg"
           alt=""
           className="h1"
         />
-        <motion.img
-          initial={{ scaleX: 1.5, opacity: 0, filter: "blur(10px)" }}
-          whileInView={{
-            scaleX: 1,
-            opacity: 1,
-            filter: "blur(0px)",
-          }}
-          transition={{
-            duration: 0.8,
-            ease: [0.16, 1, 0.3, 1],
-          }}
-          viewport={{ once: true, amount: 0.1 }}
+        <img
           src="/svgs/timeline of index-mobile.svg"
           alt=""
           className="h1 timeline-mobile"
@@ -90,91 +67,35 @@ const TimeLineHistory = () => {
         <div className="timeline-container">
           <div className="present-timeline">
             <div className="left-timeline">
-              <motion.div
-                className="timeline-item"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.1 }}
-              >
+              <div className="timeline-item">
                 <div className="control">
-                  <motion.img
+                  <img
                     src="/svgs/Group 93.svg"
                     alt="arrow"
                     className="arrow"
-                    initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                    whileInView={{
-                      scale: 1,
-                      opacity: 1,
-                      rotate: 0,
-                    }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.1 }}
                   />
-                  <motion.img
+                  <img
                     src="/svgs/timeline_arrow.svg"
                     className="arrow timeline-mobile"
-                    initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                    whileInView={{
-                      scale: 1,
-                      opacity: 1,
-                      rotate: 0,
-                    }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.1 }}
                   />
-                  <motion.div
-                    className="date"
-                    initial={{
-                      opacity: 0,
-                      y: 10,
-                      scale: 0.8,
-                      filter: "blur(10px)",
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                      scale: 1,
-                      filter: "blur(0px)",
-                    }}
-                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                    viewport={{ once: true, amount: 0.1 }}
-                  >
+                  <div className="date">
                     {historyData[0].date}
-                  </motion.div>
-                  <motion.img
+                  </div>
+                  <img
                     src="/svgs/Vector 56.svg"
                     alt=""
                     className="dent-arrow"
-                    initial={{ clipPath: "inset(0 100% 0 0)" }}
-                    whileInView={{ clipPath: "inset(0 0% 0 0)" }}
-                    transition={{ duration: 0.8, ease: [0.65, 0, 0.35, 1] }}
-                    viewport={{ once: true, amount: 0.1 }}
                   />
                 </div>
-                <motion.div
-                  className="text"
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                  viewport={{ once: true, amount: 0.1 }}
-                >
+                <div className="text">
                   {historyData[0].event}
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
 
-              <motion.img
+              <img
                 src="/svgs/yellow_happy.svg"
                 alt=""
                 className="person"
-                initial={{ y: 50, scale: 0.8, opacity: 0, rotate: -10 }}
-                whileInView={{ y: 0, scale: 1, opacity: 1, rotate: 0 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.3,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-                viewport={{ once: true, amount: 0.1 }}
               />
             </div>
 
@@ -183,213 +104,85 @@ const TimeLineHistory = () => {
                 .filter((item) => !item.date.includes("EST."))
                 .slice(1)
                 .map((item, index) => (
-                  <motion.div
+                  <div
                     className="timeline-item"
                     key={index}
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.8,
-                      ease: "easeOut",
-                      delay: index * 0.1,
-                    }}
-                    viewport={{ once: true, amount: 0.1 }}
                   >
                     <div className="control">
-                      <motion.img
+                      <img
                         src="/svgs/Group 93.svg"
                         alt="arrow"
                         className="arrow"
-                        initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                        whileInView={{
-                          scale: 1,
-                          opacity: 1,
-                          rotate: 0,
-                        }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true, amount: 0.1 }}
                       />
-                      <motion.img
+                      <img
                         src="/svgs/timeline_arrow.svg"
                         className="arrow timeline-mobile"
-                        initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                        whileInView={{
-                          scale: 1,
-                          opacity: 1,
-                          rotate: 0,
-                        }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true, amount: 0.1 }}
                       />
 
-                      <motion.div
+                      <div
                         className={`date ${
                           item.date.split(" ").length > 1 && "date-long"
                         }`}
-                        initial={{
-                          opacity: 0,
-                          y: 10,
-                          scale: 0.8,
-                          filter: "blur(10px)",
-                        }}
-                        whileInView={{
-                          opacity: 1,
-                          y: 0,
-                          scale: 1,
-                          filter: "blur(0px)",
-                        }}
-                        transition={{
-                          duration: 0.6,
-                          ease: [0.16, 1, 0.3, 1],
-                        }}
-                        viewport={{ once: true, amount: 0.1 }}
                       >
                         {item.date}
-                      </motion.div>
+                      </div>
                     </div>
-                    <motion.div
-                      className="text"
-                      initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                      transition={{
-                        duration: 0.6,
-                        ease: [0.16, 1, 0.3, 1],
-                      }}
-                      viewport={{ once: true, amount: 0.1 }}
-                    >
+                    <div className="text">
                       {item.event}
-                    </motion.div>
-                  </motion.div>
+                    </div>
+                  </div>
                 ))}
             </div>
           </div>
 
           <div className="present-timeline future">
             <div className="left-timeline">
-              <motion.div
-                className="timeline-item"
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
-                viewport={{ once: true, amount: 0.1 }}
-              >
-                <motion.img
+              <div className="timeline-item">
+                <img
                   src="/svgs/Future.svg"
                   alt="Future"
                   className="text-future"
-                  initial={{ scaleX: 1.5, opacity: 0, filter: "blur(10px)" }}
-                  whileInView={{
-                    scaleX: 1,
-                    opacity: 1,
-                    filter: "blur(0px)",
-                  }}
-                  transition={{
-                    duration: 0.8,
-                    ease: [0.16, 1, 0.3, 1],
-                  }}
-                  viewport={{ once: true, amount: 0.1 }}
                 />
 
                 <div className="control check">
-                  <motion.img
+                  <img
                     src="/svgs/Group 93.svg"
                     alt="arrow"
                     className="arrow"
-                    initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                    whileInView={{
-                      scale: 1,
-                      opacity: 1,
-                      rotate: 0,
-                    }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.1 }}
                   />
-                  <motion.img
+                  <img
                     src="/svgs/timeline_arrow.svg"
                     className="arrow timeline-mobile"
-                    initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                    whileInView={{
-                      scale: 1,
-                      opacity: 1,
-                      rotate: 0,
-                    }}
-                    transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: true, amount: 0.1 }}
                   />
-                  <motion.img
+                  <img
                     src="/svgs/Future-mobile.svg"
                     alt="Future"
                     className="future-mobile timeline-mobile"
-                    initial={{ scaleX: 1.5, opacity: 0, filter: "blur(10px)" }}
-                    whileInView={{
-                      scaleX: 1,
-                      opacity: 1,
-                      filter: "blur(0px)",
-                    }}
-                    transition={{
-                      duration: 0.8,
-                      ease: [0.16, 1, 0.3, 1],
-                    }}
-                    viewport={{ once: true, amount: 0.1 }}
                   />
-                  <motion.div
-                    className="date date-future"
-                    initial={{
-                      opacity: 0,
-                      y: 10,
-                      scale: 0.8,
-                      filter: "blur(10px)",
-                    }}
-                    whileInView={{
-                      opacity: 1,
-                      y: 0,
-                      scale: 1,
-                      filter: "blur(0px)",
-                    }}
-                    transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                    viewport={{ once: true, amount: 0.1 }}
-                  >
+                  <div className="date date-future">
                     {
                       historyData.filter((item) =>
                         item.date.includes("EST.")
                       )[0].date
                     }
-                  </motion.div>
-                  <motion.img
+                  </div>
+                  <img
                     src="/svgs/Vector 57.svg"
                     alt=""
                     className="dent-arrow"
-                    initial={{ clipPath: "inset(0 100% 0 0)" }}
-                    whileInView={{ clipPath: "inset(0 0% 0 0)" }}
-                    transition={{ duration: 1, ease: [0.65, 0, 0.35, 1] }}
-                    viewport={{ once: true, amount: 0.1 }}
                   />
                 </div>
-                <motion.div
-                  className="text"
-                  initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                  whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                  viewport={{ once: true, amount: 0.1 }}
-                >
+                <div className="text">
                   {historyData
                     .filter((item) => item.date.includes("EST."))[0]
                     .event}
-                </motion.div>
-              </motion.div>
+                </div>
+              </div>
 
-              <motion.img
+              <img
                 src="/svgs/green_lady.svg"
                 alt=""
                 className="person green"
-                initial={{ y: 50, scale: 0.8, opacity: 0, rotate: -10 }}
-                whileInView={{ y: 0, scale: 1, opacity: 1, rotate: 0 }}
-                transition={{
-                  duration: 0.8,
-                  delay: 0.3,
-                  ease: [0.16, 1, 0.3, 1],
-                }}
-                viewport={{ once: true, amount: 0.1 }}
               />
             </div>
 
@@ -398,81 +191,29 @@ const TimeLineHistory = () => {
                 .filter((item) => item.date.includes("EST."))
                 .slice(1)
                 .map((item, index) => (
-                  <motion.div
+                  <div
                     className="timeline-item"
                     key={index}
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.8,
-                      ease: "easeOut",
-                      delay: index * 0.1,
-                    }}
-                    viewport={{ once: true, amount: 0.1 }}
                   >
                     <div className="control">
-                      <motion.img
+                      <img
                         src="/svgs/Group 93.svg"
                         alt="arrow"
                         className="arrow"
-                        initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                        whileInView={{
-                          scale: 1,
-                          opacity: 1,
-                          rotate: 0,
-                        }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true, amount: 0.1 }}
                       />
-                      <motion.img
+                      <img
                         src="/svgs/timeline_arrow.svg"
                         className="arrow timeline-mobile"
-                        initial={{ scale: 0.6, opacity: 0, rotate: -10 }}
-                        whileInView={{
-                          scale: 1,
-                          opacity: 1,
-                          rotate: 0,
-                        }}
-                        transition={{ duration: 0.8, ease: "easeOut" }}
-                        viewport={{ once: true, amount: 0.1 }}
                       />
 
-                      <motion.div
-                        className={`date date-future`}
-                        initial={{
-                          opacity: 0,
-                          y: 10,
-                          scale: 0.8,
-                          filter: "blur(10px)",
-                        }}
-                        whileInView={{
-                          opacity: 1,
-                          y: 0,
-                          scale: 1,
-                          filter: "blur(0px)",
-                        }}
-                        transition={{
-                          duration: 0.6,
-                          ease: [0.16, 1, 0.3, 1],
-                        }}
-                        viewport={{ once: true, amount: 0.1 }}
-                      >
+                      <div className="date date-future">
                         {item.date}
-                      </motion.div>
+                      </div>
                     </div>
-                    <motion.div
-                      className="text"
-                      initial={{ opacity: 0, y: 20, scale: 0.95 }}
-                      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-                      transition={{
-                        duration: 0.6,
-                        ease: [0.16, 1, 0.3, 1],
-                      }}
-                      viewport={{ once: true, amount: 0.1 }}
-                    >
+                    <div className="text">
                       {item.event}
-                    </motion.div>
-                  </motion.div>
+                    </div>
+                  </div>
                 ))}
             </div>
           </div>
