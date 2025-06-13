@@ -39,7 +39,6 @@ const initializeEmailJS = () => {
 const JoinWaitlist = ({ JoinWaitlistRef, name, setName, email, setEmail }) => {
   const navigate = useNavigate();
   const [loadBool, setLoadBool] = useState(false);
-  const [hovered, setHovered] = useState(false);
 
   useEffect(() => {
     initializeEmailJS();

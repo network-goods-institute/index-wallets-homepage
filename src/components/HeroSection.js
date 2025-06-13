@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import "../css/HeroSection.css";
 import { AnimatePresence, motion } from "framer-motion";
 import Lottie from "lottie-react";
@@ -6,7 +6,7 @@ import HeroAnime from "../assets/animation/index wallet header female.json";
 import HeroAnime2 from "../assets/animation/index header wallet phone female.json";
 
 const HeroSection = () => {
-  const products = [
+  const products = useMemo(() => [
     {
       product: "your grocery store",
       location: "ukraine",
@@ -43,7 +43,7 @@ const HeroSection = () => {
       width: "183px",
       mbWidth: "103px",
     },
-  ];
+  ], []);
 
   const [index, setIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
@@ -51,8 +51,8 @@ const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 578);
   const [typingSpeed, setTypingSpeed] = useState(100);
   const [deletingSpeed, setDeletingSpeed] = useState(80);
-  const [delayBetweenWords, setDelayBetweenWords] = useState(1500);
-  const [animateWidth, setAnimateWidth] = useState(false);
+  const [delayBetweenWords,] = useState(1500);
+  const [, setAnimateWidth] = useState(false);
 
   useEffect(() => {
     if (products[index].product === "your grocery store") {
@@ -109,6 +109,7 @@ const HeroSection = () => {
       clearTimeout(typingTimeout);
       clearTimeout(deleteTimeout);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [displayedText, isDeleting, index, products]);
 
   const [delayedIndex, setDelayedIndex] = useState(0);
@@ -126,6 +127,7 @@ const HeroSection = () => {
 
       return () => clearTimeout(timeout);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [displayedText, index, products]);
 
   useEffect(() => {
@@ -145,6 +147,7 @@ const HeroSection = () => {
     }, widthDelay);
 
     return () => clearTimeout(widthTimeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [delayedIndex, isMobile]);
 
   return (

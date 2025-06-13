@@ -1,5 +1,5 @@
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect,  useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const NavMobileMenu = ({ openMenu, setOpenMenu, pageSectionRef, faqRef }) => {
@@ -59,6 +59,7 @@ const NavMobileMenu = ({ openMenu, setOpenMenu, pageSectionRef, faqRef }) => {
       setOpenMenu(false);
       scrollToSection(faqRef);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   const submitWhitepaper = (e) => {

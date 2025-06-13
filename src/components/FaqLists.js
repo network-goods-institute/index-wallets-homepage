@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaPlus, FaTimes } from "react-icons/fa";
 import "../css/FaqLists.css";
 import Lottie from "lottie-react";
 import { Link } from "react-router-dom";
@@ -81,8 +80,9 @@ const FaqLists = ({ faqRef }) => {
                 <motion.div
                   animate={{ rotate: openIndex === index ? 135 : 0 }}
                   transition={{ duration: 0.3 }}
+                  aria-label="toggle answer"
                 >
-                  <img src="/svgs/plus.svg" />
+                  <img src="/svgs/plus.svg" alt="plus icon" />
                 </motion.div>
               </div>
               <motion.div

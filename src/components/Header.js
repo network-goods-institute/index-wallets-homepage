@@ -50,7 +50,7 @@ const Header = ({
 }) => {
   const { scrollY } = useScroll();
 
-  const [joinWaitlistTop, setJoinWaitlistTop] = useState(0);
+  const [, setJoinWaitlistTop] = useState(0);
   const [validEmail, setValidEmail] = useState(false);
   const [whitepaperEmail, setWhitePaperEmail] = useState("");
   const [submissionSuccess, setsubmissionSuccess] = useState(false);
@@ -82,6 +82,7 @@ const Header = ({
       document.removeEventListener("mousedown", handleClickOutside);
       document.removeEventListener("touchstart", handleClickOutside);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // Animate header position from 24px to 0px when scrolling down
@@ -100,22 +101,6 @@ const Header = ({
       setValidEmail(false);
     }
   }, [whitepaperEmail]);
-
-  // Detect when JoinWaitlist scrolls out of view
-  const opacity = useTransform(
-    scrollY,
-    [
-      JoinWaitlistRef?.current?.offsetTop - 200,
-      JoinWaitlistRef?.current?.offsetTop,
-    ],
-    [1, 0]
-  );
-
-  const translateY = useTransform(
-    scrollY,
-    [joinWaitlistTop - 200, joinWaitlistTop],
-    [0, -100] // Move up by 100px
-  );
 
   // Function to scroll to a section after navigation
   const scrollToSection = (ref) => {
@@ -151,6 +136,7 @@ const Header = ({
     } else if (location.state?.scrollToSection === "faqRef") {
       scrollToSection(faqRef);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location]);
 
   const submitWhitepaper = (e) => {
@@ -538,6 +524,7 @@ const Header = ({
           src="/svgs/close.svg"
           onClick={() => setOpenMenu(false)}
           className="menu-bar"
+          aria-label="close menu"
         />
       )}
     </motion.header>

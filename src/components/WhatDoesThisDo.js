@@ -4,7 +4,6 @@ import { motion, useInView } from "framer-motion";
 import HeroAnime from "../assets/animation/donate 2.json";
 import HeroAnime2 from "../assets/animation/sending g.json";
 import HeroAnime3 from "../assets/animation/receiving shop 1da.json";
-import HeroAnime4 from "../assets/animation/receiveing shop 2d.json";
 import "../css/WhatDoesThisDo.css";
 import CalcForToken from "./CalcForToken";
 
@@ -26,11 +25,6 @@ const WhatDoesThisDo = () => {
   });
 
   const isInViewSecond = useInView(refSecondContainer, {
-    once: true,
-    amount: 0.1,
-  });
-
-  const isInViewThird = useInView(refThirdContainer, {
     once: true,
     amount: 0.1,
   });

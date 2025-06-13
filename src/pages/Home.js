@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import { useScroll, useTransform } from "framer-motion";
 import "../css/Home.css";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
@@ -7,7 +6,6 @@ import JoinWaitlist from "../components/JoinWaitlist";
 import FaqLists from "../components/FaqLists";
 import ApplyWaitlist from "../components/ApplyWaitlist";
 import Footer from "../components/Footer";
-import HistorySection from "../components/HistorySection";
 import PageNewSection from "../components/PageNewSection";
 import SpreadTheLoveSectionNew from "../components/SpreadTheLoveSectionNew";
 import WhatDoesThisDo from "../components/WhatDoesThisDo";
@@ -33,15 +31,6 @@ const Home = ({ name, setName, email, setEmail }) => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
-
-  // Track scroll progress of page-section
-  const { scrollYProgress } = useScroll({
-    target: pageSectionRef,
-    offset: ["start start", "end start"], // Effect starts when page-section enters
-  });
-
-  // Translate HowDoesItWork as page-section is scrolled
-  const translateY = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]); // Reduced from -100% to -80%
 
   return (
     <div className="home">

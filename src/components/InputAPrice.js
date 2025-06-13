@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "../css/InputAPrice.css";
 import Lottie from "lottie-react";
 import HeroAnime from "../assets/animation/receiving ani.json";

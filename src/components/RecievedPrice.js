@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../css/InputAPrice.css";
 import Lottie from "lottie-react";
 import HeroAnime from "../assets/animation/receiving ani.json";
@@ -7,22 +7,6 @@ import HeroAnime2 from "../assets/animation/sending g.json";
 import Stats from "./Stats";
 
 const ReceivedPrice = ({ sectionRef, value }) => {
-  const treeValue = () => {
-    return (value * 36) / 200;
-  };
-
-  const ethValue = () => {
-    return (value * 100) / 200;
-  };
-
-  const usdValue = () => {
-    return (value * 64) / 200;
-  };
-
-  const rightBarLengthTree = () => {
-    const fig = (treeValue() / 36) * 100;
-    return fig;
-  };
 
   const formatToTwoDecimals = (value) => {
     if (value === "" || isNaN(value)) return "0.00"; // Default to "0.00" if empty or NaN

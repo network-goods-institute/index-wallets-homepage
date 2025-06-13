@@ -56,12 +56,12 @@ const TimeLineHistory = () => {
       <section>
         <img
           src="/svgs/Timeline of Index Wallets.svg"
-          alt=""
+          alt="Timeline of Index Wallets"
           className="h1"
         />
         <img
           src="/svgs/timeline of index-mobile.svg"
-          alt=""
+          alt="Timeline of Index Wallets mobile"
           className="h1 timeline-mobile"
         />
         <div className="timeline-container">
@@ -77,13 +77,14 @@ const TimeLineHistory = () => {
                   <img
                     src="/svgs/timeline_arrow.svg"
                     className="arrow timeline-mobile"
+                    alt="arrow"
                   />
                   <div className="date">
                     {historyData[0].date}
                   </div>
                   <img
                     src="/svgs/Vector 56.svg"
-                    alt=""
+                    alt="timeline connector"
                     className="dent-arrow"
                   />
                 </div>
@@ -94,7 +95,7 @@ const TimeLineHistory = () => {
 
               <img
                 src="/svgs/yellow_happy.svg"
-                alt=""
+                alt="person illustration"
                 className="person"
               />
             </div>
@@ -117,6 +118,7 @@ const TimeLineHistory = () => {
                       <img
                         src="/svgs/timeline_arrow.svg"
                         className="arrow timeline-mobile"
+                        alt="arrow"
                       />
 
                       <div
@@ -153,6 +155,7 @@ const TimeLineHistory = () => {
                   <img
                     src="/svgs/timeline_arrow.svg"
                     className="arrow timeline-mobile"
+                    alt="arrow"
                   />
                   <img
                     src="/svgs/Future-mobile.svg"
@@ -168,7 +171,7 @@ const TimeLineHistory = () => {
                   </div>
                   <img
                     src="/svgs/Vector 57.svg"
-                    alt=""
+                    alt="future timeline connector"
                     className="dent-arrow"
                   />
                 </div>
@@ -181,7 +184,7 @@ const TimeLineHistory = () => {
 
               <img
                 src="/svgs/green_lady.svg"
-                alt=""
+                alt="person illustration"
                 className="person green"
               />
             </div>
@@ -204,6 +207,7 @@ const TimeLineHistory = () => {
                       <img
                         src="/svgs/timeline_arrow.svg"
                         className="arrow timeline-mobile"
+                        alt="arrow"
                       />
 
                       <div className="date date-future">

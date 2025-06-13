@@ -2,10 +2,9 @@ import React, { useState, useEffect } from "react";
 import "../css/WalletEntries.css";
 import Lottie from "lottie-react";
 import HeroAnime from "../assets/animation/sending g.json";
-import StickyPay from "./StickyPay";
 
 const WalletEntries = ({ setActiveIndex }) => {
-  const [isLive, setIsLive] = useState(true); // Start as true to show initially
+  const [, setIsLive] = useState(true); // Start as true to show initially
 
   useEffect(() => {
     // Optionally, you can set isLive back to false after some time, if needed
