@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import "./App.css";
 import JoinWaitlistPage from "./pages/JoinWaitlistPage";
 import PageNotFound from "./pages/PageNotFound";
+import BusinessPage from "./pages/BusinessPage";
 
 function App() {
   const [name, setName] = useState("");
@@ -64,6 +65,7 @@ function App() {
             />
           }
         />
+        <Route path="/business" element={<BusinessPage />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
     </Router>

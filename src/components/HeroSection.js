@@ -162,12 +162,12 @@ const HeroSection = () => {
 
         <span className="title-index">
           <h1>Index Wallets</h1>
-          <img className="first" src="/svgs/wave.svg" alt="" />
-          <img src="/svgs/wave_curve_mb.svg" alt="" className="first-mb" />
-          <img className="second" src="/svgs/shock.svg" alt="" />
-          <img src="/svgs/wave_mb.svg" alt="" className="second-mb" />
+          <img className="first" src="/svgs/wave.svg" alt="Decorative wave" />
+          <img src="/svgs/wave_curve_mb.svg" alt="Decorative wave" className="first-mb" />
+          <img className="second" src="/svgs/shock.svg" alt="Decorative lightning" />
+          <img src="/svgs/wave_mb.svg" alt="Decorative wave" className="second-mb" />
         </span>
-        <h3 style={{ whiteSpace: "nowrap", position: "relative" }}>
+        <h2 style={{ whiteSpace: "nowrap", position: "relative" }}>
           Get{" "}
           <span
             style={{
@@ -233,7 +233,7 @@ const HeroSection = () => {
               </motion.span>
             </AnimatePresence>
           </span>
-        </h3>
+        </h2>
 
         <Lottie animationData={HeroAnime} className="hero-anime" />
       </motion.section>

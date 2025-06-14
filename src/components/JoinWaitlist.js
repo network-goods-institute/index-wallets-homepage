@@ -318,13 +318,13 @@ const JoinWaitlist = ({ JoinWaitlistRef, name, setName, email, setEmail }) => {
           <div className="right-container">
             <div className="wrapped-container">
               <div className="card">
-                <img src="/svgs/no_1.svg" alt="" className="no" />
+                <img src="/svgs/no_1.svg" alt="Step 1" className="no" />
 
                 <Lottie animationData={Donate} className="anime" />
                 <p>Donate to a cause</p>
               </div>
               <div className="card">
-                <img src="/svgs/no_2.svg" alt="" className="no" />
+                <img src="/svgs/no_2.svg" alt="Step 2" className="no" />
 
                 <div className="anime-container">
                   <Lottie animationData={BuyThings} className="anime" />
@@ -333,11 +333,38 @@ const JoinWaitlist = ({ JoinWaitlistRef, name, setName, email, setEmail }) => {
               </div>
             </div>
             <div className="main-card">
-              <img src="/svgs/no_3.svg" alt="" className="no" />
+              <img src="/svgs/no_3.svg" alt="Step 3" className="no" />
 
               <Lottie animationData={DonationReceipt} className="anime" />
               <p>Make purchases with your index wallet</p>
             </div>
+          </div>
+        </div>
+
+        <div className="business-middle-section">
+          <div className="business-card">
+            <div className="business-header">
+              <h4>For Businesses</h4>
+              <p className="business-tagline">0% Transaction Fees Forever</p>
+            </div>
+            <div className="business-benefits">
+              <div className="benefit-point">
+                <span className="bullet">•</span>
+                <span>Attract purpose-driven customers</span>
+              </div>
+              <div className="benefit-point">
+                <span className="bullet">•</span>
+                <span>Stand out from competitors</span>
+              </div>
+              <div className="benefit-point">
+                <span className="bullet">•</span>
+                <span>Build community connections</span>
+              </div>
+            </div>
+            <Link to="/business" className="business-btn">
+              <span>Learn More</span>
+              <span className="hover-text">Learn More</span>
+            </Link>
           </div>
         </div>
 

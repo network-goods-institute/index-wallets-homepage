@@ -1,3 +1,21 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://indexwallets.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Allow all pages
+Allow: /business
+Allow: /join-waitlist
+
+# Block admin areas (if any exist in future)
+Disallow: /admin/
+Disallow: /api/
+
+# Block temporary files
+Disallow: /*.tmp$
+Disallow: /*.log$

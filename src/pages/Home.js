@@ -63,15 +63,6 @@ const Home = ({ name, setName, email, setEmail, isLoading }) => {
         setEmail={setEmail}
         JoinWaitlistRef={JoinWaitlistRef}
       />
-      {/* <motion.div className="page-container">
-        <motion.div style={{ y: translateY }}>
-          <HowDoesItWork />
-          <WalletEntries sectionRef={sectionRef} />
-          <InputAPrice sectionRef={sectionRef} />
-          <ReceivedPrice />
-        </motion.div>
-      </motion.div> */}
-
       <PageNewSection pageSectionRef={pageSectionRef} />
 
       <WhatDoesThisDo />
@@ -79,11 +70,6 @@ const Home = ({ name, setName, email, setEmail, isLoading }) => {
       <MoreCustomerContainer />
       <FaqLists faqRef={faqRef} />
       <TimeLineHistory />
-      {/* <div className="left-section-mb">
-        <h2>History of Index Wallets</h2>
-        <img src="/svgs/Vector 21.svg" alt="" />
-      </div>
-      <HistorySection /> */}
       <ApplyWaitlist
         setWhitepaperBool={setWhitepaperBool}
         whitepaperBool={whitepaperBool}

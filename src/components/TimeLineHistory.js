@@ -34,16 +34,16 @@ const TimeLineHistory = () => {
     },
     { date: "MAR 2025", event: "Website built by Stephen Sowunmi" },
     {
-      date: "APR 2025",
+      date: "EST. JUNE 2025",
       event: "Index wallets whitepaper published",
     },
     {
-      date: "EST. APR 2025",
+      date: "EST. JUNE 2025",
       event: "First implementation of index wallets goes live on delta",
     },
-    { date: "EST. MAY 2025", event: "First index payment to a local business" },
+    { date: "EST. JUNE 2025", event: "First index payment to a local business" },
     {
-      date: "EST. JUNE 2025",
+      date: "EST. JULY 2025",
       event: "Over 1000 people play the index wallets game!",
     },
     { date: "EST. MAR 2026", event: "First million dollars donated to causes" },

@@ -4,6 +4,7 @@
   padding-top: 190px;
   margin-bottom: 10px;
 }
+
 .join-waitlist-section .layer-blur {
   position: absolute;
   top: -10px;
@@ -11,11 +12,12 @@
   height: 109px;
   pointer-events: none;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
+
 .join-waitlist-section section {
   max-width: 1102px;
   width: 100%;
@@ -25,18 +27,21 @@
   position: relative;
   z-index: 10;
 }
+
 .join-waitlist-section section .container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   height: 410px;
 }
+
 .join-waitlist-section section .container .left-container {
   height: 100%;
   flex-direction: column;
   display: flex;
   justify-content: center;
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container {
   height: 189px;
   display: flex;
@@ -44,11 +49,13 @@
   flex-direction: column;
   position: relative;
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container img {
   position: absolute;
   left: 0;
   top: -26px;
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container p {
   font-weight: 600;
   font-size: 32px;
@@ -58,6 +65,7 @@
   z-index: 1;
   width: 463px;
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container .btn {
   width: 139px;
   border-radius: 8px;
@@ -78,41 +86,50 @@
   justify-content: center;
   transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container .btn span {
   display: block;
   transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
   position: absolute;
   top: 100%;
   left: 32px;
   width: 100%;
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
   transform: scale(1.05) rotate(1deg);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
   transform: translateY(-180%);
 }
+
 .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
   transform: translateY(-180%);
 }
+
 .join-waitlist-section section .container .left-container h2 {
   margin-top: 70px;
   font-weight: 700;
   font-size: 48px;
 }
+
 .join-waitlist-section section .container .right-container {
   height: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container {
   display: flex;
   gap: 10px;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container .card {
   width: 216px;
   height: 200px;
@@ -126,9 +143,11 @@
   align-items: flex-start;
   overflow: hidden;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
   align-self: flex-start;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container .card p {
   font-weight: 400;
   font-size: 22px;
@@ -136,17 +155,20 @@
   letter-spacing: -3%;
   align-self: flex-start;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
   align-self: center;
   justify-self: center;
   width: 127.41px;
   height: 112px;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
   width: 267px;
   overflow: hidden;
   background-color: #fff5d4;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
   position: absolute;
   right: -13px;
@@ -157,6 +179,7 @@
   height: 90px;
   overflow: hidden;
 }
+
 .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
   align-self: center;
   justify-self: center;
@@ -164,6 +187,7 @@
   height: 112px;
   overflow: hidden;
 }
+
 .join-waitlist-section section .container .right-container .main-card {
   width: 495;
   height: 200px;
@@ -177,9 +201,11 @@
   align-items: center;
   overflow: hidden;
 }
+
 .join-waitlist-section section .container .right-container .main-card img.no {
   align-self: flex-start;
 }
+
 .join-waitlist-section section .container .right-container .main-card p {
   font-weight: 400;
   font-size: 22px;
@@ -187,6 +213,7 @@
   letter-spacing: -3%;
   align-self: flex-start;
 }
+
 .join-waitlist-section section .container .right-container .main-card .anime {
   position: absolute;
   top: -20px;
@@ -196,6 +223,7 @@
   width: 210px;
   height: 184px;
 }
+
 .join-waitlist-section section .form-waitlist {
   width: 100%;
   display: flex;
@@ -207,9 +235,11 @@
   background: #e7f0ff;
   margin-top: 20px;
 }
+
 .join-waitlist-section section .form-waitlist .img-container {
   flex: 1;
 }
+
 .join-waitlist-section section .form-waitlist form {
   flex: 1;
   display: flex;
@@ -217,6 +247,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .join-waitlist-section section .form-waitlist form h2 {
   font-weight: 700;
   font-size: 40px;
@@ -225,12 +256,14 @@
   color: #0c0a09;
   margin-bottom: 20px;
 }
+
 .join-waitlist-section section .form-waitlist form .input {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin-bottom: 30px;
 }
+
 .join-waitlist-section section .form-waitlist form .input label {
   font-weight: 600;
   font-size: 24px;
@@ -239,6 +272,7 @@
   color: #0c0a09;
   margin-bottom: 0px;
 }
+
 .join-waitlist-section section .form-waitlist form .input input {
   background: none;
   border: none;
@@ -252,12 +286,15 @@
   letter-spacing: -3%;
   color: #0c0a09;
 }
+
 .join-waitlist-section section .form-waitlist form .input input::-moz-placeholder {
   color: #8a8a8e;
 }
+
 .join-waitlist-section section .form-waitlist form .input input::placeholder {
   color: #8a8a8e;
 }
+
 .join-waitlist-section section .form-waitlist form .loader {
   width: 100%;
   font-family: inherit;
@@ -274,12 +311,14 @@
   color: white;
   cursor: wait;
 }
+
 .join-waitlist-section section .form-waitlist form .loader .anime {
   height: 40px;
   transform: scale(1.8);
   position: relative;
   top: -10px;
 }
+
 .join-waitlist-section section .form-waitlist form button {
   width: 100%;
   font-family: inherit;
@@ -296,9 +335,110 @@
   color: white;
   cursor: pointer;
 }
+
 .join-waitlist-section section .form-waitlist-mb {
   display: none;
 }
+
+.business-middle-section {
+  width: 100%;
+  margin: 60px 0;
+  max-width: 1102px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 24px;
+}
+
+.business-card {
+  background: linear-gradient(135deg, #fbd03d 0%, #f7c52d 100%);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  box-shadow: 0 8px 32px rgba(251, 208, 61, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.business-header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.business-header h4 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #0c0a09;
+}
+
+.business-tagline {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0c0a09;
+  margin: 0;
+  opacity: 0.8;
+}
+
+.business-benefits {
+  margin-bottom: 24px;
+}
+
+.benefit-point {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #0c0a09;
+}
+
+.bullet {
+  color: #0c0a09;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.business-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 24px;
+  background: #0c0a09;
+  color: #fbd03d;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.business-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(12, 10, 9, 0.3);
+}
+
+.business-btn span {
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.business-btn .hover-text {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.business-btn:hover span:first-child {
+  transform: translateY(-100%);
+}
+
+.business-btn:hover .hover-text {
+  transform: translateX(-50%) translateY(-100%);
+}
+
 @media (max-width: 575px) {
   .join-waitlist-section {
     width: 100vw;
@@ -307,6 +447,7 @@
     padding-top: 30px;
     margin-bottom: 10px;
   }
+
   .join-waitlist-section .layer-blur {
     position: absolute;
     top: -70px;
@@ -315,8 +456,9 @@
     height: 109px;
     pointer-events: none;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+
   .join-waitlist-section section {
     max-width: 100%;
     width: 100%;
@@ -326,6 +468,7 @@
     position: relative;
     z-index: 10;
   }
+
   .join-waitlist-section section .container {
     width: 100%;
     display: flex;
@@ -334,12 +477,14 @@
     height: -moz-max-content;
     height: max-content;
   }
+
   .join-waitlist-section section .container .left-container {
     height: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container {
     height: 122px;
     display: flex;
@@ -347,6 +492,7 @@
     flex-direction: column;
     position: relative;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container img {
     position: absolute;
     left: 0;
@@ -354,6 +500,7 @@
     height: 152px;
     width: 152px;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container p {
     font-weight: 600;
     font-size: 20px;
@@ -363,6 +510,7 @@
     z-index: 1;
     width: 100%;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn {
     width: 88px;
     border-radius: 8px;
@@ -383,29 +531,36 @@
     justify-content: center;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn span {
     display: block;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
     position: absolute;
     top: 100%;
     left: 32px;
     width: 100%;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
     transform: scale(1.05) rotate(1deg);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container h2 {
     display: none;
   }
+
   .join-waitlist-section section .container .right-container {
     height: 100%;
     display: flex;
@@ -413,10 +568,12 @@
     gap: 10px;
     margin-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container {
     display: flex;
     gap: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card {
     width: 100%;
     height: 173px;
@@ -430,10 +587,12 @@
     align-items: flex-start;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
     align-self: flex-start;
     padding-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card p {
     font-weight: 400;
     font-size: 16px;
@@ -441,6 +600,7 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
     align-self: center;
     justify-self: center;
@@ -450,11 +610,13 @@
     top: 20px;
     right: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
     width: 100%;
     overflow: hidden;
     background-color: #fff5d4;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
     position: absolute;
     right: 0px;
@@ -465,6 +627,7 @@
     height: 80px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
     align-self: center;
     justify-self: center;
@@ -472,6 +635,7 @@
     height: 80px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card {
     height: 173px;
     border-radius: 12px;
@@ -484,10 +648,12 @@
     align-items: center;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card img.no {
     align-self: flex-start;
     padding-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .main-card p {
     font-weight: 400;
     font-size: 16px;
@@ -495,6 +661,7 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .main-card .anime {
     position: absolute;
     top: 0px;
@@ -504,9 +671,11 @@
     width: 155px;
     height: 136px;
   }
+
   .join-waitlist-section section .form-waitlist {
     display: none;
   }
+
   .join-waitlist-section section .form-waitlist-mb {
     width: 100%;
     display: flex;
@@ -521,6 +690,7 @@
     height: 347px;
     position: relative;
   }
+
   .join-waitlist-section section .form-waitlist-mb h2 {
     font-weight: 700;
     font-size: 24px;
@@ -529,15 +699,17 @@
     color: #0c0a09;
     text-align: center;
   }
+
   .join-waitlist-section section .form-waitlist-mb img {
     width: 100%;
     height: 208px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     transform: scale(1.1);
     position: absolute;
     top: 70px;
   }
+
   .join-waitlist-section section .form-waitlist-mb .btn {
     border-radius: 12px;
     width: 100%;
@@ -550,7 +722,29 @@
     letter-spacing: -3%;
     color: white;
   }
+
+  .business-middle-section {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+
+  .business-card {
+    padding: 24px;
+  }
+
+  .business-header h4 {
+    font-size: 20px;
+  }
+
+  .business-tagline {
+    font-size: 14px;
+  }
+
+  .benefit-point {
+    font-size: 14px;
+  }
 }
+
 @media (min-width: 576px) and (max-width: 768px) {
   .join-waitlist-section {
     width: 100vw;
@@ -559,6 +753,7 @@
     padding-top: 100px;
     margin-bottom: 10px;
   }
+
   .join-waitlist-section .layer-blur {
     position: absolute;
     top: -90px;
@@ -566,9 +761,10 @@
     height: 109px;
     pointer-events: none;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     left: -10px;
   }
+
   .join-waitlist-section section {
     max-width: 90%;
     width: 100%;
@@ -578,6 +774,7 @@
     position: relative;
     z-index: 10;
   }
+
   .join-waitlist-section section .container {
     width: 100%;
     display: flex;
@@ -586,12 +783,14 @@
     height: -moz-max-content;
     height: max-content;
   }
+
   .join-waitlist-section section .container .left-container {
     height: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container {
     height: 122px;
     display: flex;
@@ -599,6 +798,7 @@
     flex-direction: column;
     position: relative;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container img {
     position: absolute;
     left: 0;
@@ -606,6 +806,7 @@
     height: 152px;
     width: 152px;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container p {
     font-weight: 600;
     font-size: 20px;
@@ -615,6 +816,7 @@
     z-index: 1;
     width: 100%;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn {
     width: 88px;
     border-radius: 8px;
@@ -635,29 +837,36 @@
     justify-content: center;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn span {
     display: block;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
     position: absolute;
     top: 100%;
     left: 32px;
     width: 100%;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
     transform: scale(1.05) rotate(1deg);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container h2 {
     display: none;
   }
+
   .join-waitlist-section section .container .right-container {
     height: 100%;
     display: flex;
@@ -665,10 +874,12 @@
     gap: 10px;
     margin-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container {
     display: flex;
     gap: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card {
     width: 100%;
     height: 173px;
@@ -682,10 +893,12 @@
     align-items: flex-start;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
     align-self: flex-start;
     padding-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card p {
     font-weight: 400;
     font-size: 16px;
@@ -693,6 +906,7 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
     align-self: center;
     justify-self: center;
@@ -702,11 +916,13 @@
     top: 20px;
     right: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
     width: 100%;
     overflow: hidden;
     background-color: #fff5d4;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
     position: absolute;
     right: 0px;
@@ -717,6 +933,7 @@
     height: 80px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
     align-self: center;
     justify-self: center;
@@ -724,6 +941,7 @@
     height: 80px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card {
     height: 173px;
     border-radius: 12px;
@@ -736,10 +954,12 @@
     align-items: center;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card img.no {
     align-self: flex-start;
     padding-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .main-card p {
     font-weight: 400;
     font-size: 16px;
@@ -747,6 +967,7 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .main-card .anime {
     position: absolute;
     top: 0px;
@@ -756,9 +977,11 @@
     width: 155px;
     height: 136px;
   }
+
   .join-waitlist-section section .form-waitlist {
     display: none;
   }
+
   .join-waitlist-section section .form-waitlist-mb {
     width: 100%;
     display: flex;
@@ -773,6 +996,7 @@
     height: 347px;
     position: relative;
   }
+
   .join-waitlist-section section .form-waitlist-mb h2 {
     font-weight: 700;
     font-size: 24px;
@@ -781,15 +1005,17 @@
     color: #0c0a09;
     text-align: center;
   }
+
   .join-waitlist-section section .form-waitlist-mb img {
     width: 100%;
     height: 208px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     transform: scale(1.1);
     position: absolute;
     top: 70px;
   }
+
   .join-waitlist-section section .form-waitlist-mb .btn {
     border-radius: 12px;
     width: 100%;
@@ -803,6 +1029,7 @@
     color: white;
   }
 }
+
 @media (min-width: 769px) and (max-width: 991px) {
   .join-waitlist-section {
     width: 100vw;
@@ -811,6 +1038,7 @@
     padding-top: 100px;
     margin-bottom: 10px;
   }
+
   .join-waitlist-section .layer-blur {
     position: absolute;
     top: -120px;
@@ -818,10 +1046,11 @@
     height: 200px;
     pointer-events: none;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     left: -10px;
     z-index: 10;
   }
+
   .join-waitlist-section section {
     max-width: 90%;
     width: 100%;
@@ -831,6 +1060,7 @@
     position: relative;
     z-index: 10;
   }
+
   .join-waitlist-section section .container {
     width: 100%;
     display: flex;
@@ -839,12 +1069,14 @@
     height: -moz-max-content;
     height: max-content;
   }
+
   .join-waitlist-section section .container .left-container {
     height: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container {
     height: 122px;
     display: flex;
@@ -852,6 +1084,7 @@
     flex-direction: column;
     position: relative;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container img {
     position: absolute;
     left: 0;
@@ -859,6 +1092,7 @@
     height: 152px;
     width: 152px;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container p {
     font-weight: 600;
     font-size: 20px;
@@ -868,6 +1102,7 @@
     z-index: 1;
     width: 100%;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn {
     width: 88px;
     border-radius: 8px;
@@ -888,29 +1123,36 @@
     justify-content: center;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn span {
     display: block;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
     position: absolute;
     top: 100%;
     left: 32px;
     width: 100%;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
     transform: scale(1.05) rotate(1deg);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container h2 {
     display: none;
   }
+
   .join-waitlist-section section .container .right-container {
     height: 100%;
     display: flex;
@@ -918,10 +1160,12 @@
     gap: 10px;
     margin-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container {
     display: flex;
     gap: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card {
     width: 100%;
     height: 173px;
@@ -935,10 +1179,12 @@
     align-items: flex-start;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
     align-self: flex-start;
     padding-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card p {
     font-weight: 400;
     font-size: 16px;
@@ -946,6 +1192,7 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
     align-self: center;
     justify-self: center;
@@ -955,11 +1202,13 @@
     top: 20px;
     right: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
     width: 100%;
     overflow: hidden;
     background-color: #fff5d4;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
     position: absolute;
     right: 0px;
@@ -970,6 +1219,7 @@
     height: 80px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
     align-self: center;
     justify-self: center;
@@ -977,6 +1227,7 @@
     height: 80px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card {
     height: 173px;
     border-radius: 12px;
@@ -989,10 +1240,12 @@
     align-items: center;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card img.no {
     align-self: flex-start;
     padding-top: 30px;
   }
+
   .join-waitlist-section section .container .right-container .main-card p {
     font-weight: 400;
     font-size: 16px;
@@ -1000,6 +1253,7 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .main-card .anime {
     position: absolute;
     top: 0px;
@@ -1009,9 +1263,11 @@
     width: 155px;
     height: 136px;
   }
+
   .join-waitlist-section section .form-waitlist {
     display: none;
   }
+
   .join-waitlist-section section .form-waitlist-mb {
     width: 100%;
     display: flex;
@@ -1026,6 +1282,7 @@
     height: 347px;
     position: relative;
   }
+
   .join-waitlist-section section .form-waitlist-mb h2 {
     font-weight: 700;
     font-size: 24px;
@@ -1034,15 +1291,17 @@
     color: #0c0a09;
     text-align: center;
   }
+
   .join-waitlist-section section .form-waitlist-mb img {
     width: 100%;
     height: 208px;
     -o-object-fit: contain;
-       object-fit: contain;
+    object-fit: contain;
     transform: scale(1.1);
     position: absolute;
     top: 70px;
   }
+
   .join-waitlist-section section .form-waitlist-mb .btn {
     border-radius: 12px;
     width: 100%;
@@ -1056,11 +1315,13 @@
     color: white;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1102px) {
   .join-waitlist-section {
     padding: 0 50px;
     padding-top: 190px;
   }
+
   .join-waitlist-section .layer-blur {
     position: absolute;
     top: -10px;
@@ -1069,24 +1330,28 @@
     height: 109px;
     pointer-events: none;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+
   .join-waitlist-section section {
     width: 100%;
     max-width: 100%;
   }
+
   .join-waitlist-section section .container {
     width: 100%;
     display: flex;
     justify-content: space-between;
     height: 410px;
   }
+
   .join-waitlist-section section .container .left-container {
     height: 100%;
     flex-direction: column;
     display: flex;
     justify-content: center;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container {
     height: 189px;
     display: flex;
@@ -1094,11 +1359,13 @@
     flex-direction: column;
     position: relative;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container img {
     position: absolute;
     left: 0;
     top: -26px;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container p {
     font-weight: 600;
     font-size: 32px;
@@ -1108,6 +1375,7 @@
     z-index: 1;
     width: 400px;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn {
     width: 139px;
     border-radius: 8px;
@@ -1128,41 +1396,50 @@
     justify-content: center;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1), box-shadow 0.4s ease;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn span {
     display: block;
     transition: transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn .hover-text {
     position: absolute;
     top: 100%;
     left: 32px;
     width: 100%;
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover {
     transform: scale(1.05) rotate(1deg);
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover span:first-child {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container .wrapped-container .btn:hover .hover-text {
     transform: translateY(-180%);
   }
+
   .join-waitlist-section section .container .left-container h2 {
     margin-top: 70px;
     font-weight: 700;
     font-size: 48px;
   }
+
   .join-waitlist-section section .container .right-container {
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container {
     display: flex;
     gap: 10px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card {
     width: 216px;
     height: 200px;
@@ -1176,9 +1453,11 @@
     align-items: flex-start;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card img.no {
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card p {
     font-weight: 400;
     font-size: 22px;
@@ -1186,17 +1465,20 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:first-child .anime {
     align-self: center;
     justify-self: center;
     width: 127.41px;
     height: 112px;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) {
     width: 267px;
     overflow: hidden;
     background-color: #fff5d4;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container {
     position: absolute;
     right: -13px;
@@ -1207,6 +1489,7 @@
     height: 90px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .wrapped-container .card:nth-child(2) .anime-container .anime {
     align-self: center;
     justify-self: center;
@@ -1214,6 +1497,7 @@
     height: 112px;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card {
     width: 495;
     height: 200px;
@@ -1227,9 +1511,11 @@
     align-items: center;
     overflow: hidden;
   }
+
   .join-waitlist-section section .container .right-container .main-card img.no {
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .main-card p {
     font-weight: 400;
     font-size: 22px;
@@ -1237,6 +1523,7 @@
     letter-spacing: -3%;
     align-self: flex-start;
   }
+
   .join-waitlist-section section .container .right-container .main-card .anime {
     position: absolute;
     top: -20px;
@@ -1246,6 +1533,7 @@
     width: 210px;
     height: 184px;
   }
+
   .join-waitlist-section section .form-waitlist {
     width: 100%;
     display: flex;
@@ -1257,9 +1545,11 @@
     background: #e7f0ff;
     margin-top: 20px;
   }
+
   .join-waitlist-section section .form-waitlist .img-container {
     flex: 1;
   }
+
   .join-waitlist-section section .form-waitlist form {
     flex: 1;
     display: flex;
@@ -1267,12 +1557,14 @@
     justify-content: center;
     flex-direction: column;
   }
+
   .join-waitlist-section section .form-waitlist form .input {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin-bottom: 30px;
   }
+
   .join-waitlist-section section .form-waitlist form .input label {
     font-weight: 600;
     font-size: 24px;
@@ -1281,6 +1573,7 @@
     color: #0c0a09;
     margin-bottom: 0px;
   }
+
   .join-waitlist-section section .form-waitlist form .input input {
     background: none;
     border: none;
@@ -1294,12 +1587,15 @@
     letter-spacing: -3%;
     color: #0c0a09;
   }
+
   .join-waitlist-section section .form-waitlist form .input input::-moz-placeholder {
     color: #8a8a8e;
   }
+
   .join-waitlist-section section .form-waitlist form .input input::placeholder {
     color: #8a8a8e;
   }
+
   .join-waitlist-section section .form-waitlist form button {
     width: 100%;
     font-family: inherit;
@@ -1316,4 +1612,6 @@
     color: white;
     cursor: pointer;
   }
-}/*# sourceMappingURL=JoinWaitlist.css.map */
+}
+
+/*# sourceMappingURL=JoinWaitlist.css.map */

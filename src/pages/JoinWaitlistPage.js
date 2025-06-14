@@ -444,7 +444,6 @@ const JoinWaitlistPage = ({ name, setName, email, setEmail }) => {
         openMenu={openMenu}
         setOpenMenu={setOpenMenu}
         pageSectionRef={pageSectionRef}
-        JoinWaitlistRef={JoinWaitlistRef}
         faqRef={faqRef}
         setWhitepaperBool={setWhitepaperBool}
         whitepaperBool={whitepaperBool}

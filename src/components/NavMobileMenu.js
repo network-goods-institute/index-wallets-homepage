@@ -118,6 +118,16 @@ const NavMobileMenu = ({ openMenu, setOpenMenu, pageSectionRef, faqRef }) => {
                 visible: { opacity: 1, y: 0 },
               }}
             >
+              <Link to="/business" onClick={() => setOpenMenu(false)}>
+                For Businesses
+              </Link>
+            </motion.div>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 10 },
+                visible: { opacity: 1, y: 0 },
+              }}
+            >
               <Link
                 className="wrap"
                 href="#"
@@ -178,7 +188,7 @@ const NavMobileMenu = ({ openMenu, setOpenMenu, pageSectionRef, faqRef }) => {
                     <div className="wrap">
                       <div className="content">
                         <h2>Email added successfully</h2>
-                        <p>you’ve been added to the waitlist</p>
+                        <p>you've been added to the waitlist</p>
                       </div>
                       <img
                         src="/svgs/confettin.svg"

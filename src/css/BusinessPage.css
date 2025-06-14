@@ -1,0 +1,455 @@
+.business-page {
+    width: 100%;
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Hero Section */
+.business-page .hero-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 120px 24px 100px;
+    position: relative;
+    overflow: hidden;
+}
+
+.business-page .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.business-page .hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.business-page .hero-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.business-page .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+    line-height: 1.2;
+}
+
+.business-page .value-prop {
+    margin-bottom: 32px;
+}
+
+.business-page .fees-badge {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 8px;
+    backdrop-filter: blur(10px);
+}
+
+.business-page .fees-subtitle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.business-page .fees-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin: 0;
+}
+
+.business-page .forever-text {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ff6b6b;
+    text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    letter-spacing: 2px;
+    margin: 0;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
+    }
+
+    to {
+        text-shadow: 0 0 20px rgba(255, 107, 107, 0.8), 0 0 30px rgba(255, 107, 107, 0.6);
+    }
+}
+
+.business-page .hero-description {
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.95;
+}
+
+.business-page .hero-cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.business-page .primary-btn {
+    background: #ff6b6b;
+    color: white;
+    text-decoration: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.business-page .primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(255, 107, 107, 0.4);
+    background: #ff5252;
+}
+
+.business-page .primary-btn.large {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+}
+
+.business-page .social-proof span {
+    font-size: 0.95rem;
+    opacity: 0.8;
+}
+
+/* Benefits Section */
+.business-page .benefits-section {
+    padding: 100px 24px;
+    background: #f8fafc;
+}
+
+.business-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.business-page .section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.business-page .section-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #1a202c;
+}
+
+.business-page .section-header p {
+    font-size: 1.2rem;
+    color: #64748b;
+}
+
+.business-page .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 32px;
+}
+
+.business-page .benefit-item {
+    background: white;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid #e2e8f0;
+}
+
+.business-page .benefit-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.business-page .benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.business-page .benefit-item h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #1a202c;
+}
+
+.business-page .benefit-item p {
+    color: #64748b;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* How It Works Section */
+.business-page .how-it-works-section {
+    padding: 100px 24px;
+    background: white;
+}
+
+.business-page .process-flow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+
+.business-page .process-step {
+    text-align: center;
+    max-width: 280px;
+}
+
+.business-page .step-visual {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.business-page .step-number {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #667eea;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+.business-page .step-animation {
+    width: 120px;
+    height: 120px;
+    background: #f8fafc;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.business-page .step-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #1a202c;
+}
+
+.business-page .step-content p {
+    color: #64748b;
+    line-height: 1.5;
+}
+
+.business-page .process-arrow {
+    font-size: 2rem;
+    color: #cbd5e0;
+    font-weight: bold;
+}
+
+.business-page .process-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.business-page .detail-card {
+    background: #f8fafc;
+    padding: 32px;
+    border-radius: 12px;
+    border-left: 4px solid #667eea;
+}
+
+.business-page .detail-card h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #1a202c;
+}
+
+.business-page .detail-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.business-page .detail-card li {
+    padding: 8px 0;
+    color: #64748b;
+    position: relative;
+    padding-left: 24px;
+}
+
+.business-page .detail-card li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #10b981;
+    font-weight: bold;
+}
+
+/* Revenue Model Section */
+.business-page .revenue-model-section {
+    padding: 80px 24px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+    color: white;
+}
+
+.business-page .revenue-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.business-page .revenue-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.business-page .revenue-explanation {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.business-page .revenue-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.business-page .revenue-point {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.1rem;
+}
+
+.business-page .checkmark {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* CTA Section */
+.business-page .cta-section {
+    padding: 100px 24px;
+    background: #f8fafc;
+    text-align: center;
+}
+
+.business-page .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #1a202c;
+}
+
+.business-page .cta-content>p {
+    font-size: 1.2rem;
+    color: #64748b;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.business-page .cta-buttons {
+    margin-bottom: 24px;
+}
+
+.business-page .cta-note p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .business-page .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .business-page .fees-badge {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .business-page .hero-description {
+        font-size: 1.1rem;
+    }
+
+    .business-page .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .business-page .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .business-page .process-flow {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .business-page .process-step {
+        max-width: 100%;
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .business-page .process-arrow {
+        transform: rotate(90deg);
+        font-size: 1.5rem;
+    }
+
+    .business-page .process-details {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .business-page .revenue-content h2,
+    .business-page .cta-content h2 {
+        font-size: 2rem;
+    }
+}

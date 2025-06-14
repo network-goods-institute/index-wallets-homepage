@@ -439,6 +439,10 @@ const Header = ({
               <span>FAQ</span>
               <span className="hover-text">FAQ</span>
             </Link>
+            <Link to="/business" className="hover-link">
+              <span>For Businesses</span>
+              <span className="hover-text">For Businesses</span>
+            </Link>
             <Link
               href="#"
               onClick={(e) => {
