@@ -13,8 +13,6 @@ const HeroSection = () => {
       product_color: "#049952",
       location_border_color: "#0046BE",
       location_background: "#E7F0FF",
-      width: "125px",
-      mbWidth: "75px",
     },
     {
       product: "Amazon",
@@ -22,8 +20,6 @@ const HeroSection = () => {
       product_color: "#EDA058",
       location_border_color: "#A856F7",
       location_background: "#F0E4FC",
-      width: "192px",
-      mbWidth: "110px",
     },
     {
       product: "Walmart",
@@ -31,8 +27,6 @@ const HeroSection = () => {
       product_color: "#0046BE",
       location_border_color: "#049952",
       location_background: "#D5FFEB",
-      width: "215px",
-      mbWidth: "120px",
     },
     {
       product: "Apple",
@@ -40,12 +34,11 @@ const HeroSection = () => {
       product_color: "#A856F7",
       location_border_color: "#EDA058",
       location_background: "#FFF2E6",
-      width: "183px",
-      mbWidth: "103px",
     },
   ], []);
 
   const [index, setIndex] = useState(0);
+  const [delayedIndex, setDelayedIndex] = useState(0);
   const [displayedText, setDisplayedText] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 578);
@@ -66,12 +59,15 @@ const HeroSection = () => {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 578);
+      const newIsMobile = window.innerWidth < 578;
+      setIsMobile(newIsMobile);
+      // Recalculate width when screen size changes
+      setWidth(calculateWidth(products[delayedIndex].location, newIsMobile));
     };
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [products, delayedIndex]);
 
   useEffect(() => {
     setAnimateWidth(false);
@@ -111,15 +107,23 @@ const HeroSection = () => {
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [displayedText, isDeleting, index, products]);
-
-  const [delayedIndex, setDelayedIndex] = useState(0);
+  
+  // Function to calculate dynamic width based on text content
+  const calculateWidth = (text, isMobile) => {
+    const baseWidth = isMobile ? 9 : 11; // Increased base character width for better spacing
+    const padding = isMobile ? 24 : 32; // Increased padding for better visual appearance
+    const minWidth = isMobile ? 100 : 120; // Slightly larger minimum width
+    const calculatedWidth = (text.length * baseWidth) + padding;
+    return Math.max(calculatedWidth, minWidth) + "px";
+  };
+  
   const [width, setWidth] = useState(
-    isMobile ? products[index].mbWidth : products[index].width
+    calculateWidth(products[0].location, isMobile)
   );
 
   useEffect(() => {
     if (displayedText === products[index].product) {
-      const delay = 500; // Reduce delay to make the location update quicker
+      const delay = 300; // Reduce delay to make the location update quicker
 
       const timeout = setTimeout(() => {
         setDelayedIndex(index);
@@ -132,23 +136,22 @@ const HeroSection = () => {
 
   useEffect(() => {
     const widthDelays = {
-      "your grocery store": 300,
-      Amazon: 250,
-      Walmart: 220,
-      Apple: 200,
+      "your grocery store": 200,
+      Amazon: 150,
+      Walmart: 120,
+      Apple: 100,
     };
 
-    const widthDelay = widthDelays[products[delayedIndex].product] || 200; // Default to 200 if not found
+    const widthDelay = widthDelays[products[delayedIndex].product] || 100;
 
     const widthTimeout = setTimeout(() => {
-      setWidth(
-        isMobile ? products[delayedIndex].mbWidth : products[delayedIndex].width
-      );
+      const newWidth = calculateWidth(products[delayedIndex].location, isMobile);
+      setWidth(newWidth);
     }, widthDelay);
 
     return () => clearTimeout(widthTimeout);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [delayedIndex, isMobile]);
+  }, [delayedIndex, isMobile, products]);
 
   return (
     <div className="hero-section">
@@ -167,7 +170,11 @@ const HeroSection = () => {
           <img className="second" src="/svgs/shock.svg" alt="Decorative lightning" />
           <img src="/svgs/wave_mb.svg" alt="Decorative wave" className="second-mb" />
         </span>
-        <h2 style={{ whiteSpace: "nowrap", position: "relative" }}>
+        <h2 style={{ 
+          whiteSpace: isMobile ? "normal" : "nowrap", 
+          position: "relative",
+          lineHeight: isMobile ? "1.4" : "1.2"
+        }}>
           Get{" "}
           <span
             style={{
@@ -204,30 +211,29 @@ const HeroSection = () => {
               background: products[delayedIndex].location_background,
               border: `1.2px solid ${products[delayedIndex].location_border_color}`,
               display: "inline-block",
-              padding: "2px 6px",
+              padding: isMobile ? "4px 8px" : "4px 12px",
               borderRadius: "4px",
               position: "relative",
               overflow: "hidden",
-              height: "1.2em",
+              minHeight: "1.4em",
               verticalAlign: "middle",
-              transition: "width 0.5s ease-in-out",
+              transition: "width 0.4s ease-in-out, background-color 0.3s ease, border-color 0.3s ease",
               width,
+              textAlign: "center",
+              lineHeight: "1.2",
             }}
           >
             <AnimatePresence mode="wait">
               <motion.span
                 key={products[delayedIndex].location}
                 style={{
-                  position: "absolute",
-                  textAlign: "center",
-                  left: "12px",
+                  display: "block",
                   whiteSpace: "nowrap",
-                  bottom: "0.5px",
                 }}
                 initial={{ y: "100%", opacity: 0 }}
                 animate={{ y: "0%", opacity: 1 }}
                 exit={{ y: "-100%", opacity: 0 }}
-                transition={{ duration: 0.5, ease: "easeInOut", delay: 0.1 }} // Small delay for smoother transition
+                transition={{ duration: 0.4, ease: "easeInOut" }}
               >
                 {products[delayedIndex].location}
               </motion.span>

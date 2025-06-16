@@ -7,9 +7,13 @@ import Lottie from "lottie-react";
 import Donate from "../assets/animation/donate.json";
 import DonationReceipt from "../assets/animation/new receipt donation.json";
 import BuyThings from "../assets/animation/buythings.json";
+import { motion } from "framer-motion";
 
 const BusinessPage = () => {
   const [feePercentage, setFeePercentage] = useState(5);
+  const [showForever, setShowForever] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [whitepaperBool, setWhitepaperBool] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -17,11 +21,12 @@ const BusinessPage = () => {
         setFeePercentage(prev => {
           if (prev <= 0) {
             clearInterval(interval);
+            setTimeout(() => setShowForever(true), 500);
             return 0;
           }
           return prev - 1;
         });
-      }, 200);
+      }, 500);
       
       return () => clearInterval(interval);
     }, 1000);
@@ -31,7 +36,12 @@ const BusinessPage = () => {
 
   return (
     <div className="business-page">
-      <Header />
+      <Header 
+        setOpenMenu={setOpenMenu}
+        openMenu={openMenu}
+        whitepaperBool={whitepaperBool}
+        setWhitepaperBool={setWhitepaperBool}
+      />
       
       <section className="hero-section">
         <div className="hero-container">
@@ -39,9 +49,31 @@ const BusinessPage = () => {
             <h1>Transform Your Business with Index Wallets</h1>
             <div className="value-prop">
               <div className="zero-fees">
-                <span className="fees-badge">{feePercentage}% Transaction Fees</span>
+                <motion.span 
+                  className="fees-badge"
+                  animate={feePercentage === 0 ? {
+                    scale: [1, 1.1, 1],
+                    backgroundColor: ["rgba(255, 255, 255, 0.2)", "rgba(76, 175, 80, 0.3)", "rgba(255, 255, 255, 0.2)"]
+                  } : {}}
+                  transition={{ duration: 0.6, ease: "easeInOut" }}
+                >
+                  {feePercentage}% Transaction Fees
+                </motion.span>
                 <div className="fees-subtitle-container">
-                  <p className="forever-text">FOREVER</p>
+                  {showForever && (
+                    <motion.p 
+                      className="forever-text"
+                      initial={{ x: -150, opacity: 0, scale: 0.8 }}
+                      animate={{ x: 0, opacity: 1, scale: 1 }}
+                      transition={{ 
+                        duration: 1.2, 
+                        ease: "backOut",
+                        delay: 0.2
+                      }}
+                    >
+                      🎉 FOREVER 🎉
+                    </motion.p>
+                  )}
                 </div>
               </div>
             </div>

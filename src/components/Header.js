@@ -12,6 +12,7 @@ import Loader from "../assets/animation/loading.json";
 import Lottie from "lottie-react";
 import { toast, Slide } from "react-toastify";
 import "../css/Header.css";
+import NavMobileMenu from "./NavMobileMenu";
 
 const initializeEmailJS = () => {
   if (window.emailjs) {
@@ -38,14 +39,14 @@ const initializeEmailJS = () => {
 };
 
 const Header = ({
-  JoinWaitlistRef,
-  pageSectionRef,
-  faqRef,
+  JoinWaitlistRef = null,
+  pageSectionRef = null,
+  faqRef = null,
   setOpenMenu,
   openMenu,
   setEmail,
   setName,
-  whitepaperBool,
+  whitepaperBool = false,
   setWhitepaperBool,
   isLoading,
 }) => {
@@ -74,6 +75,11 @@ const Header = ({
       ) {
         setTimeout(() => setWhitepaperBool(false), 0); // 👈 Delay update
       }
+      
+      // Close mobile menu when clicking outside
+      if (openMenu && !event.target.closest('header') && !event.target.closest('.links-mobile')) {
+        setOpenMenu(false);
+      }
     };
 
     document.addEventListener("mousedown", handleClickOutside);
@@ -84,7 +90,7 @@ const Header = ({
       document.removeEventListener("touchstart", handleClickOutside);
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [openMenu]);
 
   // Animate header position from 24px to 0px when scrolling down
   const topPosition = useTransform(scrollY, [0, 100], [24, 10]);
@@ -428,43 +434,58 @@ const Header = ({
               <h2>Index Wallets</h2>
             </Link>
           ) : (
-            <div className="close">Close</div>
-          )}
-          <div className="links">
-            <Link to="/" onClick={handleScrollToHowItWorks} className="hover-link">
-              <span>How does it work?</span>
-              <span className="hover-text">How does it work?</span>
-            </Link>
-            <Link to="/" onClick={handleScrollToFAQ} className="hover-link">
-              <span>FAQ</span>
-              <span className="hover-text">FAQ</span>
-            </Link>
-            <Link to="/business" className="hover-link">
-              <span>For Businesses</span>
-              <span className="hover-text">For Businesses</span>
-            </Link>
             <Link
-              href="#"
-              onClick={(e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                setWhitepaperBool(!whitepaperBool);
+              to="/"
+              onClick={() => {
+                setWhitePaperEmail("");
+                setName("");
+                setOpenMenu(false);
               }}
+              className="logo"
             >
-              <span>
-                <div className="wrap">
-                  <img src="/svgs/paper.svg" alt="" />
-                  Read Whitepaper
-                </div>
-              </span>
-              <span className="hover-text">
-                <div className="wrap">
-                  <img src="/svgs/paper.svg" alt="" />
-                  Read Whitepaper
-                </div>
-              </span>
+              <img src="/svgs/index_logo.svg" alt="" />
+              <h2>Index Wallets</h2>
             </Link>
-          </div>
+          )}
+          {!openMenu && (
+          <div className="links">
+             <Link to="/" onClick={handleScrollToHowItWorks} className="hover-link">
+               <span>How does it work?</span>
+               <span className="hover-text">How does it work?</span>
+             </Link>
+             <Link to="/" onClick={handleScrollToFAQ} className="hover-link">
+               <span>FAQ</span>
+               <span className="hover-text">FAQ</span>
+             </Link>
+             <Link to="/business" className="hover-link">
+               <span>For Businesses</span>
+               <span className="hover-text">For Businesses</span>
+             </Link>
+             <Link
+               href="#"
+               onClick={(e) => {
+                 e.preventDefault();
+                 e.stopPropagation();
+                 if (typeof setWhitepaperBool === "function") {
+                   setWhitepaperBool((prev) => !prev);
+                 }
+               }}
+             >
+               <span>
+                 <div className="wrap">
+                   <img src="/svgs/paper.svg" alt="" />
+                   Read Whitepaper
+                 </div>
+               </span>
+               <span className="hover-text">
+                 <div className="wrap">
+                   <img src="/svgs/paper.svg" alt="" />
+                   Read Whitepaper
+                 </div>
+               </span>
+             </Link>
+           </div>) }
+          {!openMenu && (
           <Link
             to="/join-waitlist"
             onClick={() => {
@@ -476,6 +497,7 @@ const Header = ({
             <span>Join Waitlist</span>
             <span className="hover-text">Join Waitlist</span>
           </Link>
+          )}
         </>
       )}
 
@@ -552,13 +574,21 @@ const Header = ({
           className="menu-bar"
         />
       ) : (
-        <img
-          src="/svgs/close.svg"
+        <div
           onClick={() => setOpenMenu(false)}
-          className="menu-bar"
-          aria-label="close menu"
-        />
+          className="close"
+        >
+          ✕
+        </div>
       )}
+      
+      <NavMobileMenu 
+        openMenu={openMenu}
+        setOpenMenu={setOpenMenu}
+        pageSectionRef={pageSectionRef}
+        faqRef={faqRef}
+        setWhitepaperBool={setWhitepaperBool}
+      />
     </motion.header>
   );
 };

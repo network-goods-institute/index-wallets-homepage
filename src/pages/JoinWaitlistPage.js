@@ -9,7 +9,6 @@ import LocatedField from "../components/LocatedField";
 import CryptoField from "../components/CryptoField";
 import BuisnessField from "../components/BuisnessField";
 import IndexWalletField from "../components/IndexWalletField";
-import NavMobileMenu from "../components/NavMobileMenu";
 import BeInTouch from "../components/BeInTouch";
 import { toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -440,14 +439,6 @@ const JoinWaitlistPage = ({ name, setName, email, setEmail }) => {
 
   return (
     <div className="join-wait-list-page">
-      <NavMobileMenu
-        openMenu={openMenu}
-        setOpenMenu={setOpenMenu}
-        pageSectionRef={pageSectionRef}
-        faqRef={faqRef}
-        setWhitepaperBool={setWhitepaperBool}
-        whitepaperBool={whitepaperBool}
-      />
       <Header
         pageSectionRef={pageSectionRef}
         JoinWaitlistRef={JoinWaitlistRef}

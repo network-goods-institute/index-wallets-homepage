@@ -9,7 +9,6 @@ import Footer from "../components/Footer";
 import PageNewSection from "../components/PageNewSection";
 import SpreadTheLoveSectionNew from "../components/SpreadTheLoveSectionNew";
 import WhatDoesThisDo from "../components/WhatDoesThisDo";
-import NavMobileMenu from "../components/NavMobileMenu";
 import MoreCustomerContainer from "../components/MoreCustomerContainer";
 import TimeLineHistory from "../components/TimeLineHistory";
 
@@ -34,15 +33,6 @@ const Home = ({ name, setName, email, setEmail, isLoading }) => {
 
   return (
     <div className="home">
-      <NavMobileMenu
-        openMenu={openMenu}
-        setOpenMenu={setOpenMenu}
-        pageSectionRef={pageSectionRef}
-        JoinWaitlistRef={JoinWaitlistRef}
-        faqRef={faqRef}
-        setWhitepaperBool={setWhitepaperBool}
-        whitepaperBool={whitepaperBool}
-      />
       <Header
         pageSectionRef={pageSectionRef}
         JoinWaitlistRef={JoinWaitlistRef}

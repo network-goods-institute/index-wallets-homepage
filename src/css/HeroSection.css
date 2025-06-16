@@ -6,6 +6,7 @@
   padding: 0 112px;
   padding-top: 115px;
 }
+
 .hero-section section {
   max-width: 1102px;
   height: 620px;
@@ -16,12 +17,15 @@
   flex-direction: column;
   position: relative;
 }
+
 .hero-section section .hero-anime-mb {
   display: none;
 }
+
 .hero-section section span.title-index {
   position: relative;
 }
+
 .hero-section section span.title-index h1 {
   text-align: center;
   font-weight: 900;
@@ -30,22 +34,27 @@
   letter-spacing: -7px;
   font-family: "Sp-Pro-Rounded", sans-serif;
 }
+
 .hero-section section span.title-index .first {
   position: absolute;
   left: -10px;
   bottom: -53px;
 }
+
 .hero-section section span.title-index .second {
   position: absolute;
   right: 50px;
   bottom: -150px;
 }
+
 .hero-section section span.title-index .first-mb {
   display: none;
 }
+
 .hero-section section span.title-index .second-mb {
   display: none;
 }
+
 .hero-section section h3 {
   font-weight: 500;
   font-size: 32px;
@@ -55,18 +64,30 @@
   color: #8a8a8e;
   z-index: 10;
 }
+
 .hero-section section h3 span.product {
   color: #049952;
   border-bottom: 3px solid #049952;
 }
-.hero-section section h3 span.location {
+
+.hero-section section h2 span.location {
   background: #e7f0ff;
-  padding: 0 12px;
+  padding: 2px 6px;
   border: 1.2px solid #0046be;
-  border-radius: 8px;
+  border-radius: 4px;
   text-align: center;
   color: #0046be;
+  display: inline-block;
+  min-width: 100px;
+  max-width: 200px;
+  height: auto;
+  line-height: 1.2;
+  font-size: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: baseline;
 }
+
 .hero-section section .hero-anime {
   position: absolute;
   bottom: 0;
@@ -74,6 +95,7 @@
   transform: scale(1.25);
   pointer-events: none;
 }
+
 @media (max-width: 575px) {
   .hero-section {
     overflow: hidden;
@@ -81,6 +103,7 @@
     padding-top: 115px;
     background: url("../assets/images/hero_mb_background.png");
   }
+
   .hero-section section {
     max-width: 100%;
     height: 620px;
@@ -91,6 +114,7 @@
     flex-direction: column;
     position: relative;
   }
+
   .hero-section section .hero-anime-mb {
     position: absolute;
     bottom: -20px;
@@ -98,37 +122,44 @@
     width: 100%;
     display: block;
   }
+
   .hero-section section span.title-index {
     position: relative;
   }
+
   .hero-section section span.title-index h1 {
     text-align: center;
     font-weight: 900;
-    font-size: 88px;
-    line-height: 84px;
-    letter-spacing: -4px;
+    font-size: 64px;
+    line-height: 60px;
+    letter-spacing: -3px;
     font-family: "Sp-Pro-Rounded", sans-serif;
   }
+
   .hero-section section span.title-index .first {
     position: absolute;
     display: none;
   }
+
   .hero-section section span.title-index .first-mb {
     position: absolute;
     left: 36px;
     bottom: -83px;
     display: block;
   }
+
   .hero-section section span.title-index .second {
     position: absolute;
     display: none;
   }
+
   .hero-section section span.title-index .second-mb {
     position: absolute;
     right: 50px;
     bottom: -150px;
     display: block;
   }
+
   .hero-section section h3 {
     font-weight: 500;
     font-size: 16px;
@@ -137,18 +168,30 @@
     margin-top: 15px;
     color: #8a8a8e;
   }
+
   .hero-section section h3 span.product {
     color: #049952;
     border-bottom: 3px solid #049952;
   }
-  .hero-section section h3 span.location {
+
+  .hero-section section h2 span.location {
     background: #e7f0ff;
-    padding: 0 12px;
+    padding: 2px 4px;
     border: 1.2px solid #0046be;
-    border-radius: 8px;
+    border-radius: 4px;
     text-align: center;
     color: #0046be;
+    display: inline-block;
+    min-width: 80px;
+    max-width: 150px;
+    height: auto;
+    line-height: 1.2;
+    font-size: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: baseline;
   }
+
   .hero-section section .hero-anime {
     position: absolute;
     bottom: 0;
@@ -157,17 +200,26 @@
     pointer-events: none;
     display: none;
   }
+
+  .hero-section section h2 {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+  }
 }
+
 @media (min-width: 576px) and (max-width: 767px) {
   .hero-section {
     padding: 0 40px;
     padding-top: 115px;
   }
+
   .hero-section section {
     max-width: 100%;
     height: 70vh;
     width: 100%;
   }
+
   .hero-section section span.title-index h1 {
     text-align: center;
     font-weight: 900;
@@ -176,18 +228,21 @@
     letter-spacing: -7px;
     font-family: "Sp-Pro-Rounded", sans-serif;
   }
+
   .hero-section section span.title-index .first {
     position: absolute;
     left: -10px;
     bottom: -53px;
     transform: scale(0.6);
   }
+
   .hero-section section span.title-index .second {
     position: absolute;
     right: 20px;
     bottom: -150px;
     transform: scale(0.6);
   }
+
   .hero-section section h3 {
     font-weight: 500;
     font-size: 30px;
@@ -197,18 +252,24 @@
     color: #8a8a8e;
     z-index: 1;
   }
+
   .hero-section section h3 span.product {
     color: #049952;
     border-bottom: 3px solid #049952;
   }
-  .hero-section section h3 span.location {
+
+  .hero-section section h2 span.location {
     background: #e7f0ff;
-    padding: 0 12px;
+    padding: 2px 6px;
     border: 1.2px solid #0046be;
-    border-radius: 8px;
+    border-radius: 4px;
     text-align: center;
     color: #0046be;
+    display: inline-block;
+    min-width: 100px;
+    max-width: 200px;
   }
+
   .hero-section section .hero-anime {
     position: absolute;
     bottom: 0;
@@ -217,16 +278,19 @@
     pointer-events: none;
   }
 }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .hero-section {
     padding: 0 40px;
     padding-top: 115px;
   }
+
   .hero-section section {
     max-width: 100%;
     height: 70vh;
     width: 100%;
   }
+
   .hero-section section span.title-index h1 {
     text-align: center;
     font-weight: 900;
@@ -235,18 +299,21 @@
     letter-spacing: -7px;
     font-family: "Sp-Pro-Rounded", sans-serif;
   }
+
   .hero-section section span.title-index .first {
     position: absolute;
     left: -10px;
     bottom: -53px;
     transform: scale(0.7);
   }
+
   .hero-section section span.title-index .second {
     position: absolute;
     right: 20px;
     bottom: -150px;
     transform: scale(0.7);
   }
+
   .hero-section section h3 {
     font-weight: 500;
     font-size: 30px;
@@ -256,18 +323,24 @@
     color: #8a8a8e;
     z-index: 1;
   }
+
   .hero-section section h3 span.product {
     color: #049952;
     border-bottom: 3px solid #049952;
   }
-  .hero-section section h3 span.location {
+
+  .hero-section section h2 span.location {
     background: #e7f0ff;
-    padding: 0 12px;
+    padding: 2px 6px;
     border: 1.2px solid #0046be;
-    border-radius: 8px;
+    border-radius: 4px;
     text-align: center;
     color: #0046be;
+    display: inline-block;
+    min-width: 120px;
+    max-width: 240px;
   }
+
   .hero-section section .hero-anime {
     position: absolute;
     bottom: 100px;
@@ -276,16 +349,19 @@
     pointer-events: none;
   }
 }
+
 @media (min-width: 992px) and (max-width: 1102px) {
   .hero-section {
     padding: 0 40px;
     padding-top: 115px;
   }
+
   .hero-section section {
     max-width: 100%;
     height: 620px;
     width: 100%;
   }
+
   .hero-section section span.title-index h1 {
     text-align: center;
     font-weight: 900;
@@ -294,16 +370,19 @@
     letter-spacing: -7px;
     font-family: "Sp-Pro-Rounded", sans-serif;
   }
+
   .hero-section section span.title-index .first {
     position: absolute;
     left: -10px;
     bottom: -53px;
   }
+
   .hero-section section span.title-index .second {
     position: absolute;
     right: 50px;
     bottom: -150px;
   }
+
   .hero-section section h3 {
     font-weight: 500;
     font-size: 32px;
@@ -312,18 +391,24 @@
     margin-top: 15px;
     color: #8a8a8e;
   }
+
   .hero-section section h3 span.product {
     color: #049952;
     border-bottom: 3px solid #049952;
   }
-  .hero-section section h3 span.location {
+
+  .hero-section section h2 span.location {
     background: #e7f0ff;
-    padding: 0 12px;
+    padding: 2px 6px;
     border: 1.2px solid #0046be;
-    border-radius: 8px;
+    border-radius: 4px;
     text-align: center;
     color: #0046be;
+    display: inline-block;
+    min-width: 140px;
+    max-width: 280px;
   }
+
   .hero-section section .hero-anime {
     position: absolute;
     bottom: 0;
@@ -331,4 +416,6 @@
     transform: scale(1.25);
     pointer-events: none;
   }
-}/*# sourceMappingURL=HeroSection.css.map */
+}
+
+/*# sourceMappingURL=HeroSection.css.map */

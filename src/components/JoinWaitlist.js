@@ -343,28 +343,36 @@ const JoinWaitlist = ({ JoinWaitlistRef, name, setName, email, setEmail }) => {
 
         <div className="business-middle-section">
           <div className="business-card">
-            <div className="business-header">
-              <h4>For Businesses</h4>
-              <p className="business-tagline">0% Transaction Fees Forever</p>
-            </div>
-            <div className="business-benefits">
-              <div className="benefit-point">
-                <span className="bullet">•</span>
-                <span>Attract purpose-driven customers</span>
-              </div>
-              <div className="benefit-point">
-                <span className="bullet">•</span>
-                <span>Stand out from competitors</span>
-              </div>
-              <div className="benefit-point">
-                <span className="bullet">•</span>
-                <span>Build community connections</span>
+            <div className="left-section">
+              <h1 className="title">For Businesses</h1>
+              <div className="primary-benefit">
+                <div className="primary-text">0% Transaction Fees</div>
+                <div className="primary-adornment">Forever</div>
               </div>
             </div>
-            <Link to="/business" className="business-btn">
-              <span>Learn More</span>
-              <span className="hover-text">Learn More</span>
-            </Link>
+            
+            <div className="right-section">
+              <div className="separator">PLUS</div>
+              
+              <div className="benefits">
+                <div className="benefit-item">
+                  <div className="benefit-icon"></div>
+                  <div className="benefit-text">Attract specific, high value customers with network-based discounts</div>
+                </div>
+                
+                <div className="benefit-item">
+                  <div className="benefit-icon"></div>
+                  <div className="benefit-text">Benefit and improve your competitiveness as a local business</div>
+                </div>
+                
+                <div className="benefit-item">
+                  <div className="benefit-icon"></div>
+                  <div className="benefit-text">Fund local goods that benefit your community and business</div>
+                </div>
+              </div>
+              
+              <Link to="/business" className="cta-button">Learn More</Link>
+            </div>
           </div>
         </div>
 
