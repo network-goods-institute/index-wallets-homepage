@@ -58,6 +58,12 @@
     display: inline-block;
     margin-bottom: 8px;
     backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.business-page .fees-badge-red {
+    background: rgba(255, 67, 67, 0.3);
+    border: 2px solid rgba(255, 67, 67, 0.5);
 }
 
 .business-page .fees-subtitle-container {
@@ -74,23 +80,10 @@
 }
 
 .business-page .forever-text {
-    font-size: 1.4rem;
-    font-weight: 800;
-    color: #ff6b6b;
-    text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
-    letter-spacing: 2px;
-    margin: 0;
-    animation: glow 2s ease-in-out infinite alternate;
-}
-
-@keyframes glow {
-    from {
-        text-shadow: 0 0 10px rgba(255, 107, 107, 0.5);
-    }
-
-    to {
-        text-shadow: 0 0 20px rgba(255, 107, 107, 0.8), 0 0 30px rgba(255, 107, 107, 0.6);
-    }
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+    margin-left: 8px;
 }
 
 .business-page .hero-description {
